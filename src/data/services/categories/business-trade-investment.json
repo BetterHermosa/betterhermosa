@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "service": "Business Permit (New Application / Renewal)",
+    "slug": "business-permit-new-renewal",
+    "type": "transaction",
+    "description": "Mayor's Permit to operate a business within Hermosa, issued or renewed annually through the Business Permit and Licensing Office (BPLO).",
+    "officeSlug": ["business-permit-and-licensing-office"],
+    "category": {
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
+    },
+    "steps": [
+      "Secure barangay business clearance from the barangay where the business is located",
+      "Submit application (new) or renewal form with required documents to BPLO",
+      "Settle assessed fees (business tax, Mayor's Permit fee, and related regulatory fees) at the Treasurer's Office",
+      "Secure clearances from Sanitary/Health, Fire Safety, and Zoning offices as applicable to the business type",
+      "Claim the approved Business Permit and Official Receipt"
+    ],
+    "requirements": [
+      "Barangay Business Clearance",
+      "DTI Certificate of Business Name Registration (sole proprietorship) or SEC Certificate (partnership/corporation)",
+      "Valid government-issued ID of the owner/representative",
+      "Lease contract or proof of property ownership for the business location",
+      "Previous year's Business Permit and Official Receipt (for renewal)",
+      "Fire Safety Inspection Certificate",
+      "Sanitary Permit / Health Certificate for applicable businesses"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "When is the deadline for business permit renewal?",
+        "answer": "Renewal applications are generally filed on or before January 20 of each year, per the Local Government Code. Confirm the exact municipal deadline with BPLO."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Varies — confirm with BPLO",
+      "whoCanApply": "Business owners operating within Hermosa, Bataan"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ]
+  }
+]

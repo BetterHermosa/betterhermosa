@@ -1,61 +1,63 @@
 {
   "lgu": {
-    "name": "Los Ba\u00f1os",
-    "fullName": "Municipality of Los Ba\u00f1os",
-    "province": "Laguna",
-    "districtEngineeringOffice": "Laguna 2nd DEO",
-    "region": "Region IV-A",
-    "regionCode": "CALABARZON",
+    "name": "Hermosa",
+    "fullName": "Municipality of Hermosa",
+    "province": "Bataan",
+    "districtEngineeringOffice": "Bataan 1st DEO",
+    "region": "Central Luzon (III)",
+    "regionCode": "030000000",
     "type": "municipality",
-    "officialWebsite": "https://losbanos.gov.ph",
-    "provinceWebsite": "https://laguna.gov.ph"
+    "officialWebsite": "https://www.hermosa.gov.ph",
+    "provinceWebsite": "https://bataan.gov.ph"
   },
   "portal": {
-    "name": "BetterLB",
-    "domain": "betterlb.org",
-    "baseUrl": "https://betterlb.org",
-    "description": "Community-powered portal of the Municipality of Los Ba\u00f1os.",
-    "brandColor": "#0066eb",
-    "footerBrandName": "Better Los Ba\u00f1os",
-    "logoWhitePath": "/logos/svg/betterlb-icon-white.svg",
-    "navbarLogoPath": "/logos/svg/betterlb-icon-colored.svg",
-    "defaultOgImagePath": "/logos/svg/betterlb-icon-colored.svg",
-    "faviconPath": "/logos/png/betterlb-banner-colored.png",
-    "faviconSvgPath": "/logos/svg/betterlb-logo-primary.svg",
-    "appleTouchIconPath": "/logos/png/betterlb-banner-inverted.png",
-    "githubUrl": "https://github.com/BetterLosBanos/betterlb",
-    "discordUrl": "https://discord.gg/dA6tkU4FYS",
-    "facebookUrl": "https://facebook.com/betterlb.org",
+    "name": "BetterHermosa",
+    "domain": "betterhermosa.org",
+    "baseUrl": "https://betterhermosa.org",
+    "description": "Community-powered portal of the Municipality of Hermosa, Bataan.",
+    "brandColor": "#006B3F",
+    "footerBrandName": "Better Hermosa",
+    "logoWhitePath": "/logos/svg/betterhermosa-icon-white.svg",
+    "navbarLogoPath": "/logos/svg/betterhermosa-icon-colored.svg",
+    "defaultOgImagePath": "/logos/svg/betterhermosa-icon-colored.svg",
+    "faviconPath": "/logos/png/betterhermosa-banner-colored.png",
+    "faviconSvgPath": "/logos/svg/betterhermosa-logo-primary.svg",
+    "appleTouchIconPath": "/logos/png/betterhermosa-banner-inverted.png",
+    "githubUrl": "https://github.com/BetterHermosa/betterhermosa",
+    "discordUrl": "",
+    "facebookUrl": "",
     "contactEmail": "volunteers@bettergov.ph"
   },
   "location": {
     "coordinates": {
-      "lat": 14.1763,
-      "lon": 121.2219
+      "lat": 14.8316,
+      "lon": 120.5073
     },
     "weather": {
-      "defaultCity": "Los Ba\u00f1os"
+      "defaultCity": "Hermosa"
     }
   },
   "transparency": {
     "procurement": {
-      "organizationName": "MUNICIPALITY OF LOS BA\u00d1OS, LAGUNA",
+      "organizationName": "MUNICIPALITY OF HERMOSA, BATAAN",
       "externalDashboard": "https://transparency.bettergov.ph/organizations/"
     },
     "infrastructure": {
-      "searchString": "Los Ba\u00f1os",
-      "exactMatchTargets": ["los ba\u00f1os", "los banos"]
+      "searchString": "Hermosa",
+      "exactMatchTargets": ["hermosa"]
     }
   },
   "dataPaths": {
-    "departments": "src/data/lgu/losbanos/directory/departments.json",
-    "barangays": "src/data/lgu/losbanos/directory/barangays.json",
-    "services": "src/data/lgu/losbanos/services/categories"
+    "departments": "src/data/directory/departments.json",
+    "barangays": "src/data/directory/barangays.json",
+    "executive": "src/data/directory/executive.json",
+    "legislative": "src/data/directory/legislative.json",
+    "services": "src/data/services"
   },
   "features": {
-    "openLGU": true,
-    "transparency": true,
-    "tourism": true,
-    "statistics": true
+    "openLGU": false,
+    "transparency": false,
+    "tourism": false,
+    "statistics": false
   }
 }

@@ -59,8 +59,8 @@ export default function ServicesSidebar({
         </div>
 
         <p className='text-xs leading-relaxed text-kapwa-text-on-disabled'>
-          Better LB is community-maintained. Help your fellow citizens by
-          suggesting a new service directory.
+          {config.portal.name} is community-maintained. Help your fellow
+          citizens by suggesting a new service directory.
         </p>
 
         <a

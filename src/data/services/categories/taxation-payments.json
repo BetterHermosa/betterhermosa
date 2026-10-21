@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "service": "Real Property Tax Payment",
+    "slug": "real-property-tax-payment",
+    "type": "transaction",
+    "description": "Payment of annual or quarterly real property tax (RPT) on land, buildings, and other improvements within Hermosa, processed at the Municipal Treasurer's Office.",
+    "officeSlug": ["municipal-treasurers-office"],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Bring the property's Tax Declaration number or previous Official Receipt to the Treasurer's Office",
+      "Request assessment/computation of amount due for the current period",
+      "Pay in full (eligible for discount if paid early in the year) or in quarterly installments",
+      "Receive the Official Receipt as proof of payment"
+    ],
+    "requirements": [
+      "Tax Declaration Number or copy of Tax Declaration",
+      "Previous year's Official Receipt (if available)",
+      "Valid ID of the payor"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "Is there a discount for early payment?",
+        "answer": "Many municipalities offer a discount for full payment made within the first quarter of the year. Confirm the current discount rate and deadlines with the Treasurer's Office."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Same day",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ]
+  }
+]

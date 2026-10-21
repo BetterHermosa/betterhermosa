@@ -1,267 +1,198 @@
 [
   {
-    "service": "Animal Bite Treatment Center",
-    "slug": "animal-bite-treatment-center",
+    "service": "Birth Certificate Registration",
+    "slug": "birth-certificate-registration",
     "type": "transaction",
-    "description": "Anti-rabies vaccination and wound management for individuals bitten by animals.",
-    "officeSlug": ["municipal-health-office"],
+    "description": "Registration of a child's birth and issuance of a certified copy of the birth certificate through the Municipal Civil Registrar's Office.",
+    "officeSlug": ["municipal-civil-registrars-office"],
     "category": {
-      "name": "Health & Wellness",
-      "slug": "health-wellness"
-    },
-    "updatedAt": null,
-    "quickInfo": {
-      "processingTime": "Immediate",
-      "appointmentType": "Walk-in (Urgent)"
-    },
-    "sources": []
-  },
-  {
-    "service": "Cash Subsidy for Solo Parents",
-    "slug": "solo-parents-cash-subsidy",
-    "type": "transaction",
-    "description": "Financial assistance provided semi-annually to qualified solo parents in the municipality.",
-    "officeSlug": ["municipal-social-welfare-and-development-office"],
-    "category": {
-      "name": "Social Services & Assistance",
-      "slug": "social-services-assistance"
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
     },
     "steps": [
-      "Register as a Solo Parent with the MSWDO.",
-      "Submit required documents during the designated payout period.",
-      "Receive cash subsidy (Php 1,000 per month or as allocated)."
+      "Submit the Certificate of Live Birth form accomplished by the attending physician, midwife, or hospital",
+      "Present required supporting documents to the Civil Registrar",
+      "Pay applicable registration fee (free of charge if registered within 30 days of birth per law)",
+      "Receive the registered Certificate of Live Birth; request a certified copy from the PSA (via the civil registrar) if needed"
     ],
     "requirements": [
-      "Valid Solo Parent ID",
-      "Barangay Certification of Residency",
-      "Affidavit of Solo Parent status"
+      "Certificate of Live Birth (accomplished and signed by attendant at birth)",
+      "Marriage certificate of parents (if married)",
+      "Valid ID of parent(s) or informant",
+      "Affidavit of Acknowledgment/Admission of Paternity (for children of unmarried parents, if applicable)"
     ],
-    "quickInfo": {
-      "fee": "Free",
-      "whoCanApply": "Registered Solo Parents",
-      "documents": "Solo Parent ID"
-    },
-    "updatedAt": null,
-    "sources": [
-      {
-        "name": "Republic Act No. 11861 (Expanded Solo Parents Welfare Act of 2022)"
-      }
-    ]
-  },
-  {
-    "service": "Expanded Centenarian Program Payout (Ages 80, 85, 90, 95)",
-    "slug": "expanded-centenarian-payout",
-    "type": "transaction",
-    "description": "Provision of cash incentives for elderly residents reaching milestone ages of 80, 85, 90, and 95, facilitated by the National Commission of Senior Citizens (NCSC).",
-    "url": "",
-    "officeSlug": ["municipal-treasurers-office"],
-    "category": {
-      "name": "Social Services & Assistance",
-      "slug": "social-services-assistance"
-    },
-    "steps": [
-      "Verify if the senior's name is included in the official NCSC Masterlist (January to June 2025 batch).",
-      "Secure required templates (Authorization, SPA, or Warranty & Release forms) from the OSCA Office between 8:00 AM and 5:00 PM.",
-      "Prepare the specific set of documents based on the claimant's status (Personal, Representative, or Deceased).",
-      "Proceed to the Municipal Treasury Office on the designated payout date and time.",
-      "Submit documents for verification and receive the cash incentive."
-    ],
-    "requirements": [
-      "FOR PERSONAL CLAIM: 2 copies of valid ID with signature or thumbmark.",
-      "FOR REPRESENTATIVE: Authorization Letter (NCSC template), Physical ID of grantee (original + photocopy), Physical ID of claimant (original + photocopy).",
-      "FOR REPRESENTATIVE (BEDRIDDEN): Barangay Certification signed by Captain and BHW or Medical Certificate.",
-      "FOR REPRESENTATIVE (PROOF OF LIFE): Half-body photo of the grantee holding a current calendar or newspaper.",
-      "FOR DECEASED GRANTEE: Special Power of Attorney (SPA template), Warranty and Release from Liability form, Original or CTC of Death Certificate, Claimant ID with 3 signatures, and Proof of Relationship."
-    ],
+    "relatedServices": [],
     "faqs": [
       {
-        "question": "Where can I get the SPA or Authorization templates?",
-        "answer": "Templates are available at the Office of the Senior Citizens Affairs (OSCA) from 8:00 AM to 5:00 PM."
-      },
-      {
-        "question": "Who is eligible for this specific payout?",
-        "answer": "Seniors who are part of the qualified beneficiaries list from January to June 2025 provided by the NCSC."
+        "question": "Is there a fee for registering a birth?",
+        "answer": "Registration within 30 days of birth is free under the Civil Registration Law. Late registration fees apply beyond that period — confirm the current fee schedule with the Civil Registrar."
       }
     ],
     "quickInfo": {
-      "processingTime": "Scheduled Payout (Dec 18, 2025)",
-      "fee": "Free",
-      "whoCanApply": "Seniors aged 80, 85, 90, 95",
-      "appointmentType": "Walk-in (Treasury Office)",
-      "documents": "Valid IDs, SPA/Authorization, Proof of Life"
-    },
-    "updatedAt": "2026-01-13T20:44:00Z",
-    "sources": [
-      {
-        "name": "National Commission of Senior Citizens (NCSC)",
-        "url": "https://ncsc.gov.ph"
-      },
-      {
-        "name": "Office of the Senior Citizens Affairs (OSCA) Los Baños"
-      }
-    ]
-  },
-  {
-    "service": "Fire Safety Inspection Certificate (FSIC)",
-    "slug": "fire-safety-inspection-certificate",
-    "type": "transaction",
-    "description": "Required for occupancy and business permits to ensure the structure meets fire safety standards.",
-    "officeSlug": ["bureau-fire-protection"],
-    "category": {
-      "name": "Public Safety & Security",
-      "slug": "public-safety-security"
-    },
-    "requirements": [
-      "Unified Application Form",
-      "Building Permit Number and Date Issued",
-      "FSEC Number and Date Issued",
-      "Site Inspection by BFP personnel"
-    ],
-    "quickInfo": {
-      "processingTime": "3-5 days",
-      "whoCanApply": "Building Owners / Business Operators"
+      "processingTime": "Same day for timely registration; longer for late registration",
+      "fee": "Free within 30 days of birth; late registration fee applies thereafter"
     },
     "updatedAt": null,
     "sources": [
       {
-        "name": "BFP Fire Safety Regulations"
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
       }
     ]
   },
   {
-    "service": "Garbage Collection Schedule",
-    "slug": "garbage-collection-schedule",
-    "type": "information",
-    "description": "Weekly schedule for waste collection per barangay. Please segregate biodegradable and non-biodegradable waste.",
-    "officeSlug": ["municipal-environment-and-natural-resources-office"],
+    "service": "Business Permit (New Application / Renewal)",
+    "slug": "business-permit-new-renewal",
+    "type": "transaction",
+    "description": "Mayor's Permit to operate a business within Hermosa, issued or renewed annually through the Business Permit and Licensing Office (BPLO).",
+    "officeSlug": ["business-permit-and-licensing-office"],
     "category": {
-      "name": "Environment & Natural Resources",
-      "slug": "environment-natural-resources"
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
     },
     "steps": [
-      "Monday & Thursday: Batong Malake, San Antonio, Maahas (Biodegradable)",
-      "Tuesday & Friday: Bayog, Mayondon, Malinta (Biodegradable)",
-      "Wednesday: All Barangays (Non-Biodegradable / Recyclables)",
-      "Saturday: Special collection for Market area",
-      "Sunday: No Collection"
+      "Secure barangay business clearance from the barangay where the business is located",
+      "Submit application (new) or renewal form with required documents to BPLO",
+      "Settle assessed fees (business tax, Mayor's Permit fee, and related regulatory fees) at the Treasurer's Office",
+      "Secure clearances from Sanitary/Health, Fire Safety, and Zoning offices as applicable to the business type",
+      "Claim the approved Business Permit and Official Receipt"
     ],
     "requirements": [
-      "Please ensure waste is segregated before putting it out.",
-      "Bring out trash only between 6:00 AM - 8:00 AM."
+      "Barangay Business Clearance",
+      "DTI Certificate of Business Name Registration (sole proprietorship) or SEC Certificate (partnership/corporation)",
+      "Valid government-issued ID of the owner/representative",
+      "Lease contract or proof of property ownership for the business location",
+      "Previous year's Business Permit and Official Receipt (for renewal)",
+      "Fire Safety Inspection Certificate",
+      "Sanitary Permit / Health Certificate for applicable businesses"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "When is the deadline for business permit renewal?",
+        "answer": "Renewal applications are generally filed on or before January 20 of each year, per the Local Government Code. Confirm the exact municipal deadline with BPLO."
+      }
     ],
     "quickInfo": {
-      "processingTime": "Weekly",
-      "whoCanApply": "All Residents"
+      "processingTime": "Varies — confirm with BPLO",
+      "whoCanApply": "Business owners operating within Hermosa, Bataan"
     },
     "updatedAt": null,
     "sources": [
       {
-        "name": "Republic Act No. 9003 (Ecological Solid Waste Management Act)",
-        "url": ""
-      },
-      {
-        "name": "MENRO Garbage Collection Policy",
-        "url": ""
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
       }
     ]
   },
   {
-    "service": "Medical Assistance (AICS)",
-    "slug": "medical-assistance-aics",
+    "service": "Certificate of Indigency",
+    "slug": "certificate-of-indigency",
     "type": "transaction",
-    "description": "Assistance to Individuals in Crisis Situations for medical needs.",
+    "description": "Certification issued by MSWD confirming a resident's indigent status, commonly required for medical, educational, or burial assistance applications.",
     "officeSlug": ["municipal-social-welfare-and-development-office"],
     "category": {
       "name": "Social Services & Assistance",
       "slug": "social-services-assistance"
     },
     "steps": [
-      "Submit requirements for screening.",
-      "Undergo interview by Social Worker.",
-      "Receive Guarantee Letter or Cash Assistance."
+      "Request an interview and assessment at the MSWD office",
+      "Submit required supporting documents",
+      "Receive the signed Certificate of Indigency"
     ],
     "requirements": [
-      "Medical Certificate / Abstract",
-      "Hospital Bill / Prescription",
-      "Barangay Certificate of Indigency",
-      "Valid ID of claimant"
+      "Valid government-issued ID",
+      "Barangay Certificate of Residency or Indigency (from the applicant's barangay)",
+      "Proof of purpose (e.g., hospital bill, school requirement, burial request)"
+    ],
+    "relatedServices": ["pwd-id-registration"],
+    "faqs": [],
+    "quickInfo": {
+      "processingTime": "Same day, subject to case assessment",
+      "fee": "Free"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ]
+  },
+  {
+    "service": "PWD ID Registration",
+    "slug": "pwd-id-registration",
+    "type": "transaction",
+    "description": "Registration and issuance of a Persons with Disability (PWD) identification card through the Person with Disability Affairs Office (PDAO), entitling holders to discounts and benefits under RA 10754.",
+    "officeSlug": ["person-with-disability-affairs-office"],
+    "category": {
+      "name": "Social Services & Assistance",
+      "slug": "social-services-assistance"
+    },
+    "steps": [
+      "Accomplish the PWD registration form at PDAO",
+      "Submit medical certificate and supporting documents",
+      "Have 1x1 ID photo taken on site or submit as required",
+      "Claim the PWD ID card once released"
+    ],
+    "requirements": [
+      "Medical Certificate from a licensed physician specifying the disability",
+      "Valid government-issued ID or Birth Certificate",
+      "2 pieces 1x1 ID photo",
+      "Barangay Certificate of Residency"
+    ],
+    "relatedServices": ["certificate-of-indigency"],
+    "faqs": [],
+    "quickInfo": {
+      "processingTime": "Varies — confirm with PDAO",
+      "fee": "Free",
+      "validity": "Subject to renewal per DOH/NCDA guidelines"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ]
+  },
+  {
+    "service": "Real Property Tax Payment",
+    "slug": "real-property-tax-payment",
+    "type": "transaction",
+    "description": "Payment of annual or quarterly real property tax (RPT) on land, buildings, and other improvements within Hermosa, processed at the Municipal Treasurer's Office.",
+    "officeSlug": ["municipal-treasurers-office"],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Bring the property's Tax Declaration number or previous Official Receipt to the Treasurer's Office",
+      "Request assessment/computation of amount due for the current period",
+      "Pay in full (eligible for discount if paid early in the year) or in quarterly installments",
+      "Receive the Official Receipt as proof of payment"
+    ],
+    "requirements": [
+      "Tax Declaration Number or copy of Tax Declaration",
+      "Previous year's Official Receipt (if available)",
+      "Valid ID of the payor"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "Is there a discount for early payment?",
+        "answer": "Many municipalities offer a discount for full payment made within the first quarter of the year. Confirm the current discount rate and deadlines with the Treasurer's Office."
+      }
     ],
     "quickInfo": {
-      "processingTime": "1-2 days",
-      "whoCanApply": "Indigent Residents",
+      "processingTime": "Same day",
       "appointmentType": "Walk-in"
     },
     "updatedAt": null,
     "sources": [
       {
-        "name": "DSWD Memorandum Circular No. 02 Series of 2014",
-        "url": ""
-      },
-      {
-        "name": "MSWDO Guidelines on Financial Assistance",
-        "url": ""
-      }
-    ]
-  },
-  {
-    "service": "Public School Directory",
-    "slug": "public-school-directory",
-    "type": "information",
-    "description": "A comprehensive list of public elementary and secondary schools in the municipality.",
-    "officeSlug": ["department-of-education"],
-    "category": {
-      "name": "Education & Scholarship",
-      "slug": "education-scholarship"
-    },
-    "steps": [
-      "Los Baños Central Elementary School (Timugan)",
-      "Mayondon Elementary School",
-      "Bayog Elementary School",
-      "Lalakay Elementary School",
-      "Los Baños National High School (Poblacion)",
-      "Bernardo F. San Juan National High School",
-      "South Hill School (Private)",
-      "University of the Philippines Rural High School"
-    ],
-    "requirements": [],
-    "relatedServices": ["scholarship-application"],
-    "faqs": [
-      {
-        "question": "When does enrollment start?",
-        "answer": "Enrollment typically begins in July. Please follow the official DepEd page for announcements."
-      }
-    ],
-    "updatedAt": null,
-    "sources": [
-      {
-        "name": "DepEd Schools Division Office List",
-        "url": ""
-      }
-    ]
-  },
-  {
-    "service": "Rural Health Unit (RHU) Locations",
-    "slug": "rhu-locations",
-    "type": "information",
-    "description": "Locations of health centers providing free primary care, immunization, and maternal services.",
-    "officeSlug": ["municipal-health-office"],
-    "category": {
-      "name": "Health & Wellness",
-      "slug": "health-wellness"
-    },
-    "steps": [
-      "RHU 1: Main Health Center, Municipal Hall Compound, Brgy. Timugan",
-      "RHU 2: Brgy. Batong Malake (Near Barangay Hall)",
-      "RHU 3: Brgy. Mayondon (Purok 3)",
-      "Animal Bite Center: Municipal Hall Compound"
-    ],
-    "requirements": [],
-    "relatedServices": ["health-certificate"],
-    "updatedAt": null,
-    "sources": [
-      {
-        "name": "Municipal Health Office Registry",
-        "url": ""
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
       }
     ]
   }

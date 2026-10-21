@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "service": "Birth Certificate Registration",
+    "slug": "birth-certificate-registration",
+    "type": "transaction",
+    "description": "Registration of a child's birth and issuance of a certified copy of the birth certificate through the Municipal Civil Registrar's Office.",
+    "officeSlug": ["municipal-civil-registrars-office"],
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "steps": [
+      "Submit the Certificate of Live Birth form accomplished by the attending physician, midwife, or hospital",
+      "Present required supporting documents to the Civil Registrar",
+      "Pay applicable registration fee (free of charge if registered within 30 days of birth per law)",
+      "Receive the registered Certificate of Live Birth; request a certified copy from the PSA (via the civil registrar) if needed"
+    ],
+    "requirements": [
+      "Certificate of Live Birth (accomplished and signed by attendant at birth)",
+      "Marriage certificate of parents (if married)",
+      "Valid ID of parent(s) or informant",
+      "Affidavit of Acknowledgment/Admission of Paternity (for children of unmarried parents, if applicable)"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "Is there a fee for registering a birth?",
+        "answer": "Registration within 30 days of birth is free under the Civil Registration Law. Late registration fees apply beyond that period — confirm the current fee schedule with the Civil Registrar."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Same day for timely registration; longer for late registration",
+      "fee": "Free within 30 days of birth; late registration fee applies thereafter"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ]
+  }
+]

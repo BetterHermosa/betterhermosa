@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Welcome to BetterLB",
-    "subtitle": "The volunteer run portal of the Municipality of Los Baños. Find information, access government services, stay updated with the latest news about Los Baños.",
+    "title": "Welcome to BetterHermosa",
+    "subtitle": "The volunteer run portal of the Municipality of Hermosa. Find information, access government services, stay updated with the latest news about Hermosa.",
     "quickAccess": "Quick Access",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
@@ -37,7 +37,7 @@
     "title": "Latest News & Updates"
   },
   "footer": {
-    "copyright": "2025 BetterLB.org - All content is public domain unless otherwise specified."
+    "copyright": "2026 BetterHermosa.org - All content is public domain unless otherwise specified."
   },
   "navbar": {
     "home": "Home",
@@ -88,8 +88,8 @@
     "registerNow": "Register Now"
   },
   "government": {
-    "title": "Local Government of the Municipality of Los Baños",
-    "description": "Learn about the key offices, councils, and local units that make up the Municipal Government of Los Baños.",
+    "title": "Local Government of the Municipality of Hermosa",
+    "description": "Learn about the key offices, councils, and local units that make up the Municipal Government of Hermosa.",
     "executiveTitle": "Executive Branch",
     "executiveDescription": "Led by the Mayor, responsible for implementing municipal policies, programs, and ordinances.",
     "legislativeTitle": "Legislative Branch",
