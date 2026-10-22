@@ -1,1 +1,204 @@
-[]
+[
+  {
+    "service": "Birth Certificate Registration",
+    "slug": "birth-certificate-registration",
+    "type": "transaction",
+    "description": "Registration of a child's birth and issuance of a certified copy of the birth certificate through the Municipal Civil Registrar's Office.",
+    "officeSlug": ["municipal-civil-registrars-office"],
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "steps": [
+      "Submit the Certificate of Live Birth form accomplished by the attending physician, midwife, or hospital",
+      "Present required supporting documents to the Civil Registrar",
+      "Pay applicable registration fee (free of charge if registered within 30 days of birth per law)",
+      "Receive the registered Certificate of Live Birth; request a certified copy from the PSA (via the civil registrar) if needed"
+    ],
+    "requirements": [
+      "Certificate of Live Birth (accomplished and signed by attendant at birth)",
+      "Marriage certificate of parents (if married)",
+      "Valid ID of parent(s) or informant",
+      "Affidavit of Acknowledgment/Admission of Paternity (for children of unmarried parents, if applicable)"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "Is there a fee for registering a birth?",
+        "answer": "Registration within 30 days of birth is free under the Civil Registration Law. Late registration fees apply beyond that period — confirm the current fee schedule with the Civil Registrar."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Same day for timely registration; longer for late registration",
+      "fee": "Free within 30 days of birth; late registration fee applies thereafter"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "Business Permit (New Application / Renewal)",
+    "slug": "business-permit-new-renewal",
+    "type": "transaction",
+    "description": "Mayor's Permit to operate a business within Hermosa, issued or renewed annually through the Business Permit and Licensing Office (BPLO).",
+    "officeSlug": ["business-permit-and-licensing-office"],
+    "category": {
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
+    },
+    "steps": [
+      "Secure barangay business clearance from the barangay where the business is located",
+      "Submit application (new) or renewal form with required documents to BPLO",
+      "Settle assessed fees (business tax, Mayor's Permit fee, and related regulatory fees) at the Treasurer's Office",
+      "Secure clearances from Sanitary/Health, Fire Safety, and Zoning offices as applicable to the business type",
+      "Claim the approved Business Permit and Official Receipt"
+    ],
+    "requirements": [
+      "Barangay Business Clearance",
+      "DTI Certificate of Business Name Registration (sole proprietorship) or SEC Certificate (partnership/corporation)",
+      "Valid government-issued ID of the owner/representative",
+      "Lease contract or proof of property ownership for the business location",
+      "Previous year's Business Permit and Official Receipt (for renewal)",
+      "Fire Safety Inspection Certificate",
+      "Sanitary Permit / Health Certificate for applicable businesses"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "When is the deadline for business permit renewal?",
+        "answer": "Renewal applications are generally filed on or before January 20 of each year, per the Local Government Code. Confirm the exact municipal deadline with BPLO."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Varies — confirm with BPLO",
+      "whoCanApply": "Business owners operating within Hermosa, Bataan"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "Certificate of Indigency",
+    "slug": "certificate-of-indigency",
+    "type": "transaction",
+    "description": "Certification issued by MSWD confirming a resident's indigent status, commonly required for medical, educational, or burial assistance applications.",
+    "officeSlug": ["municipal-social-welfare-and-development-office"],
+    "category": {
+      "name": "Social Services & Assistance",
+      "slug": "social-services-assistance"
+    },
+    "steps": [
+      "Request an interview and assessment at the MSWD office",
+      "Submit required supporting documents",
+      "Receive the signed Certificate of Indigency"
+    ],
+    "requirements": [
+      "Valid government-issued ID",
+      "Barangay Certificate of Residency or Indigency (from the applicant's barangay)",
+      "Proof of purpose (e.g., hospital bill, school requirement, burial request)"
+    ],
+    "relatedServices": ["pwd-id-registration"],
+    "faqs": [],
+    "quickInfo": {
+      "processingTime": "Same day, subject to case assessment",
+      "fee": "Free"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "PWD ID Registration",
+    "slug": "pwd-id-registration",
+    "type": "transaction",
+    "description": "Registration and issuance of a Persons with Disability (PWD) identification card through the Person with Disability Affairs Office (PDAO), entitling holders to discounts and benefits under RA 10754.",
+    "officeSlug": ["person-with-disability-affairs-office"],
+    "category": {
+      "name": "Social Services & Assistance",
+      "slug": "social-services-assistance"
+    },
+    "steps": [
+      "Accomplish the PWD registration form at PDAO",
+      "Submit medical certificate and supporting documents",
+      "Have 1x1 ID photo taken on site or submit as required",
+      "Claim the PWD ID card once released"
+    ],
+    "requirements": [
+      "Medical Certificate from a licensed physician specifying the disability",
+      "Valid government-issued ID or Birth Certificate",
+      "2 pieces 1x1 ID photo",
+      "Barangay Certificate of Residency"
+    ],
+    "relatedServices": ["certificate-of-indigency"],
+    "faqs": [],
+    "quickInfo": {
+      "processingTime": "Varies — confirm with PDAO",
+      "fee": "Free",
+      "validity": "Subject to renewal per DOH/NCDA guidelines"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "Real Property Tax Payment",
+    "slug": "real-property-tax-payment",
+    "type": "transaction",
+    "description": "Payment of annual or quarterly real property tax (RPT) on land, buildings, and other improvements within Hermosa, processed at the Municipal Treasurer's Office.",
+    "officeSlug": ["municipal-treasurers-office"],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Bring the property's Tax Declaration number or previous Official Receipt to the Treasurer's Office",
+      "Request assessment/computation of amount due for the current period",
+      "Pay in full (eligible for discount if paid early in the year) or in quarterly installments",
+      "Receive the Official Receipt as proof of payment"
+    ],
+    "requirements": [
+      "Tax Declaration Number or copy of Tax Declaration",
+      "Previous year's Official Receipt (if available)",
+      "Valid ID of the payor"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "Is there a discount for early payment?",
+        "answer": "Many municipalities offer a discount for full payment made within the first quarter of the year. Confirm the current discount rate and deadlines with the Treasurer's Office."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Same day",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+        "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+      }
+    ],
+    "source": "community"
+  }
+]
