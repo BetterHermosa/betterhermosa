@@ -17,8 +17,8 @@ import type {
  * Development: localhost for local development
  */
 const ALLOWED_ORIGINS = [
-  'https://betterlb.pages.dev',
-  'https://betterlb.gov.ph', // Custom domain if configured
+  'https://betterhermosa.pages.dev',
+  'https://betterhermosa.org', // Custom domain if configured
   'http://localhost:5173', // Vite dev server
   'http://localhost:8788', // Wrangler dev server
 ];
@@ -49,9 +49,9 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
 
 // CONFIGURATION - Easy to change for other municipalities
 const DEFAULT_CITY: CityCoordinates = {
-  name: 'Los Baños',
-  lat: 14.1763,
-  lon: 121.2219,
+  name: 'Hermosa',
+  lat: 14.8316,
+  lon: 120.5073,
 };
 
 // Optional: Add more cities if needed
