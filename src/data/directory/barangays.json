@@ -1,25 +1,186 @@
 [
-  { "slug": "a-rivera", "barangay_name": "A. Rivera (Poblacion)", "address": "Barangay Hall, A. Rivera, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "almacen", "barangay_name": "Almacen", "address": "Barangay Hall, Almacen, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "bacong", "barangay_name": "Bacong", "address": "Barangay Hall, Bacong, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "balsic", "barangay_name": "Balsic", "address": "Barangay Hall, Balsic, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "bamban", "barangay_name": "Bamban", "address": "Barangay Hall, Bamban, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "burgos-soliman", "barangay_name": "Burgos-Soliman (Poblacion)", "address": "Barangay Hall, Burgos-Soliman, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "cataning", "barangay_name": "Cataning (Poblacion)", "address": "Barangay Hall, Cataning, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "culis", "barangay_name": "Culis", "address": "Barangay Hall, Culis, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "daungan", "barangay_name": "Daungan (Poblacion)", "address": "Barangay Hall, Daungan, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "jrc-mandama", "barangay_name": "Judge Roman Cruz Sr. (Mandama)", "address": "Barangay Hall, JRC Mandama, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "mabiga", "barangay_name": "Mabiga", "address": "Barangay Hall, Mabiga, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "mabuco", "barangay_name": "Mabuco", "address": "Barangay Hall, Mabuco, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "maite", "barangay_name": "Maite", "address": "Barangay Hall, Maite, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "mambog", "barangay_name": "Mambog-Mandama", "address": "Barangay Hall, Mambog, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "palihan", "barangay_name": "Palihan", "address": "Barangay Hall, Palihan, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "pandatung", "barangay_name": "Pandatung", "address": "Barangay Hall, Pandatung, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "pulo", "barangay_name": "Pulo", "address": "Barangay Hall, Pulo, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "saba", "barangay_name": "Saba", "address": "Barangay Hall, Saba, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "sacrifice-valley", "barangay_name": "Sacrifice Valley", "address": "Barangay Hall, Sacrifice Valley, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "san-pedro", "barangay_name": "San Pedro (Poblacion)", "address": "Barangay Hall, San Pedro, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "sto-cristo", "barangay_name": "Santo Cristo (Poblacion)", "address": "Barangay Hall, Sto. Cristo, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "sumalo", "barangay_name": "Sumalo", "address": "Barangay Hall, Sumalo, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] },
-  { "slug": "tipo", "barangay_name": "Tipo", "address": "Barangay Hall, Tipo, Hermosa, Bataan", "trunkline": [], "website": null, "officials": [] }
+  {
+    "slug": "a-rivera",
+    "barangay_name": "A. Rivera (Poblacion)",
+    "address": "Barangay Hall, A. Rivera, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "almacen",
+    "barangay_name": "Almacen",
+    "address": "Barangay Hall, Almacen, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "bacong",
+    "barangay_name": "Bacong",
+    "address": "Barangay Hall, Bacong, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "balsic",
+    "barangay_name": "Balsic",
+    "address": "Barangay Hall, Balsic, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "bamban",
+    "barangay_name": "Bamban",
+    "address": "Barangay Hall, Bamban, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "burgos-soliman",
+    "barangay_name": "Burgos-Soliman (Poblacion)",
+    "address": "Barangay Hall, Burgos-Soliman, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "cataning",
+    "barangay_name": "Cataning (Poblacion)",
+    "address": "Barangay Hall, Cataning, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "culis",
+    "barangay_name": "Culis",
+    "address": "Barangay Hall, Culis, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "daungan",
+    "barangay_name": "Daungan (Poblacion)",
+    "address": "Barangay Hall, Daungan, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "jrc-mandama",
+    "barangay_name": "Judge Roman Cruz Sr. (Mandama)",
+    "address": "Barangay Hall, JRC Mandama, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "mabiga",
+    "barangay_name": "Mabiga",
+    "address": "Barangay Hall, Mabiga, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "mabuco",
+    "barangay_name": "Mabuco",
+    "address": "Barangay Hall, Mabuco, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "maite",
+    "barangay_name": "Maite",
+    "address": "Barangay Hall, Maite, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "mambog",
+    "barangay_name": "Mambog-Mandama",
+    "address": "Barangay Hall, Mambog, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "palihan",
+    "barangay_name": "Palihan",
+    "address": "Barangay Hall, Palihan, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "pandatung",
+    "barangay_name": "Pandatung",
+    "address": "Barangay Hall, Pandatung, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "pulo",
+    "barangay_name": "Pulo",
+    "address": "Barangay Hall, Pulo, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "saba",
+    "barangay_name": "Saba",
+    "address": "Barangay Hall, Saba, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "sacrifice-valley",
+    "barangay_name": "Sacrifice Valley",
+    "address": "Barangay Hall, Sacrifice Valley, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "san-pedro",
+    "barangay_name": "San Pedro (Poblacion)",
+    "address": "Barangay Hall, San Pedro, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "sto-cristo",
+    "barangay_name": "Santo Cristo (Poblacion)",
+    "address": "Barangay Hall, Sto. Cristo, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "sumalo",
+    "barangay_name": "Sumalo",
+    "address": "Barangay Hall, Sumalo, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  },
+  {
+    "slug": "tipo",
+    "barangay_name": "Tipo",
+    "address": "Barangay Hall, Tipo, Hermosa, Bataan",
+    "trunkline": [],
+    "website": null,
+    "officials": []
+  }
 ]
