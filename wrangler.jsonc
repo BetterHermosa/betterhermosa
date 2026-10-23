@@ -5,6 +5,12 @@
 		"directory": "./dist",
 		"not_found_handling": "single-page-application"
 	},
+	"routes": [
+		{
+			"pattern": "betterhermosa.org",
+			"custom_domain": true
+		}
+	],
 	"vars": {
 		"GITHUB_REPO": "BetterHermosa/betterhermosa",
 	}
