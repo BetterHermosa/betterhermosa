@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 
 import { DetailSection, useBreadcrumbs } from '@/components/layout';
+import { SEO } from '@/components/layout/SEO';
 import {
   Breadcrumb,
   BreadcrumbHome,
@@ -41,6 +42,7 @@ import { FeesCard } from './components/FeesCard';
 
 import { getServiceBySlug } from '@/lib/services';
 import { config } from '@/lib/lguConfig';
+import { serviceSeo } from '@/lib/seoTemplates';
 import { toTitleCase } from '@/lib/stringUtils';
 
 import departmentsData from '@/data/directory/departments.json';
@@ -147,8 +149,18 @@ export default function ServiceDetail() {
     });
   }
 
+  const seo = serviceSeo(service.service, service.description);
+
   return (
     <div className='animate-in fade-in mx-auto max-w-7xl space-y-6 duration-500'>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        breadcrumbs={[
+          { name: 'Services', url: '/services' },
+          { name: service.service, url: `/services/${service.slug}` },
+        ]}
+      />
       <Breadcrumb>
         <BreadcrumbList>
           {breadcrumbs.map((crumb, index) => {

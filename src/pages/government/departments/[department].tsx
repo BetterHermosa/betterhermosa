@@ -21,6 +21,9 @@ import {
 import { Badge } from '@/components/ui/Badge';
 import { Card, CardContent } from '@/components/ui/Card';
 
+import { SEO } from '@/components/layout/SEO';
+
+import { departmentSeo } from '@/lib/seoTemplates';
 import { toTitleCase } from '@/lib/stringUtils';
 import { toTelUri } from '@/lib/utils';
 import { lguLabels } from '@/lib/lguLabels';
@@ -59,8 +62,21 @@ export default function DepartmentDetail() {
     ? dept.trunkline[0]
     : dept.trunkline;
 
+  const seo = departmentSeo(dept.office_name);
+
   return (
     <div className='animate-in fade-in space-y-6 pb-20 duration-500'>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        breadcrumbs={[
+          { name: 'Departments', url: '/government/departments' },
+          {
+            name: toTitleCase(dept.office_name),
+            url: `/government/departments/${dept.slug}`,
+          },
+        ]}
+      />
       {/* Skip Link for Accessibility */}
       <a
         href='#main-content'

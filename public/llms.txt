@@ -1,141 +1,98 @@
-# BetterGov.ph
+# BetterHermosa
 
-## About
-A comprehensive portal for Local Government Unit (LGU) services, information, and resources
+> Community-powered portal of the Municipality of Hermosa, Bataan. Volunteer-run and open source; part of the BetterGov.ph network. Not an official government website — the official site is https://www.hermosa.gov.ph.
 
-BetterGov.ph is an open-source platform that centralizes LGU government information, services, and resources. Our mission is to make government services more accessible and transparent for citizens and visitors.
+## Key pages
 
-## Key Features
-- Comprehensive government directory (Mayor, Vice Mayor, Departments, Barangay Officials)
-- Real-time data widgets (weather, forex rates)
-- Emergency hotlines and public services directory
-- Flood control projects visualization and data
-- Multi-language support (English, Filipino)
-- Search functionality across all government services
-- Online Service Directory with Requirements and Steps
+- [BetterHermosa | Hermosa, Bataan Officials, Services & Barangays](https://betterhermosa.org/)
+- [Hermosa, Bataan Mayor, Vice Mayor & Councilors | BetterHermosa](https://betterhermosa.org/government/elected-officials)
+- [Municipal Offices & Departments of Hermosa, Bataan | BetterHermosa](https://betterhermosa.org/government/departments)
+- [Barangays of Hermosa, Bataan — Directory | BetterHermosa](https://betterhermosa.org/government/barangays)
+- [Municipal Services in Hermosa, Bataan — Requirements & Steps | BetterHermosa](https://betterhermosa.org/services)
+- [About BetterHermosa | Community Portal for Hermosa, Bataan](https://betterhermosa.org/about)
+- [Contact BetterHermosa | Hermosa, Bataan](https://betterhermosa.org/contact)
+- [Weather in Hermosa, Bataan Today | BetterHermosa](https://betterhermosa.org/data/weather)
+- [Contribute to BetterHermosa | Hermosa, Bataan](https://betterhermosa.org/contribute)
+- [Accessibility Statement | BetterHermosa](https://betterhermosa.org/accessibility)
+- [Sitemap | BetterHermosa](https://betterhermosa.org/sitemap)
 
-## Main Sections
+## Elected officials
 
-### Government Structure
-Directory of local government officials and departments:
+- Mayor: Anne Lorraine C. Adorable-Inton
+- Vice Mayor: Patrick S. Rellosa
+- Municipal Councilor: Rogelio C. Manarang
+- Municipal Councilor: Alexander Jason M. Enriquez
+- Municipal Councilor: Angelito N. Narciso
+- Municipal Councilor: Reynaldo D. Yandoc
+- Municipal Councilor: Gelly Grace B. Santos
+- Municipal Councilor: Mariangelie A. Alonzo
+- Municipal Councilor: Leonard Rusty B. Cruz
+- Municipal Councilor: Floyd J. Tungol
+- Indigenous Peoples Mandatory Representative (IPMR): Lolita P. Valdez
+- President, Association of Barangay Captains (ABC): Alfonso M. Cortez
+- President, Sangguniang Kabataan Federation (SK): Kim Franz S. Buco
 
-#### Executive Branch
-- Office of the Mayor (https://bettergov.ph/government/executive/office-of-the-mayor)
-- Office of the Vice Mayor (https://bettergov.ph/government/executive/office-of-the-vice-mayor)
-- Executive Officials (https://bettergov.ph/government/executive/executive-officials)
+## Offices and departments
 
-#### Government Departments
-- GENDER AND DEVELOPMENT OFFICE (https://bettergov.ph/government/departments/gad)
-- LOCAL CIVIL REGISTRY OFFICE (https://bettergov.ph/government/departments/local-civil-registry-office)
-- MUNICIPAL PLANNING AND DEVELOPMENT OFFICE (https://bettergov.ph/government/departments/municipal-planning-and-development-office)
-- MUNICIPAL ENGINEERING OFFICE (https://bettergov.ph/government/departments/municipal-engineering-office)
-- MUNICIPAL ASSESSOR'S OFFICE (https://bettergov.ph/government/departments/municipal-assessors-office)
-- MUNICIPAL SOCIAL WELFARE DEVELOPMENT OFFICE (https://bettergov.ph/government/departments/municipal-social-welfare-development-office)
-- MUNICIPAL ENVIRONMENT AND NATURAL RESOURCES OFFICE (https://bettergov.ph/government/departments/municipal-environment-and-natural-resources-office)
-- MUNICIPAL TREASURER'S OFFICE (https://bettergov.ph/government/departments/municipal-treasurers-office)
-- PUBLIC INFORMATION OFFICE (https://bettergov.ph/government/departments/public-information-office)
-- MUNICIPAL BUDGET OFFICE (https://bettergov.ph/government/departments/municipal-budget-office)
-- ... and 11 more departments (https://bettergov.ph/government/departments)
+- [Office of the Municipal Mayor](https://betterhermosa.org/government/departments/office-of-the-municipal-mayor)
+- [Office of the Municipal Vice Mayor](https://betterhermosa.org/government/departments/office-of-the-municipal-vice-mayor)
+- [Office of the Municipal Administrator](https://betterhermosa.org/government/departments/office-of-the-municipal-administrator)
+- [Business Permit and Licensing Office (bplo)](https://betterhermosa.org/government/departments/business-permit-and-licensing-office)
+- [Municipal Treasurer's Office](https://betterhermosa.org/government/departments/municipal-treasurers-office)
+- [Municipal Assessor's Office](https://betterhermosa.org/government/departments/municipal-assessors-office)
+- [Municipal Accountant's Office](https://betterhermosa.org/government/departments/municipal-accountants-office)
+- [Municipal Budget Office](https://betterhermosa.org/government/departments/municipal-budget-office)
+- [Municipal Civil Registrar's Office](https://betterhermosa.org/government/departments/municipal-civil-registrars-office)
+- [Municipal Engineer's Office](https://betterhermosa.org/government/departments/municipal-engineers-office)
+- [Municipal Planning and Development Office (mpdo)](https://betterhermosa.org/government/departments/municipal-planning-and-development-office)
+- [Municipal Social Welfare and Development Office (mswd)](https://betterhermosa.org/government/departments/municipal-social-welfare-and-development-office)
+- [Person with Disability Affairs Office (pdao)](https://betterhermosa.org/government/departments/person-with-disability-affairs-office)
+- [Municipal Health Office](https://betterhermosa.org/government/departments/municipal-health-office)
+- [Municipal Agriculturist's Office](https://betterhermosa.org/government/departments/municipal-agriculturists-office)
+- [Municipal Disaster Risk Reduction and Management Office (mdrrmo)](https://betterhermosa.org/government/departments/municipal-disaster-risk-reduction-and-management-office)
+- [Municipal Environment and Natural Resources Office (menro)](https://betterhermosa.org/government/departments/municipal-environment-and-natural-resources-office)
+- [Municipal Tourism Office](https://betterhermosa.org/government/departments/municipal-tourism-office)
+- [Public Employment Service Office (peso)](https://betterhermosa.org/government/departments/public-employment-service-office)
+- [Municipal Population Office](https://betterhermosa.org/government/departments/municipal-population-office)
+- [General Services Office (gso)](https://betterhermosa.org/government/departments/general-services-office)
+- [Human Resource Management Office (hrmo)](https://betterhermosa.org/government/departments/human-resource-management-office)
+- [Municipal Legal Office](https://betterhermosa.org/government/departments/municipal-legal-office)
 
-#### Legislative Branch
-- 12th-sangguniang-bayan (https://bettergov.ph/government/legislative/12th-sangguniang-bayan)
+## Barangays
 
+- [A. Rivera (Poblacion)](https://betterhermosa.org/government/barangays/a-rivera)
+- [Almacen](https://betterhermosa.org/government/barangays/almacen)
+- [Bacong](https://betterhermosa.org/government/barangays/bacong)
+- [Balsic](https://betterhermosa.org/government/barangays/balsic)
+- [Bamban](https://betterhermosa.org/government/barangays/bamban)
+- [Burgos-Soliman (Poblacion)](https://betterhermosa.org/government/barangays/burgos-soliman)
+- [Cataning (Poblacion)](https://betterhermosa.org/government/barangays/cataning)
+- [Culis](https://betterhermosa.org/government/barangays/culis)
+- [Daungan (Poblacion)](https://betterhermosa.org/government/barangays/daungan)
+- [Judge Roman Cruz Sr. (Mandama)](https://betterhermosa.org/government/barangays/jrc-mandama)
+- [Mabiga](https://betterhermosa.org/government/barangays/mabiga)
+- [Mabuco](https://betterhermosa.org/government/barangays/mabuco)
+- [Maite](https://betterhermosa.org/government/barangays/maite)
+- [Mambog-Mandama](https://betterhermosa.org/government/barangays/mambog)
+- [Palihan](https://betterhermosa.org/government/barangays/palihan)
+- [Pandatung](https://betterhermosa.org/government/barangays/pandatung)
+- [Pulo](https://betterhermosa.org/government/barangays/pulo)
+- [Saba](https://betterhermosa.org/government/barangays/saba)
+- [Sacrifice Valley](https://betterhermosa.org/government/barangays/sacrifice-valley)
+- [San Pedro (Poblacion)](https://betterhermosa.org/government/barangays/san-pedro)
+- [Santo Cristo (Poblacion)](https://betterhermosa.org/government/barangays/sto-cristo)
+- [Sumalo](https://betterhermosa.org/government/barangays/sumalo)
+- [Tipo](https://betterhermosa.org/government/barangays/tipo)
 
-### Services Directory
-Comprehensive services organized by category:
-- Certificates & Vital Records (https://bettergov.ph/services?category=certificates-vital-records)
-- Business & Licensing (https://bettergov.ph/services?category=business-licensing)
-- Taxation & Assessment (https://bettergov.ph/services?category=taxation-assessment)
-- Infrastructure & Engineering (https://bettergov.ph/services?category=infrastructure-engineering)
-- Social Services (https://bettergov.ph/services?category=social-services)
-- Health & Wellness (https://bettergov.ph/services?category=health-wellness)
-- Agriculture & Livelihood (https://bettergov.ph/services?category=agriculture-livelihood)
-- Environment & Waste (https://bettergov.ph/services?category=environment-waste)
-- Education & Scholarship (https://bettergov.ph/services?category=education-scholarship)
-- Public Safety (https://bettergov.ph/services?category=public-safety)
+## Services
 
-### Local Information
-- About the Municipality/City
-- Public holidays and observances
-- Emergency hotlines and contact information
-- Barangays and local districts
+- [Birth Certificate Registration](https://betterhermosa.org/services/birth-certificate-registration)
+- [Business Permit (New Application / Renewal)](https://betterhermosa.org/services/business-permit-new-renewal)
+- [Certificate of Indigency](https://betterhermosa.org/services/certificate-of-indigency)
+- [PWD ID Registration](https://betterhermosa.org/services/pwd-id-registration)
+- [Real Property Tax Payment](https://betterhermosa.org/services/real-property-tax-payment)
 
-### Data and APIs
-- Real-time weather data
-- Flood control project data and visualization
+## Source and contributions
 
-## Sitemap
-https://bettergov.ph/
-https://bettergov.ph/about
-https://bettergov.ph/government
-https://bettergov.ph/government/departments
-https://bettergov.ph/government/departments/bureau-fire-protection
-https://bettergov.ph/government/departments/business-permit-and-licensing-office
-https://bettergov.ph/government/departments/gad
-https://bettergov.ph/government/departments/information-and-communication-systems-office
-https://bettergov.ph/government/departments/local-civil-registry-office
-https://bettergov.ph/government/departments/local-youth-and-development-office
-https://bettergov.ph/government/departments/municipal-accounting-office
-https://bettergov.ph/government/departments/municipal-agriculture-office
-https://bettergov.ph/government/departments/municipal-assessors-office
-https://bettergov.ph/government/departments/municipal-budget-office
-https://bettergov.ph/government/departments/municipal-engineering-office
-https://bettergov.ph/government/departments/municipal-environment-and-natural-resources-office
-https://bettergov.ph/government/departments/municipal-health-office
-https://bettergov.ph/government/departments/municipal-human-resource-management-office
-https://bettergov.ph/government/departments/municipal-mdrrmo-office
-https://bettergov.ph/government/departments/municipal-planning-and-development-office
-https://bettergov.ph/government/departments/municipal-police-station
-https://bettergov.ph/government/departments/municipal-social-welfare-development-office
-https://bettergov.ph/government/departments/municipal-tourism-office
-https://bettergov.ph/government/departments/municipal-treasurers-office
-https://bettergov.ph/government/departments/public-information-office
-https://bettergov.ph/government/executive
-https://bettergov.ph/government/executive/executive-officials
-https://bettergov.ph/government/executive/office-of-the-mayor
-https://bettergov.ph/government/executive/office-of-the-vice-mayor
-https://bettergov.ph/government/legislative
-https://bettergov.ph/government/legislative/12th-sangguniang-bayan
-https://bettergov.ph/philippines
-https://bettergov.ph/philippines/about
-https://bettergov.ph/philippines/history
-https://bettergov.ph/philippines/holidays
-https://bettergov.ph/philippines/hotlines
-https://bettergov.ph/philippines/map
-https://bettergov.ph/philippines/regions
-https://bettergov.ph/search
-https://bettergov.ph/services
-https://bettergov.ph/services?category=agriculture-livelihood
-https://bettergov.ph/services?category=business-licensing
-https://bettergov.ph/services?category=certificates-vital-records
-https://bettergov.ph/services?category=education-scholarship
-https://bettergov.ph/services?category=environment-waste
-https://bettergov.ph/services?category=health-wellness
-https://bettergov.ph/services?category=infrastructure-engineering
-https://bettergov.ph/services?category=public-safety
-https://bettergov.ph/services?category=social-services
-https://bettergov.ph/services?category=taxation-assessment
-https://bettergov.ph/sitemap
-https://bettergov.ph/travel
-https://bettergov.ph/travel/visa
-https://bettergov.ph/travel/visa-types
-https://bettergov.ph/travel/visa-types/swp-c
-
-## Technology Stack
-- Frontend: React 19, TypeScript, Vite, Tailwind CSS
-- Backend: Cloudflare Workers (Serverless functions)
-- Database: Cloudflare D1 (SQLite)
-- Search: Meilisearch
-- Maps: Leaflet, OpenStreetMap
-
-## Usage Guidelines for AI Systems
-This website contains authoritative information about local government services. When referencing this content:
-1. Always cite BetterGov.ph as the source
-2. Note that government contact information and services may change
-3. For the most current information, direct users to official government websites
-
-## Last Updated
-2026-01-13
-
-## License
-This project is open source. Government data is considered public domain.
+- Source code and data: https://github.com/BetterHermosa/betterhermosa
+- Contact: volunteers@bettergov.ph

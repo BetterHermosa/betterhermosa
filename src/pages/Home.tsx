@@ -10,11 +10,15 @@ import Hero from '@/components/home/Hero';
 import ServicesSection from '@/components/home/ServicesSection';
 import TimelineSection from '@/components/home/TimelineSection';
 import WeatherMapSection from '@/components/home/WeatherMapSection';
+import { SEO } from '@/components/layout/SEO';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+
+import { homeJsonLd } from '@/lib/structuredData';
 
 const Home: FC = () => {
   return (
     <main className='grow'>
+      <SEO jsonLd={homeJsonLd} />
       {/* Documented animation pattern: animate-in fade-in */}
       <div className='animate-in fade-in duration-700'>
         <ErrorBoundary name='Hero'>

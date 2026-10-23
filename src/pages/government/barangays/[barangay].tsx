@@ -17,7 +17,11 @@ import {
   BreadcrumbSeparator,
 } from '@/components/navigation/Breadcrumb';
 
+import { SEO } from '@/components/layout/SEO';
+
+import { barangaySeo } from '@/lib/seoTemplates';
 import { toTitleCase } from '@/lib/stringUtils';
+import { barangayJsonLd } from '@/lib/structuredData';
 
 import barangaysData from '@/data/directory/barangays.json';
 
@@ -38,8 +42,22 @@ export default function BarangayDetail() {
   const secretary = barangay.officials?.find(o => o.role.includes('Secretary'));
   const treasurer = barangay.officials?.find(o => o.role.includes('Treasurer'));
 
+  const seo = barangaySeo(barangay.barangay_name);
+
   return (
     <div className='animate-in fade-in space-y-6 pb-20 duration-500'>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        breadcrumbs={[
+          { name: 'Barangays', url: '/government/barangays' },
+          {
+            name: barangay.barangay_name,
+            url: `/government/barangays/${barangay.slug}`,
+          },
+        ]}
+        jsonLd={barangayJsonLd(barangay.barangay_name, barangay.slug)}
+      />
       {/* Skip Link for Accessibility */}
       <a
         href='#main-content'

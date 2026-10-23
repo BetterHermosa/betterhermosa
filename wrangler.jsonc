@@ -1,5 +1,6 @@
 {
 	"name": "betterhermosa",
+	"workers_dev": false,
 	"compatibility_date": "2026-01-13",
 	"assets": {
 		"directory": "./dist",

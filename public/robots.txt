@@ -1,4 +1,5 @@
-User-Agent: *
+User-agent: *
 Allow: /
+Disallow: /admin
 
-Sitemap: https://bettergov.ph/sitemap.xml
+Sitemap: https://betterhermosa.org/sitemap.xml
