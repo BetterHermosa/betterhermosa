@@ -1,0 +1,874 @@
+{
+  "generatedAt": "2026-10-23",
+  "note": "Independent community data for the Municipality of Hermosa, Bataan. Not an official source; services marked unverified are drafts.",
+  "source": "https://betterhermosa.org",
+  "lgu": {
+    "name": "Hermosa",
+    "fullName": "Municipality of Hermosa",
+    "province": "Bataan",
+    "districtEngineeringOffice": "Bataan 1st DEO",
+    "region": "Central Luzon (III)",
+    "regionCode": "030000000",
+    "type": "municipality",
+    "officialWebsite": "https://www.hermosa.gov.ph",
+    "provinceWebsite": "https://bataan.gov.ph"
+  },
+  "executive": [
+    {
+      "slug": "office-of-the-mayor",
+      "name": "Anne Lorraine C. Adorable-Inton",
+      "role": "Mayor",
+      "office": "Office of the Municipal Mayor",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan 2111",
+      "phone": "(047) 300-6750",
+      "email": "mayorsoffice301@gmail.com",
+      "website": "https://www.facebook.com/mayora.anne",
+      "isElected": true,
+      "personId": "adorable-inton-anne-lorraine-c"
+    },
+    {
+      "slug": "office-of-the-vice-mayor",
+      "name": "Patrick S. Rellosa",
+      "role": "Vice Mayor",
+      "office": "Office of the Municipal Vice Mayor",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan 2111",
+      "phone": "(047) 300-6750",
+      "email": null,
+      "website": null,
+      "isElected": true,
+      "personId": "rellosa-patrick-s"
+    }
+  ],
+  "legislative": [
+    {
+      "slug": "sangguniang-bayan-2025-2028",
+      "branch": "Legislative Branch",
+      "chamber": "Sangguniang Bayan (2025-2028 Term)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan 2111",
+      "trunkline": "(047) 300-6750",
+      "website": "https://www.hermosa.gov.ph",
+      "email": null,
+      "officials": [
+        {
+          "role": "Municipal Councilor",
+          "name": "Rogelio C. Manarang",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Alexander Jason M. Enriquez",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Angelito N. Narciso",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Reynaldo D. Yandoc",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Gelly Grace B. Santos",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Mariangelie A. Alonzo",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Leonard Rusty B. Cruz",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Municipal Councilor",
+          "name": "Floyd J. Tungol",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "Indigenous Peoples Mandatory Representative (IPMR)",
+          "name": "Lolita P. Valdez",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "President, Association of Barangay Captains (ABC)",
+          "name": "Alfonso M. Cortez",
+          "contact": null,
+          "website": null
+        },
+        {
+          "role": "President, Sangguniang Kabataan Federation (SK)",
+          "name": "Kim Franz S. Buco",
+          "contact": null,
+          "website": null
+        }
+      ],
+      "permanent_committees": []
+    }
+  ],
+  "departments": [
+    {
+      "slug": "office-of-the-municipal-mayor",
+      "office_name": "OFFICE OF THE MUNICIPAL MAYOR",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750",
+        "(047) 300-6550"
+      ],
+      "website": "https://www.hermosa.gov.ph",
+      "email": "mayorsoffice301@gmail.com",
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "office-of-the-municipal-vice-mayor",
+      "office_name": "OFFICE OF THE MUNICIPAL VICE MAYOR",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": "https://www.hermosa.gov.ph",
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "office-of-the-municipal-administrator",
+      "office_name": "OFFICE OF THE MUNICIPAL ADMINISTRATOR",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "business-permit-and-licensing-office",
+      "office_name": "BUSINESS PERMIT AND LICENSING OFFICE (BPLO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-treasurers-office",
+      "office_name": "MUNICIPAL TREASURER'S OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-assessors-office",
+      "office_name": "MUNICIPAL ASSESSOR'S OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-accountants-office",
+      "office_name": "MUNICIPAL ACCOUNTANT'S OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-budget-office",
+      "office_name": "MUNICIPAL BUDGET OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-civil-registrars-office",
+      "office_name": "MUNICIPAL CIVIL REGISTRAR'S OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-engineers-office",
+      "office_name": "MUNICIPAL ENGINEER'S OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-planning-and-development-office",
+      "office_name": "MUNICIPAL PLANNING AND DEVELOPMENT OFFICE (MPDO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-social-welfare-and-development-office",
+      "office_name": "MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE (MSWD)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "person-with-disability-affairs-office",
+      "office_name": "PERSON WITH DISABILITY AFFAIRS OFFICE (PDAO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-health-office",
+      "office_name": "MUNICIPAL HEALTH OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-agriculturists-office",
+      "office_name": "MUNICIPAL AGRICULTURIST'S OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-disaster-risk-reduction-and-management-office",
+      "office_name": "MUNICIPAL DISASTER RISK REDUCTION AND MANAGEMENT OFFICE (MDRRMO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-environment-and-natural-resources-office",
+      "office_name": "MUNICIPAL ENVIRONMENT AND NATURAL RESOURCES OFFICE (MENRO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-tourism-office",
+      "office_name": "MUNICIPAL TOURISM OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "public-employment-service-office",
+      "office_name": "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-population-office",
+      "office_name": "MUNICIPAL POPULATION OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "general-services-office",
+      "office_name": "GENERAL SERVICES OFFICE (GSO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "human-resource-management-office",
+      "office_name": "HUMAN RESOURCE MANAGEMENT OFFICE (HRMO)",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    },
+    {
+      "slug": "municipal-legal-office",
+      "office_name": "MUNICIPAL LEGAL OFFICE",
+      "address": "Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [
+        "(047) 300-6750"
+      ],
+      "website": null,
+      "email": null,
+      "department_head": {
+        "name": null,
+        "contact": null,
+        "email": null
+      }
+    }
+  ],
+  "barangays": [
+    {
+      "slug": "a-rivera",
+      "barangay_name": "A. Rivera (Poblacion)",
+      "address": "Barangay Hall, A. Rivera, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "almacen",
+      "barangay_name": "Almacen",
+      "address": "Barangay Hall, Almacen, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "bacong",
+      "barangay_name": "Bacong",
+      "address": "Barangay Hall, Bacong, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "balsic",
+      "barangay_name": "Balsic",
+      "address": "Barangay Hall, Balsic, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "bamban",
+      "barangay_name": "Bamban",
+      "address": "Barangay Hall, Bamban, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "burgos-soliman",
+      "barangay_name": "Burgos-Soliman (Poblacion)",
+      "address": "Barangay Hall, Burgos-Soliman, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "cataning",
+      "barangay_name": "Cataning (Poblacion)",
+      "address": "Barangay Hall, Cataning, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "culis",
+      "barangay_name": "Culis",
+      "address": "Barangay Hall, Culis, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "daungan",
+      "barangay_name": "Daungan (Poblacion)",
+      "address": "Barangay Hall, Daungan, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "jrc-mandama",
+      "barangay_name": "Judge Roman Cruz Sr. (Mandama)",
+      "address": "Barangay Hall, JRC Mandama, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "mabiga",
+      "barangay_name": "Mabiga",
+      "address": "Barangay Hall, Mabiga, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "mabuco",
+      "barangay_name": "Mabuco",
+      "address": "Barangay Hall, Mabuco, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "maite",
+      "barangay_name": "Maite",
+      "address": "Barangay Hall, Maite, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "mambog",
+      "barangay_name": "Mambog-Mandama",
+      "address": "Barangay Hall, Mambog, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "palihan",
+      "barangay_name": "Palihan",
+      "address": "Barangay Hall, Palihan, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "pandatung",
+      "barangay_name": "Pandatung",
+      "address": "Barangay Hall, Pandatung, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "pulo",
+      "barangay_name": "Pulo",
+      "address": "Barangay Hall, Pulo, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "saba",
+      "barangay_name": "Saba",
+      "address": "Barangay Hall, Saba, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "sacrifice-valley",
+      "barangay_name": "Sacrifice Valley",
+      "address": "Barangay Hall, Sacrifice Valley, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "san-pedro",
+      "barangay_name": "San Pedro (Poblacion)",
+      "address": "Barangay Hall, San Pedro, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "sto-cristo",
+      "barangay_name": "Santo Cristo (Poblacion)",
+      "address": "Barangay Hall, Sto. Cristo, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "sumalo",
+      "barangay_name": "Sumalo",
+      "address": "Barangay Hall, Sumalo, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    },
+    {
+      "slug": "tipo",
+      "barangay_name": "Tipo",
+      "address": "Barangay Hall, Tipo, Hermosa, Bataan",
+      "trunkline": [],
+      "website": null,
+      "officials": []
+    }
+  ],
+  "services": [
+    {
+      "service": "Birth Certificate Registration",
+      "slug": "birth-certificate-registration",
+      "type": "transaction",
+      "description": "Registration of a child's birth and issuance of a certified copy of the birth certificate through the Municipal Civil Registrar's Office.",
+      "officeSlug": [
+        "municipal-civil-registrars-office"
+      ],
+      "category": {
+        "name": "Certificates & Vital Records",
+        "slug": "certificates-vital-records"
+      },
+      "steps": [
+        "Submit the Certificate of Live Birth form accomplished by the attending physician, midwife, or hospital",
+        "Present required supporting documents to the Civil Registrar",
+        "Pay applicable registration fee (free of charge if registered within 30 days of birth per law)",
+        "Receive the registered Certificate of Live Birth; request a certified copy from the PSA (via the civil registrar) if needed"
+      ],
+      "requirements": [
+        "Certificate of Live Birth (accomplished and signed by attendant at birth)",
+        "Marriage certificate of parents (if married)",
+        "Valid ID of parent(s) or informant",
+        "Affidavit of Acknowledgment/Admission of Paternity (for children of unmarried parents, if applicable)"
+      ],
+      "relatedServices": [],
+      "faqs": [
+        {
+          "question": "Is there a fee for registering a birth?",
+          "answer": "Registration within 30 days of birth is free under the Civil Registration Law. Late registration fees apply beyond that period — confirm the current fee schedule with the Civil Registrar."
+        }
+      ],
+      "quickInfo": {
+        "processingTime": "Same day for timely registration; longer for late registration",
+        "fee": "Free within 30 days of birth; late registration fee applies thereafter"
+      },
+      "updatedAt": null,
+      "sources": [
+        {
+          "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+          "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+        }
+      ],
+      "unverified": true
+    },
+    {
+      "service": "Business Permit (New Application / Renewal)",
+      "slug": "business-permit-new-renewal",
+      "type": "transaction",
+      "description": "Mayor's Permit to operate a business within Hermosa, issued or renewed annually through the Business Permit and Licensing Office (BPLO).",
+      "officeSlug": [
+        "business-permit-and-licensing-office"
+      ],
+      "category": {
+        "name": "Business, Trade & Investment",
+        "slug": "business-trade-investment"
+      },
+      "steps": [
+        "Secure barangay business clearance from the barangay where the business is located",
+        "Submit application (new) or renewal form with required documents to BPLO",
+        "Settle assessed fees (business tax, Mayor's Permit fee, and related regulatory fees) at the Treasurer's Office",
+        "Secure clearances from Sanitary/Health, Fire Safety, and Zoning offices as applicable to the business type",
+        "Claim the approved Business Permit and Official Receipt"
+      ],
+      "requirements": [
+        "Barangay Business Clearance",
+        "DTI Certificate of Business Name Registration (sole proprietorship) or SEC Certificate (partnership/corporation)",
+        "Valid government-issued ID of the owner/representative",
+        "Lease contract or proof of property ownership for the business location",
+        "Previous year's Business Permit and Official Receipt (for renewal)",
+        "Fire Safety Inspection Certificate",
+        "Sanitary Permit / Health Certificate for applicable businesses"
+      ],
+      "relatedServices": [],
+      "faqs": [
+        {
+          "question": "When is the deadline for business permit renewal?",
+          "answer": "Renewal applications are generally filed on or before January 20 of each year, per the Local Government Code. Confirm the exact municipal deadline with BPLO."
+        }
+      ],
+      "quickInfo": {
+        "processingTime": "Varies — confirm with BPLO",
+        "whoCanApply": "Business owners operating within Hermosa, Bataan"
+      },
+      "updatedAt": null,
+      "sources": [
+        {
+          "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+          "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+        }
+      ],
+      "unverified": true
+    },
+    {
+      "service": "Certificate of Indigency",
+      "slug": "certificate-of-indigency",
+      "type": "transaction",
+      "description": "Certification issued by MSWD confirming a resident's indigent status, commonly required for medical, educational, or burial assistance applications.",
+      "officeSlug": [
+        "municipal-social-welfare-and-development-office"
+      ],
+      "category": {
+        "name": "Social Services & Assistance",
+        "slug": "social-services-assistance"
+      },
+      "steps": [
+        "Request an interview and assessment at the MSWD office",
+        "Submit required supporting documents",
+        "Receive the signed Certificate of Indigency"
+      ],
+      "requirements": [
+        "Valid government-issued ID",
+        "Barangay Certificate of Residency or Indigency (from the applicant's barangay)",
+        "Proof of purpose (e.g., hospital bill, school requirement, burial request)"
+      ],
+      "relatedServices": [
+        "pwd-id-registration"
+      ],
+      "faqs": [],
+      "quickInfo": {
+        "processingTime": "Same day, subject to case assessment",
+        "fee": "Free"
+      },
+      "updatedAt": null,
+      "sources": [
+        {
+          "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+          "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+        }
+      ],
+      "unverified": true
+    },
+    {
+      "service": "PWD ID Registration",
+      "slug": "pwd-id-registration",
+      "type": "transaction",
+      "description": "Registration and issuance of a Persons with Disability (PWD) identification card through the Person with Disability Affairs Office (PDAO), entitling holders to discounts and benefits under RA 10754.",
+      "officeSlug": [
+        "person-with-disability-affairs-office"
+      ],
+      "category": {
+        "name": "Social Services & Assistance",
+        "slug": "social-services-assistance"
+      },
+      "steps": [
+        "Accomplish the PWD registration form at PDAO",
+        "Submit medical certificate and supporting documents",
+        "Have 1x1 ID photo taken on site or submit as required",
+        "Claim the PWD ID card once released"
+      ],
+      "requirements": [
+        "Medical Certificate from a licensed physician specifying the disability",
+        "Valid government-issued ID or Birth Certificate",
+        "2 pieces 1x1 ID photo",
+        "Barangay Certificate of Residency"
+      ],
+      "relatedServices": [
+        "certificate-of-indigency"
+      ],
+      "faqs": [],
+      "quickInfo": {
+        "processingTime": "Varies — confirm with PDAO",
+        "fee": "Free",
+        "validity": "Subject to renewal per DOH/NCDA guidelines"
+      },
+      "updatedAt": null,
+      "sources": [
+        {
+          "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+          "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+        }
+      ],
+      "unverified": true
+    },
+    {
+      "service": "Real Property Tax Payment",
+      "slug": "real-property-tax-payment",
+      "type": "transaction",
+      "description": "Payment of annual or quarterly real property tax (RPT) on land, buildings, and other improvements within Hermosa, processed at the Municipal Treasurer's Office.",
+      "officeSlug": [
+        "municipal-treasurers-office"
+      ],
+      "category": {
+        "name": "Taxation & Payments",
+        "slug": "taxation-payments"
+      },
+      "steps": [
+        "Bring the property's Tax Declaration number or previous Official Receipt to the Treasurer's Office",
+        "Request assessment/computation of amount due for the current period",
+        "Pay in full (eligible for discount if paid early in the year) or in quarterly installments",
+        "Receive the Official Receipt as proof of payment"
+      ],
+      "requirements": [
+        "Tax Declaration Number or copy of Tax Declaration",
+        "Previous year's Official Receipt (if available)",
+        "Valid ID of the payor"
+      ],
+      "relatedServices": [],
+      "faqs": [
+        {
+          "question": "Is there a discount for early payment?",
+          "answer": "Many municipalities offer a discount for full payment made within the first quarter of the year. Confirm the current discount rate and deadlines with the Treasurer's Office."
+        }
+      ],
+      "quickInfo": {
+        "processingTime": "Same day",
+        "appointmentType": "Walk-in"
+      },
+      "updatedAt": null,
+      "sources": [
+        {
+          "name": "Hermosa Citizen's Charter 2025 (5th Edition) — pending detailed verification; PDF is a scanned document that could not be machine-read for this entry",
+          "url": "https://www.hermosa.gov.ph/wp-content/uploads/2025/10/CITIZENS-CHARTER-2025.pdf"
+        }
+      ],
+      "unverified": true
+    }
+  ]
+}

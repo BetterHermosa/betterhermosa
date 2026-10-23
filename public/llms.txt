@@ -92,6 +92,11 @@
 - [PWD ID Registration](https://betterhermosa.org/services/pwd-id-registration)
 - [Real Property Tax Payment](https://betterhermosa.org/services/real-property-tax-payment)
 
+## Machine-readable
+
+- [Full content as one text file](https://betterhermosa.org/llms-full.txt)
+- [All directory and service data as JSON](https://betterhermosa.org/data/hermosa.json)
+
 ## Source and contributions
 
 - Source code and data: https://github.com/BetterHermosa/betterhermosa

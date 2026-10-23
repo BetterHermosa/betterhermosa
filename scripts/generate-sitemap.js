@@ -26,6 +26,7 @@ const {
   getRoutes,
   toTitleCase,
 } = require('./lib/routes.cjs');
+const { fullMarkdown, dataFeed } = require('./lib/content.cjs');
 
 const baseUrl = config.portal.baseUrl.replace(/\/$/, '');
 const today = new Date().toISOString().slice(0, 10);
@@ -106,6 +107,14 @@ function llmsTxt() {
 
   lines.push(
     '',
+    '## Machine-readable',
+    '',
+    `- [Full content as one text file](${baseUrl}/llms-full.txt)`,
+    `- [All directory and service data as JSON](${baseUrl}/data/hermosa.json)`
+  );
+
+  lines.push(
+    '',
     '## Source and contributions',
     '',
     `- Source code and data: ${portal.githubUrl}`,
@@ -115,7 +124,15 @@ function llmsTxt() {
   return lines.join('\n');
 }
 
+fs.mkdirSync(path.join(PUBLIC, 'data'), { recursive: true });
+fs.writeFileSync(
+  path.join(PUBLIC, 'data', 'hermosa.json'),
+  JSON.stringify(dataFeed(), null, 2) + '\n',
+  'utf8'
+);
+
 for (const [file, content] of [
+  ['llms-full.txt', fullMarkdown()],
   ['sitemap.xml', sitemapXml()],
   ['robots.txt', robotsTxt()],
   ['llms.txt', llmsTxt()],
@@ -123,5 +140,5 @@ for (const [file, content] of [
   fs.writeFileSync(path.join(PUBLIC, file), content, 'utf8');
 }
 console.log(
-  `✅ Wrote sitemap.xml (${routes.length} URLs), robots.txt, llms.txt for ${baseUrl}`
+  `✅ Wrote sitemap.xml (${routes.length} URLs), robots.txt, llms.txt, llms-full.txt, data/hermosa.json for ${baseUrl}`
 );

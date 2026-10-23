@@ -12,6 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const { config, getRoutes } = require('./lib/routes.cjs');
+const { bodyHtml } = require('./lib/content.cjs');
 
 const DIST = path.join(__dirname, '..', 'dist');
 const shell = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8');
@@ -59,7 +60,13 @@ function render(route) {
     `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
   ].join('\n    ');
 
-  return html.replace('</head>', `    ${tags}\n  </head>`);
+  html = html.replace('</head>', `    ${tags}\n  </head>`);
+  // React's createRoot replaces this content on boot; readers that don't run
+  // JavaScript keep it.
+  return html.replace(
+    '<div id="root"></div>',
+    () => `<div id="root">${bodyHtml({ ...route, title, description })}</div>`
+  );
 }
 
 let count = 0;
