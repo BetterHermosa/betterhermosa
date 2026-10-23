@@ -118,6 +118,7 @@ export interface Service {
 export interface HourlyForecast {
   dt: number;
   temp: number;
+  temperature?: number;
   feels_like: number;
   icon: string;
   description: string;

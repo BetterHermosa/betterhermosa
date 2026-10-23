@@ -12,7 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const { config, getRoutes } = require('./lib/routes.cjs');
-const { bodyHtml } = require('./lib/content.cjs');
+const { bodyHtml, jsonLdFor } = require('./lib/content.cjs');
 
 const DIST = path.join(__dirname, '..', 'dist');
 const shell = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8');
@@ -58,6 +58,10 @@ function render(route) {
     `<meta data-rh="true" property="og:image:width" content="1200" />`,
     `<meta data-rh="true" property="og:image:height" content="630" />`,
     `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
+    ...jsonLdFor(route).map(
+      ld =>
+        `<script data-rh="true" type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`
+    ),
   ].join('\n    ');
 
   html = html.replace('</head>', `    ${tags}\n  </head>`);

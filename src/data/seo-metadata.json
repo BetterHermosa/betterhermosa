@@ -1,7 +1,7 @@
 {
   "/": {
-    "title": "{{portal.name}} | {{lgu.name}}, {{lgu.province}} Officials, Services & Barangays",
-    "description": "Community portal for the {{lgu.fullName}}, {{lgu.province}}: elected officials, municipal offices, all barangays, and requirements for permits, certificates and other local services."
+    "title": "{{portal.name}} | {{lgu.name}}, {{lgu.province}} Officials & Services",
+    "description": "Community portal for the Municipality of {{lgu.name}}, {{lgu.province}}: officials, offices, all barangays, and requirements for permits and certificates."
   },
   "/about": {
     "title": "About {{portal.name}} | Community Portal for {{lgu.name}}, {{lgu.province}}",

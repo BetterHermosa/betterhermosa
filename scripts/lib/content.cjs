@@ -16,6 +16,7 @@ const {
   toTitleCase,
 } = require('./routes.cjs');
 
+const homeHeading = require('../../public/locales/en/common.json').hero.title;
 const baseUrl = config.portal.baseUrl.replace(/\/$/, '');
 const place = `${config.lgu.name}, ${config.lgu.province}`;
 
@@ -78,7 +79,7 @@ function body(route) {
   const p = route.path;
   const h1 =
     p === '/'
-      ? `${config.portal.name}: ${config.lgu.fullName}, ${config.lgu.province}`
+      ? homeHeading // must match the rendered H1 (hero.title in common.json)
       : (route.title || route.path).split(' | ')[0];
   let main = '';
 
@@ -262,4 +263,77 @@ function dataFeed() {
   };
 }
 
-module.exports = { bodyHtml, fullMarkdown, dataFeed };
+// Mirrors src/lib/structuredData.ts — keep the two in sync.
+function jsonLdFor(route) {
+  const { lgu, portal, location } = config;
+  const out = [];
+  if (route.path === '/') {
+    const id = `${baseUrl}/#municipality`;
+    out.push({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'GovernmentOrganization',
+          '@id': id,
+          name: lgu.fullName,
+          url: lgu.officialWebsite,
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: lgu.name,
+            addressRegion: lgu.province,
+            addressCountry: 'PH',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: location.coordinates.lat,
+            longitude: location.coordinates.lon,
+          },
+        },
+        {
+          '@type': 'WebSite',
+          '@id': `${baseUrl}/#website`,
+          name: portal.name,
+          url: baseUrl,
+          description: portal.description,
+          inLanguage: ['en', 'fil'],
+          about: { '@id': id },
+          publisher: {
+            '@type': 'Organization',
+            name: portal.name,
+            url: baseUrl,
+            logo: `${baseUrl}${portal.navbarLogoPath}`,
+            sameAs: [portal.githubUrl],
+          },
+        },
+      ],
+    });
+  }
+  if (route.path.startsWith('/government/barangays/') && route.breadcrumbs) {
+    out.push({
+      '@context': 'https://schema.org',
+      '@type': 'AdministrativeArea',
+      name: `Barangay ${route.breadcrumbs[1][0]}`,
+      url: baseUrl + route.path,
+      containedInPlace: {
+        '@type': 'AdministrativeArea',
+        name: lgu.fullName,
+        containedInPlace: { '@type': 'AdministrativeArea', name: lgu.province },
+      },
+    });
+  }
+  if (route.breadcrumbs) {
+    out.push({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: route.breadcrumbs.map(([name, url], i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name,
+        item: baseUrl + url,
+      })),
+    });
+  }
+  return out;
+}
+
+module.exports = { bodyHtml, fullMarkdown, dataFeed, jsonLdFor };

@@ -30,59 +30,115 @@ export const mapWeatherIconToLucide = (iconCode: string): string => {
 };
 
 /**
- * Fetch weather data for configured LGU and transform to frontend type
+ * WMO weather code (Open-Meteo) -> OpenWeatherMap-style icon code + label, so
+ * the rest of the UI keeps using mapWeatherIconToLucide.
+ */
+const WMO: Record<number, [string, string]> = {
+  0: ['01', 'clear sky'],
+  1: ['02', 'mainly clear'],
+  2: ['03', 'partly cloudy'],
+  3: ['04', 'overcast'],
+  45: ['50', 'fog'],
+  48: ['50', 'rime fog'],
+  51: ['09', 'light drizzle'],
+  53: ['09', 'drizzle'],
+  55: ['09', 'heavy drizzle'],
+  61: ['10', 'light rain'],
+  63: ['10', 'rain'],
+  65: ['10', 'heavy rain'],
+  80: ['09', 'light rain showers'],
+  81: ['09', 'rain showers'],
+  82: ['09', 'violent rain showers'],
+  95: ['11', 'thunderstorm'],
+  96: ['11', 'thunderstorm with hail'],
+  99: ['11', 'thunderstorm with heavy hail'],
+};
+
+const wmo = (code: number, isDay: boolean) => {
+  const [icon, description] = WMO[code] ?? ['03', 'cloudy'];
+  return { icon: `${icon}${isDay ? 'd' : 'n'}`, description };
+};
+
+interface OpenMeteoResponse {
+  current: {
+    temperature_2m: number;
+    relative_humidity_2m: number;
+    wind_speed_10m: number;
+    surface_pressure: number;
+    visibility: number;
+    weather_code: number;
+    is_day: number;
+  };
+  hourly: {
+    time: number[];
+    temperature_2m: number[];
+    weather_code: number[];
+    is_day: number[];
+  };
+}
+
+/**
+ * Fetch weather for the configured LGU from Open-Meteo (free, no API key,
+ * CORS-enabled), so the portal needs no weather backend.
  */
 export const fetchWeatherData = async (): Promise<WeatherData[]> => {
-  // Normalize city name for API call (handle special characters)
-  const cityName = config.location.weather.defaultCity;
-  const cityKey = config.lgu.name
-    .toLowerCase()
-    .replace(/\s+/g, '_')
-    .replace(/ñ/g, 'n');
+  const { lat, lon } = config.location.coordinates;
+  const params = new URLSearchParams({
+    latitude: String(lat),
+    longitude: String(lon),
+    current:
+      'temperature_2m,relative_humidity_2m,wind_speed_10m,surface_pressure,weather_code,is_day,visibility',
+    hourly: 'temperature_2m,weather_code,is_day',
+    wind_speed_unit: 'ms',
+    timezone: 'Asia/Manila',
+    timeformat: 'unixtime',
+    forecast_days: '2',
+  });
 
-  // Always fetch specific city
-  let data = await fetchWithCache(
-    `/api/weather?city=${encodeURIComponent(cityName)}`
+  const data = await fetchWithCache<OpenMeteoResponse>(
+    `https://api.open-meteo.com/v1/forecast?${params}`
   );
+  const { current, hourly: hours } = data;
+  const now = wmo(current.weather_code, current.is_day === 1);
 
-  // If KV is empty or city missing, fallback to update
-  if (!data || Object.keys(data).length === 0) {
-    data = await fetchWithCache('/api/weather?update=true');
-  }
+  // Next 4 entries, one every 3 hours, starting from the upcoming hour.
+  const nowSec = Date.now() / 1000;
+  const start = Math.max(
+    0,
+    hours.time.findIndex(t => t >= nowSec)
+  );
+  const hourly: HourlyForecast[] = [0, 3, 6, 9]
+    .map(offset => start + offset)
+    .filter(i => i < hours.time.length)
+    .map(i => {
+      const w = wmo(hours.weather_code[i], hours.is_day[i] === 1);
+      return {
+        dt: hours.time[i],
+        temp: hours.temperature_2m[i],
+        temperature: Math.round(hours.temperature_2m[i]),
+        feels_like: hours.temperature_2m[i],
+        icon: mapWeatherIconToLucide(w.icon),
+        description: w.description,
+        humidity: current.relative_humidity_2m,
+        wind_speed: current.wind_speed_10m,
+        hour: new Date(hours.time[i] * 1000).toLocaleTimeString([], {
+          hour: 'numeric',
+          hour12: true,
+        }),
+      };
+    });
 
-  const city =
-    data[cityKey] ||
-    data[config.lgu.name.toLowerCase()] ||
-    data[Object.keys(data)[0]];
-  if (!city) {
-    // Fallback in case API completely failed
-    console.warn(`No weather data returned for ${config.lgu.name}`);
-    return [];
-  }
-
-  // Transform 3-hour forecast (first 4 entries)
-  const hourly: HourlyForecast[] = (city.hourly || [])
-    .slice(0, 4)
-    .map((h: HourlyForecast) => ({
-      hour: new Date(h.dt * 1000).toLocaleTimeString([], {
-        hour: 'numeric',
-        hour12: true,
-      }),
-      temperature: Math.round(h.temp),
-      icon: mapWeatherIconToLucide(h.icon),
-    }));
-
-  const weatherData: WeatherData = {
-    location: city.name || config.lgu.name,
-    temperature: Math.round(city.main?.temp ?? 0),
-    condition: city.weather?.[0]?.description ?? 'Unknown',
-    humidity: city.main?.humidity ?? 0,
-    windSpeed: city.wind?.speed ?? 0,
-    icon: mapWeatherIconToLucide(city.weather?.[0]?.icon ?? '01d'),
-    hourly,
-    pressure: city.main?.pressure ?? 0,
-    visibility: Math.round((city.visibility ?? 0) / 1000),
-  };
-
-  return [weatherData];
+  return [
+    {
+      location: config.lgu.name,
+      temperature: Math.round(current.temperature_2m),
+      condition: now.description,
+      humidity: current.relative_humidity_2m,
+      windSpeed: current.wind_speed_10m,
+      icon: mapWeatherIconToLucide(now.icon),
+      hourly,
+      pressure: Math.round(current.surface_pressure),
+      visibility: Math.round(current.visibility / 1000),
+    },
+  ];
 };
