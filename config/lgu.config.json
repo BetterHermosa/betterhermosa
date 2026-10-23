@@ -19,7 +19,7 @@
     "footerBrandName": "Better Hermosa",
     "logoWhitePath": "/logos/svg/betterhermosa-icon-white.svg",
     "navbarLogoPath": "/logos/svg/betterhermosa-icon-colored.svg",
-    "defaultOgImagePath": "/logos/svg/betterhermosa-icon-colored.svg",
+    "defaultOgImagePath": "/logos/png/betterhermosa-og.png",
     "faviconPath": "/logos/png/betterhermosa-banner-colored.png",
     "faviconSvgPath": "/logos/svg/betterhermosa-logo-primary.svg",
     "appleTouchIconPath": "/logos/png/betterhermosa-banner-inverted.png",
