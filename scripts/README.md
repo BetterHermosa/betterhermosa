@@ -167,6 +167,21 @@ python scripts/extract_boundaries.py bundle.zip # or use a local copy
 
 ---
 
+### `extract_dpwh.py`
+
+Extracts Hermosa's DPWH contracts into `public/data/dpwh-hermosa.json` for the `/transparency/infrastructure` page.
+
+**Usage:**
+```bash
+pip install pyarrow
+python scripts/extract_dpwh.py               # downloads the ~24 MB file
+python scripts/extract_dpwh.py file.parquet  # or use a local copy
+```
+
+**Not automated:** the source is a point-in-time dataset. See [docs/dpwh-contracts.md](../docs/dpwh-contracts.md).
+
+---
+
 ## Service Data Structure
 
 ### Category File Format

@@ -20,6 +20,7 @@ BetterLB provides Los Baños with:
 - **National Projects** (`/budget`): national-government projects that name the municipality and each barangay, from the Philippine Budget Data API. See [docs/budget-data.md](docs/budget-data.md)
 - **Local Finances** (`/finances`): the municipality's own income and spending from BLGF fiscal data. See [docs/local-finances.md](docs/local-finances.md)
 - **Barangay Map**: schematic map of the 23 barangays on the barangay pages and `/budget`. See [docs/barangay-map.md](docs/barangay-map.md)
+- **DPWH Contracts** (`/transparency/infrastructure`): public works contracts naming Hermosa, from the BetterGov Open Data Portal. See [docs/dpwh-contracts.md](docs/dpwh-contracts.md)
 - **Multi-language Support**: English and Filipino translations
 
 ---

@@ -270,15 +270,15 @@ function AppContent() {
                 <Route index element={<TransparencyIndex />} />
                 <Route path='financial' element={<FinancialPage />} />
                 <Route path='procurement' element={<ProcurementPage />} />
-                <Route path='/transparency/infrastructure'>
-                  <Route index element={<InfrastructurePage />} />
-                  <Route
-                    path=':contractId'
-                    element={<InfrastructureDetail />}
-                  />
-                </Route>
               </Route>
             )}
+
+            {/* DPWH contracts: a standalone page from a committed snapshot, so
+                it does not depend on the gated Transparency Portal */}
+            <Route path='/transparency/infrastructure'>
+              <Route index element={<InfrastructurePage />} />
+              <Route path=':contractId' element={<InfrastructureDetail />} />
+            </Route>
 
             {/* Community Contribution Flow */}
             <Route path='contribute' element={<ContributePage />} />

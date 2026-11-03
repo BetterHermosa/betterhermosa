@@ -11,6 +11,7 @@
 - [Municipal Services in Hermosa, Bataan — Requirements & Steps | BetterHermosa](https://betterhermosa.org/services)
 - [National Projects in Hermosa | Budget Data | BetterHermosa](https://betterhermosa.org/budget)
 - [Hermosa's Own Finances | Income and Spending | BetterHermosa](https://betterhermosa.org/finances)
+- [DPWH Contracts in Hermosa | Bataan Roads, Flood Control, Buildings | BetterHermosa](https://betterhermosa.org/transparency/infrastructure)
 - [About BetterHermosa | Community Portal for Hermosa, Bataan](https://betterhermosa.org/about)
 - [Contact BetterHermosa | Hermosa, Bataan](https://betterhermosa.org/contact)
 - [Weather in Hermosa, Bataan Today | BetterHermosa](https://betterhermosa.org/data/weather)
@@ -100,6 +101,8 @@
 - [All directory and service data as JSON](https://betterhermosa.org/data/hermosa.json)
 - [National-government projects in Hermosa (budget snapshot)](https://betterhermosa.org/data/budget-hermosa.json)
 - [Hermosa's own finances (BLGF fiscal data)](https://betterhermosa.org/finances)
+- [DPWH contracts naming Hermosa](https://betterhermosa.org/transparency/infrastructure)
+- [DPWH contracts snapshot (JSON)](https://betterhermosa.org/data/dpwh-hermosa.json)
 
 ## Source and contributions
 
