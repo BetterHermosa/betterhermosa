@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 import { AlertCircle, ExternalLink, FileText, Wallet } from 'lucide-react';
 
@@ -359,6 +359,10 @@ export default function BudgetPage() {
               >
                 {config.lgu.officialWebsite.replace('https://www.', '')}
               </a>
+              . For the municipality&rsquo;s own income and spending, see{' '}
+              <Link to='/finances' className='text-kapwa-text-brand font-bold'>
+                Local Finances
+              </Link>
               .
             </p>
           </section>

@@ -18,6 +18,7 @@ BetterLB provides Los Baños with:
 - **Transparency Dashboard**: Financial data, procurement bids, and infrastructure projects
 - **Government Directory**: Contact information for all municipal departments and officials
 - **National Projects** (`/budget`): national-government projects that name the municipality and each barangay, from the Philippine Budget Data API. See [docs/budget-data.md](docs/budget-data.md)
+- **Local Finances** (`/finances`): the municipality's own income and spending from BLGF fiscal data. See [docs/local-finances.md](docs/local-finances.md)
 - **Multi-language Support**: English and Filipino translations
 
 ---

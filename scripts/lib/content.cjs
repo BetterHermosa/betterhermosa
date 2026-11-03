@@ -32,6 +32,26 @@ try {
   budget = null;
 }
 
+let finances = null;
+try {
+  finances = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        __dirname,
+        '..',
+        '..',
+        'src',
+        'data',
+        'finances',
+        'hermosa.json'
+      ),
+      'utf8'
+    )
+  );
+} catch {
+  finances = null;
+}
+
 const homeHeading = require('../../public/locales/en/common.json').hero.title;
 const baseUrl = config.portal.baseUrl.replace(/\/$/, '');
 const place = `${config.lgu.name}, ${config.lgu.province}`;
@@ -67,6 +87,7 @@ const NAV = [
   ['/government/barangays', 'Barangays'],
   ['/services', 'Services'],
   ['/budget', 'National projects'],
+  ['/finances', 'Local finances'],
   ['/about', 'About'],
   ['/contact', 'Contact'],
 ];
@@ -176,6 +197,53 @@ function body(route) {
           link(`/government/barangays/${b.slug}`, b.barangay_name)
         )
       );
+  } else if (p === '/finances' && finances) {
+    const m = finances.meta;
+    const peso = n => `₱${n.toLocaleString('en-PH')}`;
+    const pct = (a, b) => `${((a / b) * 100).toFixed(1)}%`;
+    const { ari, sre, ldrrmf } = finances;
+    const exp = sre.operatingExpenditures;
+    main =
+      `<p>${esc(route.description)}</p>` +
+      `<p>FY ${m.fiscalYear} (${esc(m.status.toLowerCase())}). ${esc(m.attribution)} Amounts are in pesos.</p>` +
+      `<h2>Where the income comes from</h2>` +
+      ul([
+        `Annual regular income: ${esc(peso(ari.total))}`,
+        `National tax allotment: ${esc(peso(ari.nationalTaxAllotment))} (${pct(ari.nationalTaxAllotment, ari.total)})`,
+        `Locally sourced revenue: ${esc(peso(ari.locallySourcedRevenue))} (${pct(ari.locallySourcedRevenue, ari.total)})`,
+        `Other shares from national tax collection: ${esc(peso(ari.otherShares.total))}, of which the economic zone ${esc(peso(ari.otherShares.economicZone))}`,
+        `Interest income: ${esc(peso(ari.interestIncome))}`,
+      ]) +
+      `<h2>What the municipality raises itself</h2>` +
+      ul([
+        `Real property tax: ${esc(peso(ari.tax.realPropertyTax))}`,
+        `Tax on business: ${esc(peso(ari.tax.businessTax))}`,
+        `Other taxes: ${esc(peso(ari.tax.otherTaxes))}`,
+        `Regulatory fees: ${esc(peso(ari.nonTax.regulatoryFees))}`,
+        `Service and user charges: ${esc(peso(ari.nonTax.serviceCharges))}`,
+        `Receipts from economic enterprises: ${esc(peso(ari.nonTax.economicEnterprises))}`,
+      ]) +
+      `<h2>Current operating spending</h2>` +
+      ul([
+        `General public services: ${esc(peso(exp.generalPublicServices))}`,
+        `Education, culture and sports: ${esc(peso(exp.education))}`,
+        `Health, nutrition and population control: ${esc(peso(exp.health))}`,
+        `Social services and social welfare: ${esc(peso(exp.socialWelfare))}`,
+        `Labor and employment: ${esc(peso(exp.laborAndEmployment))}`,
+        `Economic services: ${esc(peso(exp.economicServices))}`,
+        `Interest on debt: ${esc(peso(exp.debtServiceInterest))}`,
+        `Total: ${esc(peso(exp.total))}`,
+      ]) +
+      `<h2>Income, spending and cash</h2>` +
+      ul([
+        `Current operating income: ${esc(peso(sre.income.total))}`,
+        `Net operating income: ${esc(peso(sre.netOperatingIncome))}`,
+        `Capital outlay: ${esc(peso(sre.capitalOutlay))}`,
+        `Loan amortization paid: ${esc(peso(sre.loanAmortization))}`,
+        `Cash balance, end of year: ${esc(peso(sre.cashBalanceEnd))}`,
+        `Disaster fund (LDRRMF): ${esc(peso(ldrrmf.total))}`,
+      ]) +
+      `<p>Sources: ${m.sources.map(s => link(s.url, s.file)).join(', ')}. The annual regular income and statement of receipts and expenditures use different definitions, so their totals differ. The municipality’s own annual budget is published on ${link(config.lgu.officialWebsite, config.lgu.officialWebsite)}. See also ${link('/budget', 'national projects in ' + config.lgu.name)}.</p>`;
   } else if (p === '/budget' && budget) {
     const barangayName = slug =>
       barangays.find(b => b.slug === slug)?.barangay_name || 'Hermosa-wide';
@@ -366,6 +434,7 @@ function dataFeed() {
     barangays,
     services: services.map(s => ({ ...s, unverified: isUnverified(s) })),
     budget,
+    finances,
   };
 }
 

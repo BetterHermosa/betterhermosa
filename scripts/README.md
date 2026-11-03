@@ -139,6 +139,20 @@ Runs during `npm run build`, before `generate-sitemap.js`. If the API is unreach
 
 ---
 
+### `extract_blgf.py`
+
+Extracts Hermosa's rows from the BLGF fiscal data spreadsheets into `src/data/finances/hermosa.json` for the `/finances` page.
+
+**Usage:**
+```bash
+pip install openpyxl
+python scripts/extract_blgf.py <folder-with-the-three-xlsx-files>
+```
+
+**Not automated:** blgf.gov.ph blocks scripted downloads, so download the files in a browser first. The script checks column headers and that the parts add up. See [docs/local-finances.md](../docs/local-finances.md).
+
+---
+
 ## Service Data Structure
 
 ### Category File Format
