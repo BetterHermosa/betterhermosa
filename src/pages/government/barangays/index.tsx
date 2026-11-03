@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { ArrowRight, MapPinIcon, Phone, User2 } from 'lucide-react';
 
+import { BarangayMap } from '@/components/government/BarangayMap';
 import { PageHero } from '@/components/layout/PageLayouts';
 import { Card, CardContent } from '@/components/ui/Card';
 import SearchInput from '@/components/ui/SearchInput';
@@ -29,10 +30,15 @@ export default function BarangaysIndex() {
         <SearchInput
           value={search}
           onChangeValue={setSearchTerm => setSearch(setSearchTerm)}
-          placeholder='Search by name (e.g. Mayondon)...'
+          placeholder='Search by name (e.g. Mabiga)...'
           className='md:w-72'
         />
       </PageHero>
+
+      <BarangayMap
+        hrefFor={slug => `/government/barangays/${slug}`}
+        className='mx-auto mb-8 max-w-2xl'
+      />
 
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3'>
         {filtered.map(brgy => {
