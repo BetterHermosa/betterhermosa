@@ -15,6 +15,10 @@
     "title": "Accessibility Statement | {{portal.name}}",
     "description": "How {{portal.name}} works to be accessible to every resident of {{lgu.name}}, {{lgu.province}}, including people using screen readers and mobile phones."
   },
+  "/transparency/infrastructure": {
+    "title": "DPWH Contracts in {{lgu.name}} | {{lgu.province}} Roads, Flood Control, Buildings | {{portal.name}}",
+    "description": "Public works contracts that name {{lgu.name}}, {{lgu.province}}: budget, status, progress and contractor as published by DPWH, by year and barangay."
+  },
   "/finances": {
     "title": "{{lgu.name}}'s Own Finances | Income and Spending | {{portal.name}}",
     "description": "Income, spending and disaster fund of the {{lgu.fullName}}, {{lgu.province}} from Bureau of Local Government Finance reports."

@@ -32,6 +32,18 @@ try {
   budget = null;
 }
 
+let dpwh = null;
+try {
+  dpwh = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, '..', '..', 'public', 'data', 'dpwh-hermosa.json'),
+      'utf8'
+    )
+  );
+} catch {
+  dpwh = null;
+}
+
 let finances = null;
 try {
   finances = JSON.parse(
@@ -88,6 +100,7 @@ const NAV = [
   ['/services', 'Services'],
   ['/budget', 'National projects'],
   ['/finances', 'Local finances'],
+  ['/transparency/infrastructure', 'DPWH contracts'],
   ['/about', 'About'],
   ['/contact', 'Contact'],
 ];
@@ -195,6 +208,27 @@ function body(route) {
       ul(
         barangays.map(b =>
           link(`/government/barangays/${b.slug}`, b.barangay_name)
+        )
+      );
+  } else if (p === '/transparency/infrastructure' && dpwh) {
+    const peso = n => (n == null ? '—' : `₱${n.toLocaleString('en-PH')}`);
+    const label = {
+      road: 'Road',
+      bridge: 'Bridge',
+      'flood-control': 'Flood control and drainage',
+      building: 'Building',
+      other: 'Other',
+    };
+    const total = dpwh.projects.reduce((s, x) => s + (x.budget || 0), 0);
+    const years = dpwh.projects.map(x => Number(x.year)).filter(Boolean);
+    main =
+      `<p>${esc(route.description)}</p>` +
+      `<p>${dpwh.projects.length} contracts naming ${esc(config.lgu.name)}, FY ${Math.min(...years)} to ${Math.max(...years)}, with budgets totalling ${esc(peso(total))}. Source: ${link(dpwh.meta.sourceUrl, 'DPWH Infrastructure Transparency Dataset')} (${esc(dpwh.meta.licence)}), saved ${esc(dpwh.meta.retrieved)}. ${esc(dpwh.meta.notes.join(' '))}</p>` +
+      `<h2>Contracts</h2>` +
+      ul(
+        dpwh.projects.map(
+          x =>
+            `${esc(x.title)} — ${esc(x.id)}, ${esc(label[x.category])}, FY ${esc(x.year)}, ${esc(x.status)}, budget ${esc(peso(x.budget))}${x.progress != null ? `, reported progress ${esc(x.progress)}%` : ''}${x.contractor ? `, contractor ${esc(x.contractor)}` : ''}`
         )
       );
   } else if (p === '/finances' && finances) {
@@ -435,6 +469,7 @@ function dataFeed() {
     services: services.map(s => ({ ...s, unverified: isUnverified(s) })),
     budget,
     finances,
+    dpwh,
   };
 }
 
