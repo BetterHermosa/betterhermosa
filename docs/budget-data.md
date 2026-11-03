@@ -52,7 +52,7 @@ node scripts/fetch-budget.js   # rewrites public/data/budget-hermosa.json
 
 Review the diff, then commit the JSON. If the API is unreachable, the script keeps the previous snapshot and the build continues.
 
-`refresh-budget.yml` does this on the 1st of each month (or on demand from the Actions tab) and opens a pull request only when the data changed. It needs **Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests"** turned on.
+`refresh-budget.yml` does this on the 1st of each month (or on demand from the Actions tab). When the data changed it pushes a `chore/refresh-budget-<date>` branch and opens an issue with a link that creates the pull request in one click. It opens an issue and not a PR because the BetterHermosa organization locks "Allow GitHub Actions to create and approve pull requests". If an org owner enables that setting, the last step can use `gh pr create` instead.
 
 The full `npm run build` runs `merge:services`, which needs `python3`. On Windows that command is a Store stub, so run the steps directly: `node scripts/fetch-budget.js && node scripts/generate-sitemap.js && npx vite build && node scripts/prerender-heads.cjs`.
 

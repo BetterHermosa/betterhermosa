@@ -12,7 +12,7 @@ jobs:
     name: Refresh national projects snapshot
     permissions:
       contents: write
-      pull-requests: write
+      issues: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
@@ -27,12 +27,12 @@ jobs:
       - name: Fetch snapshot
         run: node scripts/fetch-budget.js
 
-      - name: Open pull request if the data changed
+      - name: Push a branch and open an issue if the data changed
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
-          # fetchedAt changes on every run; only open a PR when the data differs.
+          # fetchedAt changes on every run; only act when the data differs.
           git diff --quiet -I'"fetchedAt"' -- public/data/budget-hermosa.json && exit 0
           branch="chore/refresh-budget-$(date +%Y-%m-%d)"
           git config user.name "github-actions[bot]"
@@ -41,6 +41,8 @@ jobs:
           git add public/data/budget-hermosa.json
           git commit -m "chore: refresh national projects budget snapshot"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" "$branch"
-          gh pr create --repo "$REPO" --head "$branch" --base main \
-            --title "chore: refresh national projects budget snapshot" \
-            --body "Monthly refresh of public/data/budget-hermosa.json from the Philippine Budget Data API. Review the diff before merging."
+          # The organization blocks Actions from opening pull requests, so
+          # open an issue with a link that creates the PR in one click.
+          gh issue create --repo "$REPO" \
+            --title "Budget data changed: review and open a PR" \
+            --body "The monthly refresh found new data in the Philippine Budget Data API. Review the diff and open the PR: https://github.com/${REPO}/compare/main...${branch}?expand=1"
