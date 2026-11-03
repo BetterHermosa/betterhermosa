@@ -84,7 +84,10 @@ export default function DepartmentsIndex() {
                           Department Head
                         </p>
                         <p className='text-kapwa-text-support truncate text-xs leading-tight font-bold'>
-                          {toTitleCase(dept.department_head.name)}
+                          {dept.department_head.status
+                            ? `${dept.department_head.status}: `
+                            : ''}
+                          {dept.department_head.name}
                         </p>
                       </div>
                     </div>

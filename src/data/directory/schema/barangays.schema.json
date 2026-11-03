@@ -18,6 +18,13 @@
         "type": ["string", "null"],
         "format": "uri"
       },
+      "map_pdf": {
+        "type": "string",
+        "format": "uri",
+        "description": "Official parcellary map (PDF) published by the Municipality"
+      },
+      "officials_source": { "type": "string", "format": "uri" },
+      "officials_checked": { "type": "string" },
       "officials": {
         "type": "array",
         "items": {

@@ -328,7 +328,7 @@ function body(route) {
     main =
       `<p>${esc(route.description)}</p>${ul(contactLines(d))}` +
       (d.department_head?.name
-        ? `<p>Head of office: ${esc(d.department_head.name)}</p>`
+        ? `<p>Head of office: ${esc(d.department_head.name)}${d.department_head.title ? `, ${esc([d.department_head.status, d.department_head.title].filter(Boolean).join(' '))}` : ''}. As shown on the Municipality’s organizational chart, checked ${esc(d.head_source?.checked || '')}.</p>`
         : '') +
       (related.length
         ? `<h2>Services</h2>${ul(related.map(s => link(`/services/${s.slug}`, s.service)))}`
@@ -339,7 +339,13 @@ function body(route) {
     main =
       `<p>${esc(route.description)}</p>${ul(contactLines(b))}` +
       (b.officials?.length
-        ? `<h2>Officials</h2>${ul(b.officials.map(o => `${esc(o.role)}: ${esc(o.name)}`))}`
+        ? `<h2>Officials</h2>${ul(b.officials.map(o => `${esc(o.role)}: ${esc(o.name)}`))}` +
+          (b.officials_source
+            ? `<p>As listed in the ${link(b.officials_source, 'Municipality’s directory')}, checked ${esc(b.officials_checked || '')}. Barangay and Sangguniang Kabataan elections were scheduled for 2 November 2026, so this may change.</p>`
+            : '')
+        : '') +
+      (b.map_pdf
+        ? `<p>${link(b.map_pdf, 'Official barangay map (PDF) from the Municipality')}</p>`
         : '') +
       barangayProjectsHtml(b) +
       `<p>${link('/government/barangays', 'All barangays of ' + config.lgu.name)}</p>`;
@@ -417,7 +423,10 @@ function fullMarkdown() {
     );
     if (phones(d)) L.push(`Phone: ${phones(d)}`);
     if (d.email) L.push(`Email: ${d.email}`);
-    if (d.department_head?.name) L.push(`Head: ${d.department_head.name}`);
+    if (d.department_head?.name)
+      L.push(
+        `Head: ${d.department_head.name}${d.department_head.title ? ` (${[d.department_head.status, d.department_head.title].filter(Boolean).join(' ')})` : ''}`
+      );
     L.push('');
   }
   L.push('## Barangays', '');

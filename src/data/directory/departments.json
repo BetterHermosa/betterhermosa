@@ -6,7 +6,11 @@
     "trunkline": ["(047) 300-6750", "(047) 300-6550"],
     "website": "https://www.hermosa.gov.ph",
     "email": "mayorsoffice301@gmail.com",
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "office-of-the-municipal-vice-mayor",
@@ -15,7 +19,11 @@
     "trunkline": ["(047) 300-6750"],
     "website": "https://www.hermosa.gov.ph",
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "office-of-the-municipal-administrator",
@@ -24,7 +32,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Rex R. Jorge",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Administrator",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "business-permit-and-licensing-office",
@@ -33,7 +51,11 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "municipal-treasurers-office",
@@ -42,7 +64,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Rhodora L. Manalansan",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Treasurer",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-assessors-office",
@@ -51,7 +83,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Serafin D. Bunsoy Jr.",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Assessor",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-accountants-office",
@@ -60,7 +102,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Jenny Lyn B. Sarmiento",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Accountant",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-budget-office",
@@ -69,7 +121,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Normita P. Tria",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Budget Officer",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-civil-registrars-office",
@@ -78,7 +140,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Marilyn B. Veluz",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Civil Registrar",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-engineers-office",
@@ -87,7 +159,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Engr. Jaime G. Escudero",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Engineer",
+      "status": "OIC"
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-planning-and-development-office",
@@ -96,7 +178,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Engr. Jan Eigbert R. Salenga, ENP",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Planning and Development Coordinator",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-social-welfare-and-development-office",
@@ -105,7 +197,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Chasmalin G. Francisco",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Social Welfare and Development Officer",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "person-with-disability-affairs-office",
@@ -114,7 +216,11 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "municipal-health-office",
@@ -123,7 +229,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Warren S. Valencia, RMT, MD",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Health Officer",
+      "status": "OIC"
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-agriculturists-office",
@@ -132,7 +248,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Vincent P. Mangulabnan",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Agriculturist",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-disaster-risk-reduction-and-management-office",
@@ -141,7 +267,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Glenly O. Monje",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Disaster Risk Reduction and Management Officer",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-environment-and-natural-resources-office",
@@ -150,7 +286,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Jesus V. De Luna",
+      "contact": null,
+      "email": null,
+      "title": "Municipal Environment and Natural Resources Officer",
+      "status": null
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-tourism-office",
@@ -159,7 +305,11 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "public-employment-service-office",
@@ -168,7 +318,11 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "municipal-population-office",
@@ -177,7 +331,11 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   },
   {
     "slug": "general-services-office",
@@ -186,7 +344,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Kelvin John R. Santos",
+      "contact": null,
+      "email": null,
+      "title": "Municipal General Services Officer",
+      "status": "OIC"
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "human-resource-management-office",
@@ -195,7 +363,17 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": "Rona S. Jaring",
+      "contact": null,
+      "email": null,
+      "title": "Human Resource Management Officer",
+      "status": "Acting"
+    },
+    "head_source": {
+      "url": "https://www.hermosa.gov.ph/government/department-offices/",
+      "checked": "2026-11-03"
+    }
   },
   {
     "slug": "municipal-legal-office",
@@ -204,6 +382,10 @@
     "trunkline": ["(047) 300-6750"],
     "website": null,
     "email": null,
-    "department_head": { "name": null, "contact": null, "email": null }
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
   }
 ]
