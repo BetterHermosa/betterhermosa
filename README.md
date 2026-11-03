@@ -17,6 +17,7 @@ BetterLB provides Los Baños with:
 - **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Bayan
 - **Transparency Dashboard**: Financial data, procurement bids, and infrastructure projects
 - **Government Directory**: Contact information for all municipal departments and officials
+- **National Projects** (`/budget`): national-government projects that name the municipality and each barangay, from the Philippine Budget Data API. See [docs/budget-data.md](docs/budget-data.md)
 - **Multi-language Support**: English and Filipino translations
 
 ---

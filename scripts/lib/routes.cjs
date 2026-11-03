@@ -112,6 +112,7 @@ const STATIC_ROUTES = [
   { path: '/government/departments', priority: '0.9' },
   { path: '/government/barangays', priority: '0.9' },
   { path: '/services', priority: '0.9', changefreq: 'weekly' },
+  { path: '/budget', priority: '0.7', changefreq: 'monthly' },
   { path: '/about', priority: '0.6' },
   { path: '/contact', priority: '0.6' },
   { path: '/data/weather', priority: '0.5', changefreq: 'daily' },

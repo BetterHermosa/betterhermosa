@@ -17,6 +17,7 @@ import {
   BreadcrumbSeparator,
 } from '@/components/navigation/Breadcrumb';
 
+import { BarangayProjects } from '@/components/government/BarangayProjects';
 import { SEO } from '@/components/layout/SEO';
 
 import { barangaySeo } from '@/lib/seoTemplates';
@@ -190,6 +191,11 @@ export default function BarangayDetail() {
             )}
           </div>
         </div>
+
+        <BarangayProjects
+          slug={barangay.slug}
+          name={barangay.barangay_name.replace(/\s*\(.*?\)/, '')}
+        />
       </main>
     </div>
   );

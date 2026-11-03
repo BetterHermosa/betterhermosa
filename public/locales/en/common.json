@@ -96,6 +96,8 @@
     "legislativeDescription": "Composed of the Sangguniang Bayan, responsible for making local laws.",
     "barangaysTitle": "Barangays",
     "barangaysDescription": "Local government units within the municipality, led by elected officials who manage community-level services and programs.",
+    "nationalProjectsTitle": "National Projects",
+    "nationalProjectsDescription": "Roads, flood control and buildings in the national budget that name Hermosa and each barangay.",
     "departmentsTitle": "Municipal Departments",
     "departmentsDescription" : "Municipal departments and agencies responsible for specific areas of governance.",
     "electedofficialsTitle": "Elected Officials",

@@ -16,6 +16,22 @@ const {
   toTitleCase,
 } = require('./routes.cjs');
 
+const fs = require('fs');
+const path = require('path');
+
+// Written by scripts/fetch-budget.js; absent on a fresh checkout before the first build.
+let budget = null;
+try {
+  budget = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, '..', '..', 'public', 'data', 'budget-hermosa.json'),
+      'utf8'
+    )
+  );
+} catch {
+  budget = null;
+}
+
 const homeHeading = require('../../public/locales/en/common.json').hero.title;
 const baseUrl = config.portal.baseUrl.replace(/\/$/, '');
 const place = `${config.lgu.name}, ${config.lgu.province}`;
@@ -50,6 +66,7 @@ const NAV = [
   ['/government/departments', 'Offices and departments'],
   ['/government/barangays', 'Barangays'],
   ['/services', 'Services'],
+  ['/budget', 'National projects'],
   ['/about', 'About'],
   ['/contact', 'Contact'],
 ];
@@ -73,6 +90,49 @@ function officials() {
       rows.push(`${esc(o.role)}: ${esc(o.name)}`);
   }
   return ul(rows);
+}
+
+// Mirrors src/components/government/BarangayProjects.tsx — keep the sorting
+// and wording of the two in sync.
+function barangayProjects(b) {
+  if (!budget) return [];
+  const latest = g => Math.max(...Object.keys(g.amounts).map(Number));
+  return budget.gaa
+    .filter(g => g.barangay === b.slug)
+    .sort(
+      (x, y) =>
+        latest(y) - latest(x) || y.amounts[latest(y)] - x.amounts[latest(x)]
+    );
+}
+
+function barangayProjectsHtml(b) {
+  if (!budget) return '';
+  const name = b.barangay_name.replace(/\s*\(.*?\)/, '');
+  const projects = barangayProjects(b);
+  const peso = n => `₱${n.toLocaleString('en-PH')}`;
+  const note = `<p>These are national government projects, not the barangay’s own budget. Source: ${link(budget.meta.source, 'Philippine Budget Data API')}.</p>`;
+  if (!projects.length) {
+    return `<h2>National projects in ${esc(name)}</h2><p>No national projects naming ${esc(name)} were found. Matching is by place name, so a project may exist without being listed. ${link('/budget', 'See projects for all of Hermosa')}.</p>${note}`;
+  }
+  const years = budget.meta.gaaYears;
+  const lines = budget.hgab.datasets
+    .flatMap(d => d.rows)
+    .filter(r => r.barangay === b.slug).length;
+  return (
+    `<h2>National projects in ${esc(name)}</h2>` +
+    `<p>${projects.length} national-government ${projects.length === 1 ? 'project names' : 'projects name'} ${esc(name)} (FY ${years[0]}–${years[years.length - 1]}).</p>` +
+    ul(
+      projects.slice(0, 5).map(g => {
+        const y = Math.max(...Object.keys(g.amounts).map(Number));
+        return `${esc(g.title)} — FY ${y}, ${esc(peso(g.amounts[y]))}`;
+      })
+    ) +
+    (lines
+      ? `<p>${lines} ${lines === 1 ? 'line' : 'lines'} naming ${esc(name)} in the FY ${budget.hgab.fiscalYear} proposal and House bill. ${link(`/budget?barangay=${b.slug}`, 'Compare the versions')}.</p>`
+      : '') +
+    `<p>${link(`/budget?barangay=${b.slug}`, `See all ${projects.length} ${projects.length === 1 ? 'project' : 'projects'}`)}</p>` +
+    note
+  );
 }
 
 function body(route) {
@@ -116,6 +176,38 @@ function body(route) {
           link(`/government/barangays/${b.slug}`, b.barangay_name)
         )
       );
+  } else if (p === '/budget' && budget) {
+    const barangayName = slug =>
+      barangays.find(b => b.slug === slug)?.barangay_name || 'Hermosa-wide';
+    const peso = n => (n == null ? '—' : `₱${n.toLocaleString('en-PH')}`);
+    const top = budget.gaa
+      .filter(g => g.amounts[2026])
+      .sort((a, b) => b.amounts[2026] - a.amounts[2026]);
+    const total = top.reduce((s, g) => s + g.amounts[2026], 0);
+    main =
+      `<p>${esc(route.description)}</p>` +
+      `<p>FY 2026: ${top.length} national-government projects naming ${esc(config.lgu.name)}, totalling ${esc(peso(total))} (General Appropriations Act). These are not the municipality’s own budget. Data: ${link(budget.meta.source, 'Philippine Budget Data API')}, fetched ${esc(budget.meta.fetchedAt.slice(0, 10))}.</p>` +
+      `<h2>FY 2026 projects</h2>` +
+      ul(
+        top.map(
+          g =>
+            `${esc(g.title)} — ${esc(barangayName(g.barangay))}, ${esc(g.department)}, ${esc(peso(g.amounts[2026]))}`
+        )
+      ) +
+      `<h2>FY 2027: National Expenditure Program vs House bill</h2>` +
+      budget.hgab.datasets
+        .map(d =>
+          ul(
+            d.rows.map(
+              r =>
+                `${esc(r.title)} — ${esc(r.statusLabel)}; NEP ${esc(peso(r.nep))}; House bill ${esc(peso(r.house))}`
+            )
+          )
+        )
+        .join('') +
+      budget.meta.disclaimers
+        .map(x => `<p><strong>${esc(x.title)}</strong> ${esc(x.body)}</p>`)
+        .join('');
   } else if (p === '/services') {
     main =
       `<p>${esc(route.description)}</p>` +
@@ -145,6 +237,7 @@ function body(route) {
       (b.officials?.length
         ? `<h2>Officials</h2>${ul(b.officials.map(o => `${esc(o.role)}: ${esc(o.name)}`))}`
         : '') +
+      barangayProjectsHtml(b) +
       `<p>${link('/government/barangays', 'All barangays of ' + config.lgu.name)}</p>`;
   } else if (p.startsWith('/services/')) {
     const s = services.find(x => p.endsWith('/' + x.slug));
@@ -227,6 +320,18 @@ function fullMarkdown() {
     L.push(
       `- ${b.barangay_name} — ${b.address || ''} (${baseUrl}/government/barangays/${b.slug})`
     );
+    const projects = barangayProjects(b);
+    if (projects.length) {
+      L.push(
+        `  National projects naming this barangay: ${projects.length} (${baseUrl}/budget?barangay=${b.slug})`
+      );
+      for (const g of projects.slice(0, 5)) {
+        const y = Math.max(...Object.keys(g.amounts).map(Number));
+        L.push(
+          `  - ${g.title} — FY ${y}, ₱${g.amounts[y].toLocaleString('en-PH')}`
+        );
+      }
+    }
   }
   L.push('', '## Services', '');
   for (const s of services) {
@@ -260,6 +365,7 @@ function dataFeed() {
     departments,
     barangays,
     services: services.map(s => ({ ...s, unverified: isUnverified(s) })),
+    budget,
   };
 }
 

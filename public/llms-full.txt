@@ -142,28 +142,128 @@ Phone: (047) 300-6750
 ## Barangays
 
 - A. Rivera (Poblacion) — Barangay Hall, A. Rivera, Hermosa, Bataan (https://betterhermosa.org/government/barangays/a-rivera)
+  National projects naming this barangay: 2 (https://betterhermosa.org/budget?barangay=a-rivera)
+  - Construction of Multi-Purpose Building, Barangay A. Rivera, Hermosa, Bataan — FY 2021, ₱5,000,000
+  - Construction of Multi-Purpose Building, Brgy. A. Rivera, Hermosa, Bataan — FY 2020, ₱10,000,000
 - Almacen — Barangay Hall, Almacen, Hermosa, Bataan (https://betterhermosa.org/government/barangays/almacen)
+  National projects naming this barangay: 2 (https://betterhermosa.org/budget?barangay=almacen)
+  - Construction of Road, Barangay Almacen, Hermosa, Bataan, Section 1: Sta. 0+000 - Sta. 0+151, Section 2: Sta. 0+000 - Sta. 0+060 — FY 2026, ₱4,707,000
+  - Construction of Flood Control Project along Almacen River Cut - Off Channel, Phase IV - DMC, Hermosa, Bataan — FY 2024, ₱100,000,000
 - Bacong — Barangay Hall, Bacong, Hermosa, Bataan (https://betterhermosa.org/government/barangays/bacong)
+  National projects naming this barangay: 5 (https://betterhermosa.org/budget?barangay=bacong)
+  - Improvement of Road along Barangay Bacong, Hermosa, Bataan, Sta 0+ 000 - Sta 2 + 500 — FY 2026, ₱61,422,000
+  - Construction of Multi-Purpose Building (Extension of the Barangay Hall) Barangay Bacong, Hermosa, Bataan (14.853139, 120.437405) — FY 2026, ₱5,000,000
+  - Construction of Road, Sitio Riverside, Barangay Bacong, Hermosa, Bataan, Sta. 0+000 - Sta. 0+373 — FY 2026, ₱4,707,000
+  - Construction of Flood Control Structure along Colo River, Bacong Section, Phase 1-B, Hermosa, Bataan — FY 2025, ₱100,000,000
+  - Construction of Flood Control Project along Colo River, Bacong Section Phase IV-AGP1, Hermosa, Bataan — FY 2023, ₱30,000,000
 - Balsic — Barangay Hall, Balsic, Hermosa, Bataan (https://betterhermosa.org/government/barangays/balsic)
+  National projects naming this barangay: 13 (https://betterhermosa.org/budget?barangay=balsic)
+  - Construction of Multi-Purpose Building at Purok 5, Brgy. Balsik, Hermosa, Bataan — FY 2026, ₱8,000,000
+  - Construction of Multi-Purpose Building (Covered Court), Purok 5, Barangay Balsik, Hermosa, Bataan (14.858373, 120.483947) — FY 2026, ₱5,000,000
+  - Construction of Slope Protection Structure, Upstream of Balsik Dam, at Lakay-Balsik RIS, Hermosa, Bataan — FY 2025, ₱15,000,000
+  - Construction of Flood Control Project along Pentor - Balsik River, Balsik Section, Phase IV - DMC, Hermosa, Bataan — FY 2024, ₱100,000,000
+  - Concreting of Brgy. Balsik FMR, Brgy. Balsik, Hermosa, Bataan — FY 2024, ₱15,000,000
 - Bamban — Barangay Hall, Bamban, Hermosa, Bataan (https://betterhermosa.org/government/barangays/bamban)
+  National projects naming this barangay: 6 (https://betterhermosa.org/budget?barangay=bamban)
+  - Construction of Flood Control Structure along Colo River, Bamban Section, Phase III - DM, Hermosa, Bataan — FY 2024, ₱100,000,000
+  - Construction of Road, Purok 3, Barangay Bamban, Hermosa, Bataan — FY 2024, ₱10,000,000
+  - Construction of Flood Control along Colo River, Bamban Section Phase III-1C, Hermosa, Bataan — FY 2023, ₱29,600,000
+  - Construction of River Wall, Brgy. Bamban, Hermosa, Bataan — FY 2023, ₱5,000,000
+  - Construction of Flood Control Structure along Colo River, Bamban Section, Phase ERD-I, Hermosa, Bataan — FY 2022, ₱15,000,000
 - Burgos-Soliman (Poblacion) — Barangay Hall, Burgos-Soliman, Hermosa, Bataan (https://betterhermosa.org/government/barangays/burgos-soliman)
+  National projects naming this barangay: 1 (https://betterhermosa.org/budget?barangay=burgos-soliman)
+  - Rehabilitation/Completion of Multi-Purpose Building (Barangay Hall) in Barangay Burgos-Soliman, Hermosa, Bataan — FY 2025, ₱3,500,000
 - Cataning (Poblacion) — Barangay Hall, Cataning, Hermosa, Bataan (https://betterhermosa.org/government/barangays/cataning)
+  National projects naming this barangay: 1 (https://betterhermosa.org/budget?barangay=cataning)
+  - Concreting of Road, Barangay Cataning, Hermosa, Bataan, Section 1: Sta 0+000 - Sta 0+140, Section 2: Sta 0+000 - Sta 0+220 — FY 2026, ₱4,900,000
 - Culis — Barangay Hall, Culis, Hermosa, Bataan (https://betterhermosa.org/government/barangays/culis)
+  National projects naming this barangay: 5 (https://betterhermosa.org/budget?barangay=culis)
+  - Improvement of Road along Barangay Culis - Sitio Sta. Maria -Tama, Hermosa, Bataan, Sta 0+000 - Sta 3+250 — FY 2026, ₱54,243,000
+  - Construction of Road, Barangay Culis, Hermosa, Bataan — FY 2025, ₱6,000,000
+  - Rehabilitation of Multi-Purpose Building (Covered Court) in Barangay Culis, Hermosa, Bataan — FY 2025, ₱5,000,000
+  - Construction of Multi-Purpose Facility (Covered Court) Brgy. Sitio Sta. Maria, Culis, Hermosa Bataan  — FY 2023, ₱5,000,000
+  - Construction of Culis Multi-Purpose Building, Hermosa, Bataan — FY 2022, ₱7,000,000
 - Daungan (Poblacion) — Barangay Hall, Daungan, Hermosa, Bataan (https://betterhermosa.org/government/barangays/daungan)
 - Judge Roman Cruz Sr. (Mandama) — Barangay Hall, JRC Mandama, Hermosa, Bataan (https://betterhermosa.org/government/barangays/jrc-mandama)
+  National projects naming this barangay: 2 (https://betterhermosa.org/budget?barangay=jrc-mandama)
+  - Construction of Multi-Purpose Building, Barangay Judge Roman Cruz Sr., Hermosa, Bataan (14.83438001, 120.49258589) — FY 2026, ₱25,000,000
+  - Construction of Road at Hermosa Government Center, Barangay Judge Roman Cruz Sr., Hermosa Bataan  — FY 2024, ₱20,000,000
 - Mabiga — Barangay Hall, Mabiga, Hermosa, Bataan (https://betterhermosa.org/government/barangays/mabiga)
+  National projects naming this barangay: 9 (https://betterhermosa.org/budget?barangay=mabiga)
+  - Construction of Mabiga-Moring-Subic Port to Connect to Hermosa Ecozone, Clark International Airport, Subic Port and Airport and Bataan Technopark, Hermosa, Bataan (Phase 2) — FY 2025, ₱100,000,000
+  - Construction of Mabiga- Morong- Subic Port to connect to Hermosa Ecozone, Clark International Airport and Bataan Technopark- Phase 3, Hermosa, Bataan — FY 2025, ₱30,000,000
+  - Construction of Flood Control Structure along Mabiga River, Tributary to Colo River, Phase III - DM, Hermosa, Bataan — FY 2024, ₱75,000,000
+  - Construction of School Building, Brgy. Mabiga Elementary School, Hermosa, Bataan — FY 2024, ₱12,000,000
+  - Concreting of Road Barangay Mabiga, Hermosa, Bataan — FY 2024, ₱10,000,000
 - Mabuco — Barangay Hall, Mabuco, Hermosa, Bataan (https://betterhermosa.org/government/barangays/mabuco)
+  National projects naming this barangay: 4 (https://betterhermosa.org/budget?barangay=mabuco)
+  - Construction of Road, Sitio Suha, Barangay Mabuco, Hermosa, Bataan, Sta. 0+000 - Sta. 0+308 — FY 2026, ₱4,707,000
+  - Construction of Multi-Purpose Building at Barangay Mabuco, Hermosa, Bataan — FY 2022, ₱5,000,000
+  - Construction of Multi-Purpose Building Hermosa National High School Annex, Brgy. Mabuco, Hermosa, Bataan — FY 2021, ₱5,810,000
+  - Construction of Multi-Purpose Building, Brgy. Mabuco, Hermosa, Bataan — FY 2021, ₱3,000,000
 - Maite — Barangay Hall, Maite, Hermosa, Bataan (https://betterhermosa.org/government/barangays/maite)
+  National projects naming this barangay: 11 (https://betterhermosa.org/budget?barangay=maite)
+  - Construction of Multi-Purpose Building (Covered Court) at Sitio Manduray, Barangay Maite, Hermosa, Bataan (14.836169, 120.418361) — FY 2026, ₱8,000,000
+  - Construction of Flood Control Structure along Colo River, Maite Section Phase 6, Hermosa, Bataan — FY 2025, ₱100,000,000
+  - Construciton of Flood Control Project Along Colo River , Maite Section , Phase IV - DMC, Hermosa, Bataan — FY 2024, ₱100,000,000
+  - Construction of Multi - Purpose Hall, Sitio Manduray, Brgy. Maite, Hermosa, Bataan  — FY 2024, ₱5,000,000
+  - Construction of Flood Control Project along Colo River, Maite Section Phase CMD-1 Hermosa, Bataan  — FY 2023, ₱20,000,000
 - Mambog-Mandama — Barangay Hall, Mambog, Hermosa, Bataan (https://betterhermosa.org/government/barangays/mambog)
+  National projects naming this barangay: 1 (https://betterhermosa.org/budget?barangay=mambog)
+  - Construction of Multi-Purpose Building, Mambog Child Development Center Building (MCDC), Barangay Mambog, Hermosa, Bataan (14.82298175, 120.48357281) — FY 2026, ₱5,000,000
 - Palihan — Barangay Hall, Palihan, Hermosa, Bataan (https://betterhermosa.org/government/barangays/palihan)
+  National projects naming this barangay: 14 (https://betterhermosa.org/budget?barangay=palihan)
+  - Access Road from Hermosa Economic and Industrial Zone connecting Palihan-Mabiga-SBMA, Sta. 5 + 700 - Sta. 5 + 802, Hermosa, Bataan — FY 2026, ₱22,075,000
+  - Concreting of Road, Manalo Street, Sto. Niño, Barangay Palihan, Hermosa, Bataan, Section 1: Sta. 0+000 - Sta. 0+107, Section 2: Sta. 0+000 - Sta. 0+151 — FY 2026, ₱5,649,000
+  - Access Road from Hermosa Economic and Industrial Zone connecting Palihan-Mabiga-SBMA, Hermosa, Bataan — FY 2025, ₱5,000,000
+  - Construction of Flood Control Structure along Colo River, Palihan Section, Hermosa, Bataan — FY 2024, ₱100,000,000
+  - Construction of Flood Control Structure along Colo River  ( Phase III - DM ) , Palihan Section, Hermosa, Bataan — FY 2024, ₱75,000,000
 - Pandatung — Barangay Hall, Pandatung, Hermosa, Bataan (https://betterhermosa.org/government/barangays/pandatung)
+  National projects naming this barangay: 3 (https://betterhermosa.org/budget?barangay=pandatung)
+  - Improvement of Road along Barangay Pandatung- Sumalo- Sibul, Hermosa and Orani, Bataan, Sta 0 + 000 -  Sta 3+800 — FY 2026, ₱90,626,000
+  - Construction of Road at Sitio Sta. Maria, Pandatung, Hermosa, Bataan, Section 1: Sta. 0+000 - Sta. 0+191, Section 2: Sta. 0+000 - Sta. 0+210 — FY 2026, ₱4,707,000
+  - Concreting of FMR at Brgy. Pandatun, Hermosa, Bataan — FY 2025, ₱15,000,000
 - Pulo — Barangay Hall, Pulo, Hermosa, Bataan (https://betterhermosa.org/government/barangays/pulo)
+  National projects naming this barangay: 6 (https://betterhermosa.org/budget?barangay=pulo)
+  - Construction of Road, Barangay Pulo, Hermosa, Bataan, Sta. 0 + 060 - Sta. + 333 — FY 2026, ₱4,707,000
+  - Construction of Flood Control Project along Pulo - Almacen River, Phase IV - DMC, Hermosa, Bataan — FY 2024, ₱100,000,000
+  - Construction of Flood Control Project along Pulo - Almacen River Phase VII - CMD, Hermosa, Bataan — FY 2024, ₱30,000,000
+  - Construction of Flood Control Structure along Barangay Pulo, Hermosa, Bataan — FY 2024, ₱10,000,000
+  - Construction of Flood Control project along Pulo-Almacen River, Phase VI-1A, Hermosa, Bataan — FY 2023, ₱29,700,000
 - Saba — Barangay Hall, Saba, Hermosa, Bataan (https://betterhermosa.org/government/barangays/saba)
+  National projects naming this barangay: 3 (https://betterhermosa.org/budget?barangay=saba)
+  - Construction/Improvement of Multi-Purpose Building (Phase II), Barangay Saba, Hermosa, Bataan — FY 2021, ₱3,000,000
+  - Construction of Multi-Purpose Building, Brgy. Saba, Hermosa, Bataan — FY 2020, ₱4,000,000
+  - Construction of Road, Brgy. Saba, Hermosa, Bataan — FY 2020, ₱3,000,000
 - Sacrifice Valley — Barangay Hall, Sacrifice Valley, Hermosa, Bataan (https://betterhermosa.org/government/barangays/sacrifice-valley)
+  National projects naming this barangay: 8 (https://betterhermosa.org/budget?barangay=sacrifice-valley)
+  - Construction of Multi-purpose Building in Brgy. Sacrifice Valley, Hermosa, Bataan — FY 2026, ₱5,000,000
+  - Construction of Multi-Purpose Hall, Barangay Sacrifice Valley, Hermosa, Bataan (14.847412, 120.382006) — FY 2026, ₱5,000,000
+  - Construction of Flood Control Structure along Colo River Sacrifice Valley Section Phase 6A, Hermosa, Bataan — FY 2025, ₱100,000,000
+  - Construction of Bridge, Purok 7 and Purok 1, Barangay Sacrifice Valley, Hermosa, Bataan  — FY 2025, ₱15,000,000
+  - Construction of Flood Control Structure along Colo River, Sacrifice Valley Section (Phase II-AA), Hermosa, Bataan — FY 2023, ₱70,000,000
 - San Pedro (Poblacion) — Barangay Hall, San Pedro, Hermosa, Bataan (https://betterhermosa.org/government/barangays/san-pedro)
+  National projects naming this barangay: 6 (https://betterhermosa.org/budget?barangay=san-pedro)
+  - Construction of Road at Barangay San Pedro, Hermosa Bataan — FY 2025, ₱15,000,000
+  - Construction of Multi - Purpose Building, Barangay San Pedro, Hermosa, Bataan — FY 2024, ₱5,000,000
+  - Replacement of Romulo Bridge, San Pedro, Hermosa, Bataan — FY 2023, ₱12,000,000
+  - Rehabilitation of Road, Barangay San Pedro, Hermosa, Bataan — FY 2023, ₱5,000,000
+  - Construction of Flood Control Structure along Hermosa River, San Pedro Section Phase RSA-II, Hermosa, Bataan — FY 2022, ₱50,000,000
 - Santo Cristo (Poblacion) — Barangay Hall, Sto. Cristo, Hermosa, Bataan (https://betterhermosa.org/government/barangays/sto-cristo)
+  National projects naming this barangay: 1 (https://betterhermosa.org/budget?barangay=sto-cristo)
+  - Construction of Multi-Purpose Building (Barangay Hall), Barangay Santo Cristo, Hermosa, Bataan (14.830328, 120.503909) — FY 2026, ₱5,000,000
 - Sumalo — Barangay Hall, Sumalo, Hermosa, Bataan (https://betterhermosa.org/government/barangays/sumalo)
+  National projects naming this barangay: 3 (https://betterhermosa.org/budget?barangay=sumalo)
+  - Construction of Multi-Purpose Building (New Covered Court) in Sitio Antonino in Barangay Sumalo, Hermosa, Bataan (14.808552, 120.480572) — FY 2026, ₱8,000,000
+  - Construction of Multi-Purpose Building, Barangay Sumalo, Hermosa, Bataan — FY 2025, ₱5,000,000
+  - Construction of Road, Barangay Sumalo, Hermosa, Bataan — FY 2023, ₱5,000,000
 - Tipo — Barangay Hall, Tipo, Hermosa, Bataan (https://betterhermosa.org/government/barangays/tipo)
+  National projects naming this barangay: 5 (https://betterhermosa.org/budget?barangay=tipo)
+  - Construction of Multi-Purpose Building (Covered Court), Pastolan Integrated School - Sitio Pastolan (School ID: 502488), Barangay Tipo, Hermosa, Bataan — FY 2026, ₱8,000,000
+  - Concreting of Road Purok 1 and Purok 4, Barangay Tipo, Hermosa, Bataan, Section 1: Sta 0+000 - Sta 0+273, Section 2 Sta 0+000 -Sta 0+220 — FY 2026, ₱4,900,000
+  - Construction of Bridge, Sitio Pastolan, Brgy. Tipo, Hermosa, Bataan — FY 2023, ₱10,000,000
+  - Construction of Road at  Brgy. Tipo, Hermosa, Bataan — FY 2023, ₱5,000,000
+  - Concreting of Tipo Road Dos Extension, Hermosa, Bataan — FY 2022, ₱5,000,000
 
 ## Services
 

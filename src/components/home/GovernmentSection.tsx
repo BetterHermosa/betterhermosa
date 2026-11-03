@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { Banner } from '@bettergov/kapwa/banner';
 import { Button } from '@bettergov/kapwa/button';
-import { Building2Icon, HomeIcon, UsersIcon } from 'lucide-react';
+import { Building2Icon, HomeIcon, LandmarkIcon, UsersIcon } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { Badge } from '@/components/ui/Badge';
@@ -54,6 +54,13 @@ const GovernmentSection: FC = () => {
       icon: <HomeIcon className='text-kapwa-text-brand h-10 w-10' />,
       link: '/government/barangays',
     },
+    {
+      id: 'national-projects',
+      title: t('government.nationalProjectsTitle'),
+      description: t('government.nationalProjectsDescription'),
+      icon: <LandmarkIcon className='text-kapwa-text-brand h-10 w-10' />,
+      link: '/budget',
+    },
   ];
 
   return (
@@ -82,7 +89,7 @@ const GovernmentSection: FC = () => {
         </div>
 
         {/* Using documented CardGrid pattern */}
-        <CardGrid columns={3}>
+        <CardGrid columns={4}>
           {branches.map(branch => (
             <Card key={branch.id} hover className='text-center'>
               <CardContent className='p-6'>

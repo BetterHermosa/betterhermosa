@@ -110,7 +110,8 @@ function llmsTxt() {
     '## Machine-readable',
     '',
     `- [Full content as one text file](${baseUrl}/llms-full.txt)`,
-    `- [All directory and service data as JSON](${baseUrl}/data/hermosa.json)`
+    `- [All directory and service data as JSON](${baseUrl}/data/hermosa.json)`,
+    `- [National-government projects in Hermosa (budget snapshot)](${baseUrl}/data/budget-hermosa.json)`
   );
 
   lines.push(

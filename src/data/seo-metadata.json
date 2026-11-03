@@ -15,6 +15,10 @@
     "title": "Accessibility Statement | {{portal.name}}",
     "description": "How {{portal.name}} works to be accessible to every resident of {{lgu.name}}, {{lgu.province}}, including people using screen readers and mobile phones."
   },
+  "/budget": {
+    "title": "National Projects in {{lgu.name}} | Budget Data | {{portal.name}}",
+    "description": "Roads, flood control and barangay buildings in {{lgu.name}}, {{lgu.province}} funded in the national budget (GAA 2020-2026), plus the FY2027 proposal and House bill."
+  },
   "/data/weather": {
     "title": "Weather in {{lgu.name}}, {{lgu.province}} Today | {{portal.name}}",
     "description": "Current weather and forecast for {{lgu.name}}, {{lgu.province}}."
