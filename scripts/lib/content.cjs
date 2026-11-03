@@ -109,6 +109,8 @@ function officials() {
   for (const c of legislative) {
     for (const o of c.officials || [])
       rows.push(`${esc(o.role)}: ${esc(o.name)}`);
+    if (c.secretary)
+      rows.push(`${esc(c.secretary.role)}: ${esc(c.secretary.name)}`);
   }
   return ul(rows);
 }
@@ -370,6 +372,7 @@ function fullMarkdown() {
   for (const c of legislative) {
     L.push('', `### ${c.chamber}`, '');
     for (const o of c.officials || []) L.push(`- ${o.role}: ${o.name}`);
+    if (c.secretary) L.push(`- ${c.secretary.role}: ${c.secretary.name}`);
   }
   L.push('', '## Offices and departments', '');
   for (const d of departments) {

@@ -25,6 +25,7 @@ import { DetailSection, PageHero } from '@/components/layout/PageLayouts';
 import { Badge } from '@/components/ui/Badge';
 import { Card, CardContent } from '@/components/ui/Card';
 
+import { config } from '@/lib/lguConfig';
 import { toTitleCase } from '@/lib/stringUtils';
 
 import executiveData from '@/data/directory/executive.json';
@@ -63,9 +64,13 @@ function ElectedLeaderCard({ leader }: { leader: ExecutiveOfficial }) {
   const isMayor =
     leader.slug.includes('mayor') && !leader.slug.includes('vice');
   const Icon = isMayor ? Landmark : Gavel;
+  const profileHref =
+    config.features.openLGU && leader.personId
+      ? `/openlgu/person/${leader.personId}`
+      : undefined;
 
   const card = (
-    <Card hover={!!leader.personId} className='group h-full'>
+    <Card hover={!!profileHref} className='group h-full'>
       <CardContent className='flex h-full flex-col items-center space-y-4 py-6 text-center'>
         <div className='relative'>
           <div
@@ -114,7 +119,7 @@ function ElectedLeaderCard({ leader }: { leader: ExecutiveOfficial }) {
           </div>
         )}
 
-        {leader.personId && (
+        {profileHref && (
           <div className='border-kapwa-border-weak w-full border-t pt-4'>
             <span className='text-kapwa-text-brand text-sm font-bold'>
               View Full Profile →
@@ -125,11 +130,8 @@ function ElectedLeaderCard({ leader }: { leader: ExecutiveOfficial }) {
     </Card>
   );
 
-  return leader.personId ? (
-    <Link
-      to={`/openlgu/person/${leader.personId}`}
-      className='group block h-full'
-    >
+  return profileHref ? (
+    <Link to={profileHref} className='group block h-full'>
       {card}
     </Link>
   ) : (
@@ -144,11 +146,16 @@ function CouncilMemberCard({
   member: CouncilMember;
   chairedCommittees: Committee[];
 }) {
+  const profileHref =
+    config.features.openLGU && member.personId
+      ? `/openlgu/person/${member.personId}`
+      : undefined;
+
   const card = (
     <Card
-      hover={!!member.personId}
+      hover={!!profileHref}
       className={`group flex h-full flex-col shadow-xs ${
-        member.personId
+        profileHref
           ? 'border-kapwa-border-weak cursor-pointer'
           : 'border-kapwa-border-weak'
       }`}
@@ -166,7 +173,7 @@ function CouncilMemberCard({
             <h4 className='text-kapwa-text-strong text-base font-bold leading-tight'>
               {toTitleCase(member.name)}
             </h4>
-            {member.personId && (
+            {profileHref && (
               <p className='text-kapwa-text-brand mt-1 text-[10px] font-medium tracking-wide uppercase'>
                 View Profile
               </p>
@@ -211,7 +218,7 @@ function CouncilMemberCard({
               href={member.website}
               target='_blank'
               rel='noreferrer'
-              onClick={e => member.personId && e.stopPropagation()}
+              onClick={e => profileHref && e.stopPropagation()}
               className='hover:border-kapwa-border-brand hover:text-kapwa-text-brand border-kapwa-border-weak bg-kapwa-bg-surface flex items-center gap-2 rounded-lg border px-3 py-1.5 shadow-sm transition-all'
             >
               <span className='text-[10px] font-bold tracking-wider uppercase'>
@@ -225,8 +232,8 @@ function CouncilMemberCard({
     </Card>
   );
 
-  return member.personId ? (
-    <Link to={`/openlgu/person/${member.personId}`} className='block group'>
+  return profileHref ? (
+    <Link to={profileHref} className='block group'>
       {card}
     </Link>
   ) : (
@@ -244,9 +251,10 @@ export default function ElectedOfficialsPage() {
     [allExecutive]
   );
 
-  const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
+  const sbData = legislativeData.find(item =>
+    item.slug.startsWith('sangguniang-bayan')
   );
+  const committeeCount = sbData?.permanent_committees?.length ?? 0;
 
   const getChairedCommittees = (memberName: string): Committee[] =>
     (sbData?.permanent_committees ?? []).filter(
@@ -323,7 +331,7 @@ export default function ElectedOfficialsPage() {
           className='shadow-sm'
         >
           {/* Chamber contact info */}
-          {(sbData.address || sbData.website) && (
+          {(sbData.address || sbData.website || sbData.secretary) && (
             <div className='mb-6'>
               <ContactContainer variant='grid' className='md:grid-cols-2'>
                 {sbData.address && (
@@ -331,6 +339,13 @@ export default function ElectedOfficialsPage() {
                     icon={MapPinIcon}
                     label='Office Location'
                     value={sbData.address}
+                  />
+                )}
+                {sbData.secretary && (
+                  <ContactItem
+                    icon={Briefcase}
+                    label={sbData.secretary.role}
+                    value={sbData.secretary.name}
                   />
                 )}
                 {websiteUrl && (
@@ -357,31 +372,47 @@ export default function ElectedOfficialsPage() {
             ))}
           </div>
 
-          {/* Link to committees */}
-          <div className='border-kapwa-border-weak mt-6 flex flex-col items-center justify-between gap-4 border-t pt-6 sm:flex-row'>
-            <div className='flex items-center gap-3'>
-              <BookOpenIcon className='text-kapwa-text-disabled h-5 w-5 shrink-0' />
-              <div>
-                <p className='text-kapwa-text-strong text-sm font-bold'>
-                  Standing Committees
-                </p>
-                <p className='text-kapwa-text-disabled text-xs'>
-                  {sbData.permanent_committees?.length ?? 0} active committees
-                  with full member listings
-                </p>
+          {/* Link to committees (only once the list is published) */}
+          {committeeCount > 0 && (
+            <div className='border-kapwa-border-weak mt-6 flex flex-col items-center justify-between gap-4 border-t pt-6 sm:flex-row'>
+              <div className='flex items-center gap-3'>
+                <BookOpenIcon className='text-kapwa-text-disabled h-5 w-5 shrink-0' />
+                <div>
+                  <p className='text-kapwa-text-strong text-sm font-bold'>
+                    Standing Committees
+                  </p>
+                  <p className='text-kapwa-text-disabled text-xs'>
+                    {committeeCount} active committees with full member listings
+                  </p>
+                </div>
               </div>
+              <Link to='/government/elected-officials/committees'>
+                <Button
+                  variant='outline'
+                  size='sm'
+                  className='text-[10px] font-bold tracking-widest uppercase'
+                  rightIcon={<ArrowRight className='h-3 w-3' />}
+                >
+                  View Committees
+                </Button>
+              </Link>
             </div>
-            <Link to='/government/elected-officials/committees'>
-              <Button
-                variant='outline'
-                size='sm'
-                className='text-[10px] font-bold tracking-widest uppercase'
-                rightIcon={<ArrowRight className='h-3 w-3' />}
+          )}
+
+          {sbData.source && (
+            <p className='text-kapwa-text-support mt-6 text-xs'>
+              Names as published by the Municipality of Hermosa on{' '}
+              <a
+                href={sbData.source.url}
+                target='_blank'
+                rel='noreferrer'
+                className='text-kapwa-text-brand font-bold'
               >
-                View Committees
-              </Button>
-            </Link>
-          </div>
+                hermosa.gov.ph
+              </a>
+              , checked {sbData.source.retrieved}.
+            </p>
+          )}
         </DetailSection>
       )}
 

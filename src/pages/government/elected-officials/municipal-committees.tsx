@@ -27,8 +27,8 @@ interface Committee {
 export default function MunicipalCommitteesPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
+  const sbData = legislativeData.find(item =>
+    item.slug.startsWith('sangguniang-bayan')
   );
 
   const committees = useMemo(
