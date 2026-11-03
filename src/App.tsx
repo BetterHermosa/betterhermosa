@@ -33,6 +33,7 @@ const Discord = lazy(() => import('@/pages/Discord'));
 
 // Data Utilities
 const WeatherPage = lazy(() => import('@/pages/data/weather'));
+const BudgetPage = lazy(() => import('@/pages/budget'));
 const ForexPage = lazy(() => import('@/pages/data/forex'));
 
 // Services Module
@@ -175,6 +176,7 @@ function AppContent() {
             <Route path='/discord' element={<Discord />} />
 
             {/* Data Utilities */}
+            <Route path='/budget' element={<BudgetPage />} />
             <Route path='/data/weather' element={<WeatherPage />} />
             <Route path='/data/forex' element={<ForexPage />} />
 

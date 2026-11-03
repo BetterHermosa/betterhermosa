@@ -116,6 +116,29 @@ Run automatically during the build process.
 
 ---
 
+### `fetch-budget.js`
+
+Snapshots national-government projects located in Hermosa from the [Philippine Budget Data API](https://budget.bettergov.ph/docs) for the `/budget` page.
+
+**Output:**
+- `public/data/budget-hermosa.json` - GAA FY2020-2026 projects plus the FY2027 NEP vs House bill rows (DPWH and farm-to-market roads). Committed to the repo.
+
+**Usage:**
+```bash
+node scripts/fetch-budget.js
+```
+
+**Automated:**
+Runs during `npm run build`, before `generate-sitemap.js`. If the API is unreachable the previous snapshot is kept and the build continues.
+
+**Caveats:**
+- The API has no municipality field, so projects are matched by the word "Hermosa" in the title (with a deny list for "Villahermosa" and other provinces' Hermosa). Projects that don't name Hermosa are missed.
+- These are national projects, not the municipality's own budget.
+- NEP and House figures are two versions of one budget: never add them. The API's disclaimers are copied into the JSON and must stay on any page showing House bill rows.
+- Refresh by re-running the script and committing the JSON; the data changes a few times a year.
+
+---
+
 ## Service Data Structure
 
 ### Category File Format

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-11-03",
   "note": "Independent community data for the Municipality of Hermosa, Bataan. Not an official source; services marked unverified are drafts.",
   "source": "https://betterhermosa.org",
   "lgu": {
@@ -870,5 +870,1642 @@
       ],
       "unverified": true
     }
-  ]
+  ],
+  "budget": {
+    "meta": {
+      "fetchedAt": "2026-11-03T08:24:25.727Z",
+      "source": "https://budget.bettergov.ph",
+      "apiBase": "https://budget.bettergov.ph/api/v1",
+      "gaaYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": {
+        "gaa": 117,
+        "dpwh": 30,
+        "fmr": 3
+      },
+      "notice": "Independent and unofficial. This comparison is our own reading of the published documents, not an official record of the budget department, the agencies or the House. Figures are the amounts published in the documents, not spending. No allegations. An insertion, deletion, or amount-change candidate describes a provisional comparison between identified sources. That classification alone does not establish irregularity or wrongdoing by any office or official and should not be represented as such. Absence from an API snapshot likewise does not establish absence from the published NEP or concealment. Read the full notice: https://budget.bettergov.ph/hgab/2027/methodology#disclaimer.",
+      "disclaimers": [
+        {
+          "id": "disclaimer-no-allegations",
+          "title": "No allegations.",
+          "body": "An insertion, deletion, or amount-change candidate describes a provisional comparison between identified sources. That classification alone does not establish irregularity or wrongdoing by any office or official and should not be represented as such. Absence from an API snapshot likewise does not establish absence from the published NEP or concealment.",
+          "url": "https://budget.bettergov.ph/hgab/2027/methodology#disclaimer-no-allegations"
+        }
+      ]
+    },
+    "gaa": [
+      {
+        "id": "18-001|improvement of road along barangay pandatung sumalo sibul hermosa and orani bataan sta 0  000  sta 3800",
+        "title": "Improvement of Road along Barangay Pandatung- Sumalo- Sibul, Hermosa and Orani, Bataan, Sta 0 + 000 -  Sta 3+800",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pandatung",
+        "type": "road",
+        "amounts": {
+          "2026": 90626000
+        }
+      },
+      {
+        "id": "18-001|improvement of road along barangay bacong hermosa bataan sta 0 000  sta 2  500",
+        "title": "Improvement of Road along Barangay Bacong, Hermosa, Bataan, Sta 0+ 000 - Sta 2 + 500",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bacong",
+        "type": "road",
+        "amounts": {
+          "2026": 61422000
+        }
+      },
+      {
+        "id": "18-001|improvement of road along barangay culis  sitio sta maria tama hermosa bataan sta 0000  sta 3250",
+        "title": "Improvement of Road along Barangay Culis - Sitio Sta. Maria -Tama, Hermosa, Bataan, Sta 0+000 - Sta 3+250",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "culis",
+        "type": "road",
+        "amounts": {
+          "2026": 54243000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building barangay judge roman cruz sr hermosa bataan 1483438001 12049258589",
+        "title": "Construction of Multi-Purpose Building, Barangay Judge Roman Cruz Sr., Hermosa, Bataan (14.83438001, 120.49258589)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "jrc-mandama",
+        "type": "building",
+        "amounts": {
+          "2026": 25000000
+        }
+      },
+      {
+        "id": "18-001|access road from hermosa economic and industrial zone connecting palihanmabigasbma sta 5  700  sta 5  802 hermosa bataan",
+        "title": "Access Road from Hermosa Economic and Industrial Zone connecting Palihan-Mabiga-SBMA, Sta. 5 + 700 - Sta. 5 + 802, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "road",
+        "amounts": {
+          "2026": 22075000
+        }
+      },
+      {
+        "id": "18-001|regionwide  nationwide  roads and bridges  feasibility studies preliminary and detailed engineering economic analysis technical studies traffic impact assessment  region iii  hermosa  morong btpi access road",
+        "title": "Regionwide / Nationwide - Roads and Bridges - Feasibility Studies/ Preliminary and Detailed Engineering/ Economic Analysis/ Technical Studies/ Traffic Impact Assessment - Region III - Hermosa - Morong (BTPI) Access Road",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": null,
+        "type": "road",
+        "amounts": {
+          "2025": 2120000,
+          "2026": 18600000
+        }
+      },
+      {
+        "id": "18-001|hermosa poblacion rd  chainage 0  chainage 408",
+        "title": "Hermosa Poblacion Rd - Chainage 0 - Chainage 408",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": null,
+        "type": "road",
+        "amounts": {
+          "2026": 9800000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building at purok 5 brgy balsik hermosa bataan",
+        "title": "Construction of Multi-Purpose Building at Purok 5, Brgy. Balsik, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "building",
+        "amounts": {
+          "2026": 8000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building covered court at sitio manduray barangay maite hermosa bataan 14836169 120418361",
+        "title": "Construction of Multi-Purpose Building (Covered Court) at Sitio Manduray, Barangay Maite, Hermosa, Bataan (14.836169, 120.418361)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "building",
+        "amounts": {
+          "2026": 8000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building covered court pastolan integrated school  sitio pastolan school id 502488 barangay tipo hermosa bataan",
+        "title": "Construction of Multi-Purpose Building (Covered Court), Pastolan Integrated School - Sitio Pastolan (School ID: 502488), Barangay Tipo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "tipo",
+        "type": "building",
+        "amounts": {
+          "2026": 8000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building new covered court in sitio antonino in barangay sumalo hermosa bataan 14808552 120480572",
+        "title": "Construction of Multi-Purpose Building (New Covered Court) in Sitio Antonino in Barangay Sumalo, Hermosa, Bataan (14.808552, 120.480572)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sumalo",
+        "type": "building",
+        "amounts": {
+          "2026": 8000000
+        }
+      },
+      {
+        "id": "18-001|concreting of road manalo street sto nio barangay palihan hermosa bataan section 1 sta 0000  sta 0107 section 2 sta 0000  sta 0151",
+        "title": "Concreting of Road, Manalo Street, Sto. Niño, Barangay Palihan, Hermosa, Bataan, Section 1: Sta. 0+000 - Sta. 0+107, Section 2: Sta. 0+000 - Sta. 0+151",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "road",
+        "amounts": {
+          "2026": 5649000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building barangay hall barangay santo cristo hermosa bataan 14830328 120503909",
+        "title": "Construction of Multi-Purpose Building (Barangay Hall), Barangay Santo Cristo, Hermosa, Bataan (14.830328, 120.503909)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sto-cristo",
+        "type": "building",
+        "amounts": {
+          "2026": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building covered court purok 5 barangay balsik hermosa bataan 14858373 120483947",
+        "title": "Construction of Multi-Purpose Building (Covered Court), Purok 5, Barangay Balsik, Hermosa, Bataan (14.858373, 120.483947)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "building",
+        "amounts": {
+          "2026": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building extension of the barangay hall barangay bacong hermosa bataan 14853139 120437405",
+        "title": "Construction of Multi-Purpose Building (Extension of the Barangay Hall) Barangay Bacong, Hermosa, Bataan (14.853139, 120.437405)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bacong",
+        "type": "building",
+        "amounts": {
+          "2026": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building in brgy sacrifice valley hermosa bataan",
+        "title": "Construction of Multi-purpose Building in Brgy. Sacrifice Valley, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "building",
+        "amounts": {
+          "2026": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building mambog child development center building mcdc barangay mambog hermosa bataan 1482298175 12048357281",
+        "title": "Construction of Multi-Purpose Building, Mambog Child Development Center Building (MCDC), Barangay Mambog, Hermosa, Bataan (14.82298175, 120.48357281)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mambog",
+        "type": "building",
+        "amounts": {
+          "2026": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose hall barangay sacrifice valley hermosa bataan 14847412 120382006",
+        "title": "Construction of Multi-Purpose Hall, Barangay Sacrifice Valley, Hermosa, Bataan (14.847412, 120.382006)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "building",
+        "amounts": {
+          "2026": 5000000
+        }
+      },
+      {
+        "id": "18-001|concreting of road barangay cataning hermosa bataan section 1 sta 0000  sta 0140 section 2 sta 0000  sta 0220",
+        "title": "Concreting of Road, Barangay Cataning, Hermosa, Bataan, Section 1: Sta 0+000 - Sta 0+140, Section 2: Sta 0+000 - Sta 0+220",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "cataning",
+        "type": "road",
+        "amounts": {
+          "2026": 4900000
+        }
+      },
+      {
+        "id": "18-001|concreting of road purok 1 and purok 4 barangay tipo hermosa bataan section 1 sta 0000  sta 0273 section 2 sta 0000 sta 0220",
+        "title": "Concreting of Road Purok 1 and Purok 4, Barangay Tipo, Hermosa, Bataan, Section 1: Sta 0+000 - Sta 0+273, Section 2 Sta 0+000 -Sta 0+220",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "tipo",
+        "type": "road",
+        "amounts": {
+          "2026": 4900000
+        }
+      },
+      {
+        "id": "18-001|construction of road at sitio sta maria pandatung hermosa bataan section 1 sta 0000  sta 0191 section 2 sta 0000  sta 0210",
+        "title": "Construction of Road at Sitio Sta. Maria, Pandatung, Hermosa, Bataan, Section 1: Sta. 0+000 - Sta. 0+191, Section 2: Sta. 0+000 - Sta. 0+210",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pandatung",
+        "type": "road",
+        "amounts": {
+          "2026": 4707000
+        }
+      },
+      {
+        "id": "18-001|construction of road barangay almacen hermosa bataan section 1 sta 0000  sta 0151 section 2 sta 0000  sta 0060",
+        "title": "Construction of Road, Barangay Almacen, Hermosa, Bataan, Section 1: Sta. 0+000 - Sta. 0+151, Section 2: Sta. 0+000 - Sta. 0+060",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "almacen",
+        "type": "road",
+        "amounts": {
+          "2026": 4707000
+        }
+      },
+      {
+        "id": "18-001|construction of road barangay pulo hermosa bataan sta 0  060  sta  333",
+        "title": "Construction of Road, Barangay Pulo, Hermosa, Bataan, Sta. 0 + 060 - Sta. + 333",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pulo",
+        "type": "road",
+        "amounts": {
+          "2026": 4707000
+        }
+      },
+      {
+        "id": "18-001|construction of road sitio riverside barangay bacong hermosa bataan sta 0000  sta 0373",
+        "title": "Construction of Road, Sitio Riverside, Barangay Bacong, Hermosa, Bataan, Sta. 0+000 - Sta. 0+373",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bacong",
+        "type": "road",
+        "amounts": {
+          "2026": 4707000
+        }
+      },
+      {
+        "id": "18-001|construction of road sitio suha barangay mabuco hermosa bataan sta 0000  sta 0308",
+        "title": "Construction of Road, Sitio Suha, Barangay Mabuco, Hermosa, Bataan, Sta. 0+000 - Sta. 0+308",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabuco",
+        "type": "road",
+        "amounts": {
+          "2026": 4707000
+        }
+      },
+      {
+        "id": "18-001|construction of mabiga  morong  subic port road to connect to hermosa ecozone clark international airport subic port and airport and bataan techno park  phase 1 hermosa bataan",
+        "title": "Construction of Mabiga - Morong - Subic Port Road to connect to Hermosa Ecozone, Clark International Airport, Subic Port and Airport and Bataan Techno Park - Phase 1, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "road",
+        "amounts": {
+          "2020": 120000000,
+          "2021": 102000000
+        }
+      },
+      {
+        "id": "18-001|construction of mabiga  morong  subic port road to connect to hermosa ecozone clark international airport subic port and airport and bataan techno park and the rest of the key tourism and investment areas of province of bataan hermosa bataan",
+        "title": "Construction of Mabiga - Morong - Subic Port Road to connect to Hermosa Ecozone, Clark International Airport, Subic Port and Airport and Bataan Techno Park and the rest of the key tourism and investment areas of Province of Bataan, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "road",
+        "amounts": {
+          "2020": 10000000,
+          "2021": 7700000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building brgy a rivera hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Brgy. A. Rivera, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "a-rivera",
+        "type": "building",
+        "amounts": {
+          "2020": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of road brgy maite hermosa bataan",
+        "title": "Construction of Road, Brgy. Maite, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "road",
+        "amounts": {
+          "2020": 10000000,
+          "2021": 7700000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building hermosa national high school annex brgy mabuco hermosa bataan",
+        "title": "Construction of Multi-Purpose Building Hermosa National High School Annex, Brgy. Mabuco, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabuco",
+        "type": "building",
+        "amounts": {
+          "2020": 7000000,
+          "2021": 5810000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building brgy sacrifice valley hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Brgy. Sacrifice Valley, Hermosa Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "building",
+        "amounts": {
+          "2020": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of road at brgy tipo hermosa bataan",
+        "title": "Construction of Road at  Brgy. Tipo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "tipo",
+        "type": "road",
+        "amounts": {
+          "2020": 5000000,
+          "2023": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building brgy saba hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Brgy. Saba, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "saba",
+        "type": "building",
+        "amounts": {
+          "2020": 4000000
+        }
+      },
+      {
+        "id": "18-001|construction of road brgy saba hermosa bataan",
+        "title": "Construction of Road, Brgy. Saba, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "saba",
+        "type": "road",
+        "amounts": {
+          "2020": 3000000
+        }
+      },
+      {
+        "id": "05-001|concreting of brgy balsik fmr brgy balsik hermosa bataan",
+        "title": "Concreting of Brgy. Balsik FMR, Brgy. Balsik, Hermosa, Bataan",
+        "department": "Department of Agriculture (DA)",
+        "barangay": "balsic",
+        "type": "farm-to-market",
+        "amounts": {
+          "2024": 15000000
+        }
+      },
+      {
+        "id": "05-001|concreting of fmr at brgy pandatun hermosa bataan",
+        "title": "Concreting of FMR at Brgy. Pandatun, Hermosa, Bataan",
+        "department": "Department of Agriculture (DA)",
+        "barangay": "pandatung",
+        "type": "farm-to-market",
+        "amounts": {
+          "2025": 15000000
+        }
+      },
+      {
+        "id": "18-001|access road from hermosa economic and industrial zone connecting palihanmabigasbma hermosa bataan",
+        "title": "Access Road from Hermosa Economic and Industrial Zone connecting Palihan-Mabiga-SBMA, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "road",
+        "amounts": {
+          "2021": 200000000,
+          "2022": 10000000,
+          "2023": 10000000,
+          "2024": 5000000,
+          "2025": 5000000
+        }
+      },
+      {
+        "id": "18-001|balsikpuloalmacen road brgy pulo hermosa bataan",
+        "title": "Balsik-Pulo-Almacen Road, Brgy. Pulo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "road",
+        "amounts": {
+          "2021": 45000000,
+          "2022": 10000000
+        }
+      },
+      {
+        "id": "18-001|concreting of maite road hermosa bataan",
+        "title": "Concreting of Maite Road, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "road",
+        "amounts": {
+          "2022": 5000000
+        }
+      },
+      {
+        "id": "18-001|concreting of road barangay mabiga hermosa bataan",
+        "title": "Concreting of Road Barangay Mabiga, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "road",
+        "amounts": {
+          "2024": 10000000
+        }
+      },
+      {
+        "id": "18-001|concreting of road from roman expressway leading to san pedro hermosa bataan",
+        "title": "Concreting of Road from Roman Expressway leading to San Pedro, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "san-pedro",
+        "type": "road",
+        "amounts": {
+          "2021": 10000000
+        }
+      },
+      {
+        "id": "18-001|concreting of road little baguio palihan hermosa bataan",
+        "title": "Concreting of Road, Little Baguio, Palihan, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "road",
+        "amounts": {
+          "2024": 5000000
+        }
+      },
+      {
+        "id": "18-001|concreting of road purok 5 balsik hermosa bataan",
+        "title": "Concreting of Road, Purok 5, Balsik, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "road",
+        "amounts": {
+          "2024": 5000000
+        }
+      },
+      {
+        "id": "18-001|concreting of tipo road dos extension hermosa bataan",
+        "title": "Concreting of Tipo Road Dos Extension, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "tipo",
+        "type": "road",
+        "amounts": {
+          "2022": 5000000
+        }
+      },
+      {
+        "id": "18-001|construciton of flood control project along colo river  maite section  phase iv  dmc hermosa bataan",
+        "title": "Construciton of Flood Control Project Along Colo River , Maite Section , Phase IV - DMC, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of barangay palihan covered court hermosa bataan",
+        "title": "Construction of Barangay Palihan Covered Court, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "building",
+        "amounts": {
+          "2024": 7500000
+        }
+      },
+      {
+        "id": "18-001|construction of bridge purok 7 and purok 1 barangay sacrifice valley hermosa bataan",
+        "title": "Construction of Bridge, Purok 7 and Purok 1, Barangay Sacrifice Valley, Hermosa, Bataan ",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "road",
+        "amounts": {
+          "2025": 15000000
+        }
+      },
+      {
+        "id": "18-001|construction of bridge sitio pastolan brgy tipo hermosa bataan",
+        "title": "Construction of Bridge, Sitio Pastolan, Brgy. Tipo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "tipo",
+        "type": "road",
+        "amounts": {
+          "2023": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of by  pass road brgy palihan hermosa bataan",
+        "title": "Construction of By - pass Road, Brgy. Palihan, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "road",
+        "amounts": {
+          "2024": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of culis multipurpose building hermosa bataan",
+        "title": "Construction of Culis Multi-Purpose Building, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "culis",
+        "type": "building",
+        "amounts": {
+          "2022": 7000000
+        }
+      },
+      {
+        "id": "18-001|construction of damaged flood control structure barangay pulo hermosa bataan",
+        "title": "Construction of Damaged Flood Control Structure Barangay Pulo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pulo",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 20000000
+        }
+      },
+      {
+        "id": "18-001|construction of drainage structure purok 1 and purok 2 balsik hermosa bataan",
+        "title": "Construction of Drainage Structure, Purok 1 and Purok 2, Balsik, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control along colo river bamban section phase iii1c hermosa bataan",
+        "title": "Construction of Flood Control along Colo River, Bamban Section Phase III-1C, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bamban",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 29600000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along almacen river cut  off channel phase iv  dmc hermosa bataan",
+        "title": "Construction of Flood Control Project along Almacen River Cut - Off Channel, Phase IV - DMC, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "almacen",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along colo river bacong section phase ivagp1 hermosa bataan",
+        "title": "Construction of Flood Control Project along Colo River, Bacong Section Phase IV-AGP1, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bacong",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 30000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along colo river maite section phase cmd1 hermosa bataan",
+        "title": "Construction of Flood Control Project along Colo River, Maite Section Phase CMD-1 Hermosa, Bataan ",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 20000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along colo river sacrifice valley section phase erdi hermosa bataan",
+        "title": "Construction of Flood Control Project along Colo River, Sacrifice Valley Section, Phase ERD-I, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 25000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along pentor  balsik river balsik section phase iv  dmc hermosa bataan",
+        "title": "Construction of Flood Control Project along Pentor - Balsik River, Balsik Section, Phase IV - DMC, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along pulo  almacen river phase iv  dmc hermosa bataan",
+        "title": "Construction of Flood Control Project along Pulo - Almacen River, Phase IV - DMC, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pulo",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along pulo  almacen river phase vii  cmd hermosa bataan",
+        "title": "Construction of Flood Control Project along Pulo - Almacen River Phase VII - CMD, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pulo",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 30000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control project along puloalmacen river phase vi1a hermosa bataan",
+        "title": "Construction of Flood Control project along Pulo-Almacen River, Phase VI-1A, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pulo",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 29700000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along barangay pulo hermosa bataan",
+        "title": "Construction of Flood Control Structure along Barangay Pulo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "pulo",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river  phase 3agp   palihan section hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River  ( Phase 3AGP ) , Palihan Section, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 50000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river  phase iii  dm   palihan section hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River  ( Phase III - DM ) , Palihan Section, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 75000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river bacong section phase 1b hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Bacong Section, Phase 1-B, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bacong",
+        "type": "flood-control",
+        "amounts": {
+          "2025": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river bamban section phase erdi hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Bamban Section, Phase ERD-I, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bamban",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 15000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river bamban section phase iii  dm hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Bamban Section, Phase III - DM, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bamban",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river maite section phase 6 hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Maite Section Phase 6, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "flood-control",
+        "amounts": {
+          "2025": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river malte section phase erdi hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Malte Section, Phase ERD-I, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 15000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river palihan section hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Palihan Section, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river sacrifice valley section phase 6a hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River Sacrifice Valley Section Phase 6A, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "flood-control",
+        "amounts": {
+          "2025": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along colo river sacrifice valley section phase iiaa hermosa bataan",
+        "title": "Construction of Flood Control Structure along Colo River, Sacrifice Valley Section (Phase II-AA), Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 70000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along hermosa river  phase iii   hermosa bataan",
+        "title": "Construction of Flood Control Structure along Hermosa River  ( Phase III ) , Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": null,
+        "type": "flood-control",
+        "amounts": {
+          "2024": 50000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along hermosa river phase iiaa hermosa bataan",
+        "title": "Construction of Flood Control Structure along Hermosa River (Phase II-AA), Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": null,
+        "type": "flood-control",
+        "amounts": {
+          "2023": 50000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along hermosa river san pedro section phase rsaii hermosa bataan",
+        "title": "Construction of Flood Control Structure along Hermosa River, San Pedro Section Phase RSA-II, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "san-pedro",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 50000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along mabiga river tributary to colo river phase iii  dm hermosa bataan",
+        "title": "Construction of Flood Control Structure along Mabiga River, Tributary to Colo River, Phase III - DM, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "flood-control",
+        "amounts": {
+          "2024": 75000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along pentor balsik river balsik section phase atr1 hermosa bataan",
+        "title": "Construction of Flood Control Structure along Pentor, Balsik River, Balsik Section Phase ATR-1, Hermosa, Bataan á",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 40000000
+        }
+      },
+      {
+        "id": "18-001|construction of flood control structure along sapang balsik tributary to almacen river phase iiaa hermosa bataan",
+        "title": "Construction of Flood Control Structure along Sapang Balsik Tributary to Almacen River (Phase II-AA), Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 50000000
+        }
+      },
+      {
+        "id": "18-001|construction of mabiga morong subic port to connect to hermosa ecozone clark international airport and bataan technopark phase 3 hermosa bataan",
+        "title": "Construction of Mabiga- Morong- Subic Port to connect to Hermosa Ecozone, Clark International Airport and Bataan Technopark- Phase 3, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "other",
+        "amounts": {
+          "2025": 30000000
+        }
+      },
+      {
+        "id": "18-001|construction of mabigamoringsubic port to connect to hermosa ecozone clark international airport subic port and airport and bataan technopark hermosa bataan phase 2",
+        "title": "Construction of Mabiga-Moring-Subic Port to Connect to Hermosa Ecozone, Clark International Airport, Subic Port and Airport and Bataan Technopark, Hermosa, Bataan (Phase 2)",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "other",
+        "amounts": {
+          "2025": 100000000
+        }
+      },
+      {
+        "id": "18-001|construction of multi  purpose building barangay balsik hermosa bataan",
+        "title": "Construction of Multi - Purpose Building, Barangay Balsik, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "building",
+        "amounts": {
+          "2024": 7500000
+        }
+      },
+      {
+        "id": "18-001|construction of multi  purpose building barangay san pedro hermosa bataan",
+        "title": "Construction of Multi - Purpose Building, Barangay San Pedro, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "san-pedro",
+        "type": "building",
+        "amounts": {
+          "2024": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multi  purpose hall sitio manduray brgy maite hermosa bataan",
+        "title": "Construction of Multi - Purpose Hall, Sitio Manduray, Brgy. Maite, Hermosa, Bataan ",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "building",
+        "amounts": {
+          "2024": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building at barangay mabuco hermosa bataan",
+        "title": "Construction of Multi-Purpose Building at Barangay Mabuco, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabuco",
+        "type": "building",
+        "amounts": {
+          "2022": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building barangay a rivera hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Barangay A. Rivera, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "a-rivera",
+        "type": "building",
+        "amounts": {
+          "2021": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building barangay sumalo hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Barangay Sumalo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sumalo",
+        "type": "building",
+        "amounts": {
+          "2025": 5000000
+        }
+      },
+      {
+        "id": "18-001|constructionrehabilitation of flood control project in colo river mabiga section phase b hermosa bataan",
+        "title": "Construction/Rehabilitation of Flood Control Project in Colo River, Mabiga Section, Phase B, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "flood-control",
+        "amounts": {
+          "2021": 94986000
+        }
+      },
+      {
+        "id": "18-001|construction of road barangay maite hermosa bataan",
+        "title": "Construction of Road, Barangay Maite, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "road",
+        "amounts": {
+          "2021": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building little baguio palihan hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Little Baguio, Palihan, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "building",
+        "amounts": {
+          "2021": 6000000
+        }
+      },
+      {
+        "id": "18-001|construction of road sitio riverside maite hermosa bataan",
+        "title": "Construction of Road, Sitio Riverside, Maite, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "road",
+        "amounts": {
+          "2021": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building brgy mabuco hermosa bataan",
+        "title": "Construction of Multi-Purpose Building, Brgy. Mabuco, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabuco",
+        "type": "building",
+        "amounts": {
+          "2021": 3000000
+        }
+      },
+      {
+        "id": "18-001|constructionimprovement of multipurpose building phase ii barangay saba hermosa bataan",
+        "title": "Construction/Improvement of Multi-Purpose Building (Phase II), Barangay Saba, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "saba",
+        "type": "building",
+        "amounts": {
+          "2021": 3000000
+        }
+      },
+      {
+        "id": "18-001|hermosasctex interchange hermosa bataan",
+        "title": "Hermosa-SCTEX Interchange, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": null,
+        "type": "other",
+        "amounts": {
+          "2022": 100000000
+        }
+      },
+      {
+        "id": "18-001|constructionrehabilitation of flood control project along colo river sta 0000  sta 036950 palihan section phase 1agp hermosa bataan",
+        "title": "Construction/Rehabilitation of Flood Control Project along Colo River, Sta. 0+000 - Sta. 0+369.50, Palihan Section Phase 1AGP, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 50000000
+        }
+      },
+      {
+        "id": "18-001|constructionrehabilitation of flood control project along colo river sta 0000  sta 036950 palihan section phase 2agp hermosa bataan",
+        "title": "Construction/Rehabilitation of Flood Control Project along Colo River, Sta. 0+000 - Sta. 0+369.50, Palihan Section Phase 2AGP, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "flood-control",
+        "amounts": {
+          "2022": 50000000
+        }
+      },
+      {
+        "id": "18-001|construction of road at barangay maete hermosa bataan",
+        "title": "Construction of Road at Barangay Maete, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "maite",
+        "type": "road",
+        "amounts": {
+          "2022": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of road at barangay sacrifice valley hermosa bataan",
+        "title": "Construction of Road at Barangay Sacrifice Valley, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sacrifice-valley",
+        "type": "road",
+        "amounts": {
+          "2022": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of road at brgy bamban hermosa bataan",
+        "title": "Construction of Road at Brgy. Bamban, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bamban",
+        "type": "road",
+        "amounts": {
+          "2022": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of palihan multipurpose building hermosa bataan",
+        "title": "Construction of Palihan Multi-Purpose Building, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "building",
+        "amounts": {
+          "2022": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of road at barangay balsik hermosa bataan",
+        "title": "Construction of Road at Barangay Balsik, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "road",
+        "amounts": {
+          "2022": 5000000
+        }
+      },
+      {
+        "id": "18-001|replacement of romulo bridge san pedro hermosa bataan",
+        "title": "Replacement of Romulo Bridge, San Pedro, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "san-pedro",
+        "type": "road",
+        "amounts": {
+          "2023": 12000000
+        }
+      },
+      {
+        "id": "18-001|construction of road sitio lambang mabiga hermosa bataan",
+        "title": "Construction of Road, Sitio Lambang Mabiga, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "road",
+        "amounts": {
+          "2023": 10000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose building in barangay balsik hermosa bataan",
+        "title": " Construction of Multi-Purpose Building in Barangay Balsik, Hermosa, Bataan ",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "building",
+        "amounts": {
+          "2023": 8000000
+        }
+      },
+      {
+        "id": "18-001|construction of multipurpose facility covered court brgy sitio sta maria culis hermosa bataan",
+        "title": "Construction of Multi-Purpose Facility (Covered Court) Brgy. Sitio Sta. Maria, Culis, Hermosa Bataan ",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "culis",
+        "type": "building",
+        "amounts": {
+          "2023": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of river wall brgy bamban hermosa bataan",
+        "title": "Construction of River Wall, Brgy. Bamban, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bamban",
+        "type": "flood-control",
+        "amounts": {
+          "2023": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of road barangay sumalo hermosa bataan",
+        "title": "Construction of Road, Barangay Sumalo, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "sumalo",
+        "type": "road",
+        "amounts": {
+          "2023": 5000000
+        }
+      },
+      {
+        "id": "18-001|rehabilitation of road barangay san pedro hermosa bataan",
+        "title": "Rehabilitation of Road, Barangay San Pedro, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "san-pedro",
+        "type": "road",
+        "amounts": {
+          "2023": 5000000
+        }
+      },
+      {
+        "id": "18-001|construction of road at hermosa government center barangay judge roman cruz sr hermosa bataan",
+        "title": "Construction of Road at Hermosa Government Center, Barangay Judge Roman Cruz Sr., Hermosa Bataan ",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "jrc-mandama",
+        "type": "road",
+        "amounts": {
+          "2024": 20000000
+        }
+      },
+      {
+        "id": "18-001|construction of school building brgy mabiga elementary school hermosa bataan",
+        "title": "Construction of School Building, Brgy. Mabiga Elementary School, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "mabiga",
+        "type": "building",
+        "amounts": {
+          "2024": 12000000
+        }
+      },
+      {
+        "id": "18-001|construction of road purok 3 barangay bamban hermosa bataan",
+        "title": "Construction of Road, Purok 3, Barangay Bamban, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "bamban",
+        "type": "road",
+        "amounts": {
+          "2024": 10000000
+        }
+      },
+      {
+        "id": "18-001|installation of road safety devices and facilities along roman expressway  s01420lz   k0101    299   k0101  701 barangay palihan hermosa bataan",
+        "title": "Installation of Road Safety Devices and Facilities along Roman Expressway  ( S01420LZ )  - K0101 +  (  - 299 )  - K0101 + 701, Barangay Palihan, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "palihan",
+        "type": "road",
+        "amounts": {
+          "2024": 6000000
+        }
+      },
+      {
+        "id": "18-001|hermosa poblacion rd  chainage 212  chainage 307",
+        "title": "Hermosa Poblacion Rd - Chainage 212 - Chainage 307",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": null,
+        "type": "road",
+        "amounts": {
+          "2024": 3567000
+        }
+      },
+      {
+        "id": "18-001|construction of road at barangay san pedro hermosa bataan",
+        "title": "Construction of Road at Barangay San Pedro, Hermosa Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "san-pedro",
+        "type": "road",
+        "amounts": {
+          "2025": 15000000
+        }
+      },
+      {
+        "id": "18-001|construction of slope protection structure upstream of balsik dam at lakaybalsik ris hermosa bataan",
+        "title": "Construction of Slope Protection Structure, Upstream of Balsik Dam, at Lakay-Balsik RIS, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "balsic",
+        "type": "flood-control",
+        "amounts": {
+          "2025": 15000000
+        }
+      },
+      {
+        "id": "18-001|construction of road barangay culis hermosa bataan",
+        "title": "Construction of Road, Barangay Culis, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "culis",
+        "type": "road",
+        "amounts": {
+          "2025": 6000000
+        }
+      },
+      {
+        "id": "18-001|rehabilitation of multipurpose building covered court in barangay culis hermosa bataan",
+        "title": "Rehabilitation of Multi-Purpose Building (Covered Court) in Barangay Culis, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "culis",
+        "type": "building",
+        "amounts": {
+          "2025": 5000000
+        }
+      },
+      {
+        "id": "18-001|rehabilitationcompletion of multipurpose building barangay hall in barangay burgossoliman hermosa bataan",
+        "title": "Rehabilitation/Completion of Multi-Purpose Building (Barangay Hall) in Barangay Burgos-Soliman, Hermosa, Bataan",
+        "department": "Department of Public Works and Highways (DPWH)",
+        "barangay": "burgos-soliman",
+        "type": "building",
+        "amounts": {
+          "2025": 3500000
+        }
+      }
+    ],
+    "hgab": {
+      "fiscalYear": 2027,
+      "datasets": [
+        {
+          "key": "dpwh",
+          "label": "DPWH infrastructure",
+          "disclaimers": [
+            {
+              "id": "disclaimer-no-allegations",
+              "title": "No allegations.",
+              "body": "An insertion, deletion, or amount-change candidate describes a provisional comparison between identified sources. That classification alone does not establish irregularity or wrongdoing by any office or official and should not be represented as such. Absence from an API snapshot likewise does not establish absence from the published NEP or concealment.",
+              "url": "https://budget.bettergov.ph/hgab/2027/methodology#disclaimer-no-allegations"
+            }
+          ],
+          "sums": {
+            "nep_php": 1190500000,
+            "hgab2_php": 1223500000,
+            "hgab3_php": 1223500000,
+            "api_php": 1190500000,
+            "rows_with_amount": {
+              "nep": 25,
+              "hgab2": 30,
+              "hgab3": 30,
+              "api": 25
+            },
+            "unconfirmed_rows": 0,
+            "not_additive_across_versions": true
+          },
+          "rows": [
+            {
+              "id": "house-reading:4059",
+              "title": "Construction of Concrete Revetment along Almacen Cut-Off Channel, Hermosa, Bataan, Sta. 0+000 -Sta.1 + 058 ( Right Side Downstream)",
+              "barangay": "almacen",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 388000000,
+              "house": 388000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4059"
+            },
+            {
+              "id": "house-reading:7736",
+              "title": "Construction of Road Barangay Almacen-Saba, Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 120000000,
+              "house": 120000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7736"
+            },
+            {
+              "id": "house-reading:4060",
+              "title": "Construction of Concrete Revetment along Almacen Cut-Off Channel, Sta. 0 + 000-Sta. 0 + 160 (Left Bank), Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 100000000,
+              "house": 100000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4060"
+            },
+            {
+              "id": "house-reading:4061",
+              "title": "Construction of Concrete Revetment along Almacen Cut-Off Channel, Sta. 0 + 161-Sta. 0 + 320 (Right Bank), Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 100000000,
+              "house": 100000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4061"
+            },
+            {
+              "id": "house-reading:4062",
+              "title": "Construction of Concrete Revetment along Almacen Cut-Off Channel, Sta. 0 + 361-Sta. 0 + 521 (Right Bank), Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 100000000,
+              "house": 100000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4062"
+            },
+            {
+              "id": "house-reading:4063",
+              "title": "Construction of Concrete Revetment, Pulo-Almacen River, Barangay Pulo, Hermosa, Bataan",
+              "barangay": "pulo",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 100000000,
+              "house": 100000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4063"
+            },
+            {
+              "id": "house-reading:4101",
+              "title": "Construction of Revetment, Downstream Portion of Almacen-Cut-Off Channel, Malimatac River, Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 90000000,
+              "house": 90000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4101"
+            },
+            {
+              "id": "house-reading:7735",
+              "title": "Construction of New Road Barangay Almacen, Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 90000000,
+              "house": 90000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7735"
+            },
+            {
+              "id": "house-reading:12200",
+              "title": "Construction of Multi-Purpose Building, Barangay Almacen, Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "building",
+              "status": "house_only_candidate",
+              "statusLabel": "House bill only",
+              "nep": null,
+              "house": 10000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12200"
+            },
+            {
+              "id": "house-reading:12223",
+              "title": "Rehabilitation of Multi-Purpose Building, Barangay Palihan, Hermosa, Bataan (14.8422, 120.4752)",
+              "barangay": "palihan",
+              "type": "building",
+              "status": "house_only_candidate",
+              "statusLabel": "House bill only",
+              "nep": null,
+              "house": 10000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12223"
+            },
+            {
+              "id": "house-reading:4006",
+              "title": "Construction of Slope Protection along eroded portion, Sitio Macera, Barangay Almacen, Hermosa, Bataan",
+              "barangay": "almacen",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 10000000,
+              "house": 10000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4006"
+            },
+            {
+              "id": "house-reading:12178",
+              "title": "Construction of Multi-Purpose Building (Covered Court and Barangay Hall), Barangay Mambog, Hermosa, Bataan",
+              "barangay": "mambog",
+              "type": "building",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 8500000,
+              "house": 8500000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12178"
+            },
+            {
+              "id": "house-reading:12179",
+              "title": "Construction of Multi-Purpose Building (Covered Court), Hermosa Heights, Barangay Culis, Hermosa, Bataan",
+              "barangay": "culis",
+              "type": "building",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 8000000,
+              "house": 8000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12179"
+            },
+            {
+              "id": "house-reading:4010",
+              "title": "Improvement of Waterways and Riverwalls, Barangay Sto. Cristo, Hermosa, Bataan",
+              "barangay": "sto-cristo",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 8000000,
+              "house": 8000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4010"
+            },
+            {
+              "id": "house-reading:7466",
+              "title": "Construction of Barangay Road including drainage, JP Rizal Street, Barangay Palihan, Hermosa, Bataan",
+              "barangay": "palihan",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 8000000,
+              "house": 8000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7466"
+            },
+            {
+              "id": "house-reading:12182",
+              "title": "Construction of Multi-Purpose Building (Barangay Hall), Barangay Bamban, Hermosa, Bataan",
+              "barangay": "bamban",
+              "type": "building",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12182"
+            },
+            {
+              "id": "house-reading:12187",
+              "title": "Construction of Multi-Purpose Building, Barangay Saba, Hermosa, Bataan, 14.85607828, 120.51675173",
+              "barangay": "saba",
+              "type": "building",
+              "status": "house_only_candidate",
+              "statusLabel": "House bill only",
+              "nep": null,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12187"
+            },
+            {
+              "id": "house-reading:12188",
+              "title": "Construction of Multi-Purpose Building, Barangay Sacrifice Valley, Hermosa, Bataan",
+              "barangay": "sacrifice-valley",
+              "type": "building",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12188"
+            },
+            {
+              "id": "house-reading:12222",
+              "title": "Rehabilitation of Multi-Purpose Building, Barangay Judge Roman Cruz Sr., Hermosa, Bataan (14.8343, 120.4883)",
+              "barangay": "jrc-mandama",
+              "type": "building",
+              "status": "house_only_candidate",
+              "statusLabel": "House bill only",
+              "nep": null,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12222"
+            },
+            {
+              "id": "house-reading:4004",
+              "title": "Construction of Drainage Canal, Purok 2 and Purok 3, Barangay Balsik, Hermosa, Bataan",
+              "barangay": "balsic",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4004"
+            },
+            {
+              "id": "house-reading:4007",
+              "title": "Construction of Waterways including Floodgate, Barangay Daungan, Hermosa, Bataan",
+              "barangay": "daungan",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4007"
+            },
+            {
+              "id": "house-reading:4012",
+              "title": "Improvement/Rehabilitation of Existing Riverbank Protection, Barangay San Pedro, Hermosa, Bataan",
+              "barangay": "san-pedro",
+              "type": "flood-control",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A4012"
+            },
+            {
+              "id": "house-reading:5101",
+              "title": "Construction of Water System, Barangay Sumalo, Hermosa, Bataan",
+              "barangay": "sumalo",
+              "type": "other",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A5101"
+            },
+            {
+              "id": "house-reading:7454",
+              "title": "Concreting of Road Barangay A. Rivera, Hermosa, Bataan",
+              "barangay": "a-rivera",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7454"
+            },
+            {
+              "id": "house-reading:7455",
+              "title": "Concreting of Road at Purok 05 Barangay Cataning, Hermosa, Bataan",
+              "barangay": "cataning",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7455"
+            },
+            {
+              "id": "house-reading:7456",
+              "title": "Concreting of Road at Sitio Apalang, Barangay Apalang, Barangay Maite, Hermosa, Bataan",
+              "barangay": "maite",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7456"
+            },
+            {
+              "id": "house-reading:7459",
+              "title": "Concreting of Road, Sitio Upland, Purok 2 and Providence Estate, Barangay JRC Mandama, Hermosa, Bataan",
+              "barangay": "jrc-mandama",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7459"
+            },
+            {
+              "id": "house-reading:7463",
+              "title": "Construction of Road Cataning-Pulo, Barangay Pulo, Hermosa, Bataan",
+              "barangay": "cataning",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7463"
+            },
+            {
+              "id": "house-reading:7465",
+              "title": "Construction of Road including Box Culvert, Purok 1, Barangay Tipo, Hermosa, Bataan",
+              "barangay": "tipo",
+              "type": "road",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 5000000,
+              "house": 5000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A7465"
+            },
+            {
+              "id": "house-reading:12173",
+              "title": "Construction (Completion) of Multi-Purpose Building, Sitio Suha, Barangay Mabuco, Hermosa, Bataan, 14.821293, 120.514296",
+              "barangay": "mabuco",
+              "type": "building",
+              "status": "house_only_candidate",
+              "statusLabel": "House bill only",
+              "nep": null,
+              "house": 3000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/dpwh/p/house-reading%3A12173"
+            }
+          ]
+        },
+        {
+          "key": "fmr",
+          "label": "DA farm-to-market roads",
+          "disclaimers": [
+            {
+              "id": "disclaimer-no-allegations",
+              "title": "No allegations.",
+              "body": "An insertion, deletion, or amount-change candidate describes a provisional comparison between identified sources. That classification alone does not establish irregularity or wrongdoing by any office or official and should not be represented as such. Absence from an API snapshot likewise does not establish absence from the published NEP or concealment.",
+              "url": "https://budget.bettergov.ph/hgab/2027/methodology#disclaimer-no-allegations"
+            }
+          ],
+          "sums": {
+            "nep_php": 45000000,
+            "hgab2_php": 55000000,
+            "hgab3_php": 55000000,
+            "api_php": null,
+            "rows_with_amount": {
+              "nep": 3,
+              "hgab2": 4,
+              "hgab3": 4,
+              "api": 0
+            },
+            "unconfirmed_rows": 0,
+            "not_additive_across_versions": true
+          },
+          "rows": [
+            {
+              "id": "pair:nep_fmr:p13:r12:ib:p680:r13",
+              "title": "Construction of Sitio Victory Brgy. Maite FMR, Brgy. Maite, Hermosa, Bataan",
+              "barangay": "maite",
+              "type": "farm-to-market",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 15000000,
+              "house": 15000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/fmr/p/pair%3Anep_fmr%3Ap13%3Ar12%3Aib%3Ap680%3Ar13"
+            },
+            {
+              "id": "pair:nep_fmr:p13:r13:ib:p680:r14",
+              "title": "Construction of Purok 3 Brgy. Balsik to Brgy. Pulo FMR, Brgy. Balsik, Hermosa, Bataan",
+              "barangay": "balsic",
+              "type": "farm-to-market",
+              "status": "amount_same",
+              "statusLabel": "Same amount in both",
+              "nep": 15000000,
+              "house": 15000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/fmr/p/pair%3Anep_fmr%3Ap13%3Ar13%3Aib%3Ap680%3Ar14"
+            },
+            {
+              "id": "house_only:ib:p689:r15",
+              "title": "Concreting of Brgy. Balsik going to Iron Farm FMR, Brgy. Balsik, Hermosa, Bataan",
+              "barangay": "balsic",
+              "type": "farm-to-market",
+              "status": "house_only_candidate",
+              "statusLabel": "House bill only",
+              "nep": null,
+              "house": 10000000,
+              "url": "https://budget.bettergov.ph/hgab/2027/fmr/p/house_only%3Aib%3Ap689%3Ar15"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
