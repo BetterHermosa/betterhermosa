@@ -16,6 +16,25 @@
         "type": ["string", "null"],
         "format": "uri"
       },
+      "secretary": {
+        "type": "object",
+        "required": ["name", "role"],
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" }
+        }
+      },
+      "source": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "also": {
+            "type": "array",
+            "items": { "type": "string", "format": "uri" }
+          },
+          "retrieved": { "type": "string" }
+        }
+      },
       "officials": {
         "type": "array",
         "items": {

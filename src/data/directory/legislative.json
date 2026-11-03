@@ -75,6 +75,18 @@
         "website": null
       }
     ],
-    "permanent_committees": []
+    "permanent_committees": [],
+    "secretary": {
+      "name": "Atty. Joseph Mario S. Sabado",
+      "role": "Secretary of the Sangguniang Bayan"
+    },
+    "source": {
+      "url": "https://www.hermosa.gov.ph/government/elected-officials/",
+      "also": [
+        "https://www.hermosa.gov.ph/wp-content/uploads/2026/03/VICE-MAYORS-OFFICE-SANGGUNIANG-BAYAN-STAFF.pdf",
+        "https://www.hermosa.gov.ph/wp-content/uploads/2026/03/VICE-MAYORS-OFFICE-LEGISLATIVE.pdf"
+      ],
+      "retrieved": "2026-11-03"
+    }
   }
 ]
