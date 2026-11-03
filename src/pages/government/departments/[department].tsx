@@ -191,7 +191,12 @@ export default function DepartmentDetail() {
                     {dept.department_head.name}
                   </h3>
                   <Badge variant='secondary' className='mt-1'>
-                    Department Head
+                    {[
+                      dept.department_head.status,
+                      dept.department_head.title ?? 'Department Head',
+                    ]
+                      .filter(Boolean)
+                      .join(' ')}
                   </Badge>
                   {dept.department_head.email && (
                     <a

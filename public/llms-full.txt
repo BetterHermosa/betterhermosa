@@ -39,6 +39,7 @@ Phone: (047) 300-6750
 URL: https://betterhermosa.org/government/departments/office-of-the-municipal-administrator
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Rex R. Jorge (Municipal Administrator)
 
 ### Business Permit and Licensing Office (bplo)
 URL: https://betterhermosa.org/government/departments/business-permit-and-licensing-office
@@ -49,41 +50,49 @@ Phone: (047) 300-6750
 URL: https://betterhermosa.org/government/departments/municipal-treasurers-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Rhodora L. Manalansan (Municipal Treasurer)
 
 ### Municipal Assessor's Office
 URL: https://betterhermosa.org/government/departments/municipal-assessors-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Serafin D. Bunsoy Jr. (Municipal Assessor)
 
 ### Municipal Accountant's Office
 URL: https://betterhermosa.org/government/departments/municipal-accountants-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Jenny Lyn B. Sarmiento (Municipal Accountant)
 
 ### Municipal Budget Office
 URL: https://betterhermosa.org/government/departments/municipal-budget-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Normita P. Tria (Municipal Budget Officer)
 
 ### Municipal Civil Registrar's Office
 URL: https://betterhermosa.org/government/departments/municipal-civil-registrars-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Marilyn B. Veluz (Municipal Civil Registrar)
 
 ### Municipal Engineer's Office
 URL: https://betterhermosa.org/government/departments/municipal-engineers-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Engr. Jaime G. Escudero (OIC Municipal Engineer)
 
 ### Municipal Planning and Development Office (mpdo)
 URL: https://betterhermosa.org/government/departments/municipal-planning-and-development-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Engr. Jan Eigbert R. Salenga, ENP (Municipal Planning and Development Coordinator)
 
 ### Municipal Social Welfare and Development Office (mswd)
 URL: https://betterhermosa.org/government/departments/municipal-social-welfare-and-development-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Chasmalin G. Francisco (Municipal Social Welfare and Development Officer)
 
 ### Person with Disability Affairs Office (pdao)
 URL: https://betterhermosa.org/government/departments/person-with-disability-affairs-office
@@ -94,21 +103,25 @@ Phone: (047) 300-6750
 URL: https://betterhermosa.org/government/departments/municipal-health-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Warren S. Valencia, RMT, MD (OIC Municipal Health Officer)
 
 ### Municipal Agriculturist's Office
 URL: https://betterhermosa.org/government/departments/municipal-agriculturists-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Vincent P. Mangulabnan (Municipal Agriculturist)
 
 ### Municipal Disaster Risk Reduction and Management Office (mdrrmo)
 URL: https://betterhermosa.org/government/departments/municipal-disaster-risk-reduction-and-management-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Glenly O. Monje (Municipal Disaster Risk Reduction and Management Officer)
 
 ### Municipal Environment and Natural Resources Office (menro)
 URL: https://betterhermosa.org/government/departments/municipal-environment-and-natural-resources-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Jesus V. De Luna (Municipal Environment and Natural Resources Officer)
 
 ### Municipal Tourism Office
 URL: https://betterhermosa.org/government/departments/municipal-tourism-office
@@ -129,11 +142,13 @@ Phone: (047) 300-6750
 URL: https://betterhermosa.org/government/departments/general-services-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Kelvin John R. Santos (OIC Municipal General Services Officer)
 
 ### Human Resource Management Office (hrmo)
 URL: https://betterhermosa.org/government/departments/human-resource-management-office
 Address: Municipal Hall, Brgy. Burgos-Soliman, Hermosa, Bataan
 Phone: (047) 300-6750
+Head: Rona S. Jaring (Acting Human Resource Management Officer)
 
 ### Municipal Legal Office
 URL: https://betterhermosa.org/government/departments/municipal-legal-office

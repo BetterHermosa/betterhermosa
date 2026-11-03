@@ -37,12 +37,24 @@
         "format": "email",
         "description": "Official office email address"
       },
+      "head_source": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "checked": { "type": "string" }
+        }
+      },
       "department_head": {
         "oneOf": [
           {
             "type": "object",
             "properties": {
               "name": { "type": ["string", "null"] },
+              "title": { "type": ["string", "null"] },
+              "status": {
+                "type": ["string", "null"],
+                "description": "OIC or Acting, as printed on the organizational chart"
+              },
               "contact": { "type": ["string", "null"] },
               "email": {
                 "type": ["string", "null"],

@@ -5,7 +5,15 @@
     "address": "Barangay Hall, A. Rivera, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Doreta N. Ocampo"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/A.Rivera.pdf"
   },
   {
     "slug": "almacen",
@@ -13,7 +21,15 @@
     "address": "Barangay Hall, Almacen, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Herman A. Layug"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Almacen.pdf"
   },
   {
     "slug": "bacong",
@@ -21,7 +37,15 @@
     "address": "Barangay Hall, Bacong, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Enrique N. Diwa"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Bacong.pdf"
   },
   {
     "slug": "balsic",
@@ -29,7 +53,15 @@
     "address": "Barangay Hall, Balsic, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Jerry P. Asuncion"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Balsic.pdf"
   },
   {
     "slug": "bamban",
@@ -37,7 +69,15 @@
     "address": "Barangay Hall, Bamban, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Medardo D. Miranda"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Bamban.pdf"
   },
   {
     "slug": "burgos-soliman",
@@ -45,7 +85,15 @@
     "address": "Barangay Hall, Burgos-Soliman, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Manuel L. Mendoza"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Burgos-Soliman.pdf"
   },
   {
     "slug": "cataning",
@@ -53,7 +101,15 @@
     "address": "Barangay Hall, Cataning, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Julieta P. Basi"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Cataning.pdf"
   },
   {
     "slug": "culis",
@@ -61,7 +117,15 @@
     "address": "Barangay Hall, Culis, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Federic F. Bernal"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Culis.pdf"
   },
   {
     "slug": "daungan",
@@ -69,7 +133,15 @@
     "address": "Barangay Hall, Daungan, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Edgar B. Rivera"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Daungan.pdf"
   },
   {
     "slug": "jrc-mandama",
@@ -77,7 +149,15 @@
     "address": "Barangay Hall, JRC Mandama, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Romel M. Bondoc"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/JRC-Mandama.pdf"
   },
   {
     "slug": "mabiga",
@@ -85,7 +165,15 @@
     "address": "Barangay Hall, Mabiga, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Roberto L. Rosel"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Mabiga.pdf"
   },
   {
     "slug": "mabuco",
@@ -93,7 +181,15 @@
     "address": "Barangay Hall, Mabuco, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Florencio P. Ambrocio"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Mabuco.pdf"
   },
   {
     "slug": "maite",
@@ -101,7 +197,15 @@
     "address": "Barangay Hall, Maite, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Marcelino M. Micua"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Maite.pdf"
   },
   {
     "slug": "mambog",
@@ -109,7 +213,15 @@
     "address": "Barangay Hall, Mambog, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Lorena F. Viray"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Mambog.pdf"
   },
   {
     "slug": "palihan",
@@ -117,7 +229,15 @@
     "address": "Barangay Hall, Palihan, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Lamberto E. Suelto"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Palihan.pdf"
   },
   {
     "slug": "pandatung",
@@ -125,7 +245,15 @@
     "address": "Barangay Hall, Pandatung, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Gregorio M. Landicho"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Pandatung.pdf"
   },
   {
     "slug": "pulo",
@@ -133,7 +261,15 @@
     "address": "Barangay Hall, Pulo, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Renie N. Santos"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Pulo.pdf"
   },
   {
     "slug": "saba",
@@ -141,7 +277,15 @@
     "address": "Barangay Hall, Saba, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Jesus F. Reyes"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Saba.pdf"
   },
   {
     "slug": "sacrifice-valley",
@@ -149,7 +293,15 @@
     "address": "Barangay Hall, Sacrifice Valley, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Alfonso M. Cortez"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Sacrifice-Valley.pdf"
   },
   {
     "slug": "san-pedro",
@@ -157,7 +309,15 @@
     "address": "Barangay Hall, San Pedro, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Carlos J. Waje Jr."
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/San-Pedro.pdf"
   },
   {
     "slug": "sto-cristo",
@@ -165,7 +325,15 @@
     "address": "Barangay Hall, Sto. Cristo, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Leonardo J. Cruz Jr."
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Sto.-Cristo.pdf"
   },
   {
     "slug": "sumalo",
@@ -173,7 +341,15 @@
     "address": "Barangay Hall, Sumalo, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Rolando T. Martinez"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Sumalo.pdf"
   },
   {
     "slug": "tipo",
@@ -181,6 +357,14 @@
     "address": "Barangay Hall, Tipo, Hermosa, Bataan",
     "trunkline": [],
     "website": null,
-    "officials": []
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Judy T. Ramon"
+      }
+    ],
+    "officials_source": "https://www.hermosa.gov.ph/about-2/directory/",
+    "officials_checked": "2026-11-03",
+    "map_pdf": "https://www.hermosa.gov.ph/wp-content/uploads/2021/03/Tipo.pdf"
   }
 ]

@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import {
   Briefcase,
+  ExternalLink,
   GraduationCapIcon,
   MapPinIcon,
   UsersIcon,
@@ -121,30 +122,48 @@ export default function BarangayDetail() {
               Chief Executive
             </p>
             <PunongBarangayCard official={punongBarangay} />
+            {barangay.officials_source && (
+              <p className='text-kapwa-text-support pl-1 text-xs'>
+                As listed in the{' '}
+                <a
+                  href={barangay.officials_source}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='text-kapwa-text-brand font-bold'
+                >
+                  Municipality&rsquo;s directory
+                </a>
+                , checked {barangay.officials_checked}. Barangay and Sangguniang
+                Kabataan elections were scheduled for 2 November 2026, so this
+                may change.
+              </p>
+            )}
           </div>
         )}
 
         {/* Sangguniang Barangay */}
-        <div
-          className='space-y-2'
-          role='group'
-          aria-label='Sangguniang Barangay'
-        >
-          <p className='sr-only'>Sangguniang Barangay</p>
-          <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
-            Sangguniang Barangay
-          </p>
-          <div className='grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
-            {kagawads?.map(kagawad => (
-              <OfficialCard
-                key={kagawad.name}
-                official={kagawad}
-                role='Barangay Kagawad'
-                icon={UsersIcon}
-              />
-            ))}
+        {kagawads && kagawads.length > 0 && (
+          <div
+            className='space-y-2'
+            role='group'
+            aria-label='Sangguniang Barangay'
+          >
+            <p className='sr-only'>Sangguniang Barangay</p>
+            <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
+              Sangguniang Barangay
+            </p>
+            <div className='grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
+              {kagawads?.map(kagawad => (
+                <OfficialCard
+                  key={kagawad.name}
+                  official={kagawad}
+                  role='Barangay Kagawad'
+                  icon={UsersIcon}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Sangguniang Kabataan */}
         {skOfficials && skOfficials.length > 0 && (
@@ -171,33 +190,34 @@ export default function BarangayDetail() {
         )}
 
         {/* Barangay Administration */}
-        <div
-          className='space-y-2'
-          role='group'
-          aria-label='Barangay Administration'
-        >
-          <p className='sr-only'>Barangay Administration</p>
-          <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
-            Barangay Administration
-          </p>
-          <div className='grid grid-cols-1 gap-3 md:grid-cols-2'>
-            {secretary && (
-              <OfficialCard
-                official={secretary}
-                role='Barangay Secretary'
-                icon={Briefcase}
-              />
-            )}
-            {treasurer && (
-              <OfficialCard
-                official={treasurer}
-                role='Barangay Treasurer'
-                icon={Briefcase}
-              />
-            )}
+        {(secretary || treasurer) && (
+          <div
+            className='space-y-2'
+            role='group'
+            aria-label='Barangay Administration'
+          >
+            <p className='sr-only'>Barangay Administration</p>
+            <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
+              Barangay Administration
+            </p>
+            <div className='grid grid-cols-1 gap-3 md:grid-cols-2'>
+              {secretary && (
+                <OfficialCard
+                  official={secretary}
+                  role='Barangay Secretary'
+                  icon={Briefcase}
+                />
+              )}
+              {treasurer && (
+                <OfficialCard
+                  official={treasurer}
+                  role='Barangay Treasurer'
+                  icon={Briefcase}
+                />
+              )}
+            </div>
           </div>
-        </div>
-
+        )}
         <section aria-labelledby='location-heading' className='space-y-3 pt-2'>
           <div className='border-kapwa-border-weak flex items-center gap-2 border-b pb-3'>
             <MapPinIcon
@@ -216,6 +236,17 @@ export default function BarangayDetail() {
             hrefFor={s => `/government/barangays/${s}`}
             className='max-w-md'
           />
+          {barangay.map_pdf && (
+            <a
+              href={barangay.map_pdf}
+              target='_blank'
+              rel='noreferrer'
+              className='text-kapwa-text-brand inline-flex min-h-11 items-center gap-2 text-sm font-bold'
+            >
+              Official barangay map (PDF) from the Municipality
+              <ExternalLink aria-hidden='true' className='h-3 w-3' />
+            </a>
+          )}
         </section>
 
         <BarangayProjects
