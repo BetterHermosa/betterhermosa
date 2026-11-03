@@ -1,6 +1,11 @@
 import { useParams } from 'react-router-dom';
 
-import { Briefcase, GraduationCapIcon, UsersIcon } from 'lucide-react';
+import {
+  Briefcase,
+  GraduationCapIcon,
+  MapPinIcon,
+  UsersIcon,
+} from 'lucide-react';
 
 import { BarangayHeader } from '@/components/government/BarangayHeader';
 import {
@@ -17,6 +22,7 @@ import {
   BreadcrumbSeparator,
 } from '@/components/navigation/Breadcrumb';
 
+import { BarangayMap } from '@/components/government/BarangayMap';
 import { BarangayProjects } from '@/components/government/BarangayProjects';
 import { SEO } from '@/components/layout/SEO';
 
@@ -191,6 +197,26 @@ export default function BarangayDetail() {
             )}
           </div>
         </div>
+
+        <section aria-labelledby='location-heading' className='space-y-3 pt-2'>
+          <div className='border-kapwa-border-weak flex items-center gap-2 border-b pb-3'>
+            <MapPinIcon
+              aria-hidden='true'
+              className='text-kapwa-text-disabled h-4 w-4'
+            />
+            <h2
+              id='location-heading'
+              className='kapwa-heading-md text-kapwa-text-strong'
+            >
+              Location in Hermosa
+            </h2>
+          </div>
+          <BarangayMap
+            selected={barangay.slug}
+            hrefFor={s => `/government/barangays/${s}`}
+            className='max-w-md'
+          />
+        </section>
 
         <BarangayProjects
           slug={barangay.slug}

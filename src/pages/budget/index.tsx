@@ -4,6 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 
 import { AlertCircle, ExternalLink, FileText, Wallet } from 'lucide-react';
 
+import { BarangayMap } from '@/components/government/BarangayMap';
 import { SEO } from '@/components/layout/SEO';
 import { ModuleHeader } from '@/components/layout/PageLayouts';
 import { Badge } from '@/components/ui/Badge';
@@ -74,16 +75,32 @@ export default function BudgetPage() {
   const filterKey = params.toString();
   useEffect(() => setPage(1), [filterKey]);
 
-  const filtered = useMemo(() => {
+  // Everything except the barangay filter, so the map can still shade the
+  // other barangays while one is selected.
+  const yearMatches = useMemo(() => {
     if (!data) return [];
     const q = query.trim().toLowerCase();
     return data.gaa
       .filter(p => (p.amounts[year] || 0) > 0)
-      .filter(p => !barangay || p.barangay === barangay)
       .filter(p => !type || p.type === type)
-      .filter(p => !q || p.title.toLowerCase().includes(q))
-      .sort((a, b) => (b.amounts[year] || 0) - (a.amounts[year] || 0));
-  }, [data, year, barangay, type, query]);
+      .filter(p => !q || p.title.toLowerCase().includes(q));
+  }, [data, year, type, query]);
+
+  const counts = useMemo(() => {
+    const out: Record<string, number> = {};
+    for (const p of yearMatches) {
+      if (p.barangay) out[p.barangay] = (out[p.barangay] || 0) + 1;
+    }
+    return out;
+  }, [yearMatches]);
+
+  const filtered = useMemo(
+    () =>
+      yearMatches
+        .filter(p => !barangay || p.barangay === barangay)
+        .sort((a, b) => (b.amounts[year] || 0) - (a.amounts[year] || 0)),
+    [yearMatches, barangay, year]
+  );
 
   const yearTotal = filtered.reduce(
     (sum, p) => sum + (p.amounts[year] || 0),
@@ -187,6 +204,24 @@ export default function BudgetPage() {
               ))}
             </select>
           </div>
+
+          <section className='space-y-3'>
+            <h2 className='text-kapwa-text-strong text-xl font-black'>
+              Map by barangay, FY {year}
+            </h2>
+            <p className='text-kapwa-text-support text-sm'>
+              Shaded by the number of projects naming each barangay. Choose a
+              barangay to filter the list; choose it again to clear.
+            </p>
+            <BarangayMap
+              counts={counts}
+              selected={barangay || null}
+              onSelect={slug =>
+                setFilter('barangay', slug === barangay ? '' : slug)
+              }
+              className='max-w-2xl'
+            />
+          </section>
 
           <CardGrid columns={4}>
             <StatCard

@@ -153,6 +153,20 @@ python scripts/extract_blgf.py <folder-with-the-three-xlsx-files>
 
 ---
 
+### `extract_boundaries.py`
+
+Extracts Hermosa's 23 barangay boundaries from the Philippine Barangay Boundaries release into `src/data/geo/hermosa-barangays.json` for the barangay map.
+
+**Usage:**
+```bash
+python scripts/extract_boundaries.py            # downloads the ~8 MB release zip
+python scripts/extract_boundaries.py bundle.zip # or use a local copy
+```
+
+**Not automated:** the boundaries change rarely. See [docs/barangay-map.md](../docs/barangay-map.md).
+
+---
+
 ## Service Data Structure
 
 ### Category File Format

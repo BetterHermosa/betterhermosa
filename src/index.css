@@ -103,3 +103,47 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Barangay map (Leaflet): shapes use the site's theme colours. */
+.barangay-map .barangay-shape {
+  fill: var(--color-kapwa-bg-brand-default);
+  stroke: var(--color-kapwa-brand-700, var(--color-kapwa-bg-brand-default));
+  stroke-linejoin: round;
+}
+.barangay-map .barangay-shape.lvl-plain {
+  fill-opacity: 0.18;
+}
+.barangay-map .barangay-shape.lvl-0 {
+  fill-opacity: 0.05;
+}
+.barangay-map .barangay-shape.lvl-1 {
+  fill-opacity: 0.25;
+}
+.barangay-map .barangay-shape.lvl-2 {
+  fill-opacity: 0.4;
+}
+.barangay-map .barangay-shape.lvl-3 {
+  fill-opacity: 0.6;
+}
+.barangay-map .barangay-shape.lvl-4 {
+  fill-opacity: 0.8;
+}
+.barangay-map .barangay-shape.is-selected {
+  fill-opacity: 0.7;
+  stroke: var(--color-kapwa-brand-900, var(--color-kapwa-bg-brand-default));
+}
+.barangay-map .barangay-shape.is-interactive {
+  cursor: pointer;
+}
+.barangay-map .barangay-shape.is-interactive:hover,
+.barangay-map .barangay-shape.is-interactive:focus-visible {
+  fill-opacity: 0.55;
+  outline: none;
+}
+/* Touch-sized zoom buttons */
+.barangay-map .leaflet-bar a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 20px;
+}
