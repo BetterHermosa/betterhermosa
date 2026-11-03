@@ -25,6 +25,7 @@ export const mainNavigation: NavigationItem[] = [
       { label: 'Departments', href: '/government/departments' },
       { label: 'Barangays', href: '/government/barangays' },
       { label: 'National Projects', href: '/budget' },
+      { label: 'Local Finances', href: '/finances' },
     ],
   },
   {
@@ -106,6 +107,7 @@ export const footerNavigation = {
         { label: 'Departments', href: '/government/departments' },
         { label: 'Barangay Directory', href: '/government/barangays' },
         { label: 'National Projects', href: '/budget' },
+        { label: 'Local Finances', href: '/finances' },
         { label: 'OpenLGU Portal', href: '/openlgu' },
         { label: 'Transparency', href: '/transparency/financial' },
       ],

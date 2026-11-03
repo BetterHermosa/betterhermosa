@@ -111,7 +111,8 @@ function llmsTxt() {
     '',
     `- [Full content as one text file](${baseUrl}/llms-full.txt)`,
     `- [All directory and service data as JSON](${baseUrl}/data/hermosa.json)`,
-    `- [National-government projects in Hermosa (budget snapshot)](${baseUrl}/data/budget-hermosa.json)`
+    `- [National-government projects in Hermosa (budget snapshot)](${baseUrl}/data/budget-hermosa.json)`,
+    `- [Hermosa's own finances (BLGF fiscal data)](${baseUrl}/finances)`
   );
 
   lines.push(

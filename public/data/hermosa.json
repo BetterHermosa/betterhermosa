@@ -873,7 +873,7 @@
   ],
   "budget": {
     "meta": {
-      "fetchedAt": "2026-11-03T08:24:25.727Z",
+      "fetchedAt": "2026-11-03T09:14:30.657Z",
       "source": "https://budget.bettergov.ph",
       "apiBase": "https://budget.bettergov.ph/api/v1",
       "gaaYears": [
@@ -2506,6 +2506,102 @@
           ]
         }
       ]
+    }
+  },
+  "finances": {
+    "meta": {
+      "lgu": "Hermosa",
+      "province": "Bataan",
+      "fiscalYear": 2024,
+      "status": "Preliminary",
+      "currency": "PHP",
+      "scale": "pesos",
+      "publisher": "Bureau of Local Government Finance (BLGF), Department of Finance",
+      "attribution": "Source: Bureau of Local Government Finance (BLGF). Figures are based on the Statement of Receipts and Expenditures reports submitted by local governments and are preliminary.",
+      "extractedBySource": "March 17, 2025",
+      "extractedOn": "2026-11-03",
+      "page": "https://blgf.gov.ph/lgu-fiscal-data/",
+      "sources": [
+        {
+          "key": "ari",
+          "file": "By-LGU-ARI-and-Dependencies-2024.xlsx",
+          "url": "https://blgf.gov.ph/wp-content/uploads/2025/06/By-LGU-ARI-and-Dependencies-2024.xlsx"
+        },
+        {
+          "key": "sre",
+          "file": "By-LGU-SRE-2024.xlsx",
+          "url": "https://blgf.gov.ph/wp-content/uploads/2025/08/By-LGU-SRE-2024.xlsx"
+        },
+        {
+          "key": "ldrrmf",
+          "file": "FY2024-LDRRMF-by-LGU.xlsx",
+          "url": "https://blgf.gov.ph/wp-content/uploads/2025/06/FY2024-LDRRMF-by-LGU.xlsx"
+        }
+      ]
+    },
+    "ari": {
+      "tax": {
+        "realPropertyTax": 20298181.23,
+        "businessTax": 30429081.6,
+        "otherTaxes": 2859373,
+        "total": 53586635.83
+      },
+      "nonTax": {
+        "regulatoryFees": 20624069.18,
+        "serviceCharges": 3361080.74,
+        "economicEnterprises": 17457832.41,
+        "total": 41442982.33
+      },
+      "locallySourcedRevenue": 95029618.16,
+      "interestIncome": 65360.84,
+      "nationalTaxAllotment": 266876382,
+      "otherShares": {
+        "economicZone": 78340352.55,
+        "evat": 0,
+        "nationalWealth": 545384.86,
+        "pagcorPcsoLotto": 133249.33,
+        "tobaccoExciseTax": 0,
+        "others": 0,
+        "total": 79018986.74
+      },
+      "total": 440990347.74,
+      "dependency": {
+        "locallySourced": 0.215491,
+        "nationalTaxAllotment": 0.605175,
+        "otherShares": 0.179185
+      }
+    },
+    "sre": {
+      "income": {
+        "localSources": 120527873.06,
+        "nationalTaxAllotment": 266876382,
+        "externalSources": 345895368.74,
+        "total": 466423241.8
+      },
+      "operatingExpenditures": {
+        "generalPublicServices": 210500398.97,
+        "education": 22659529.83,
+        "health": 29254372.86,
+        "laborAndEmployment": 2787214.49,
+        "housing": 0,
+        "socialWelfare": 20571123.25,
+        "socialServicesTotal": 75272240.43,
+        "economicServices": 49617059.8,
+        "debtServiceInterest": 7591467.48,
+        "total": 342981166.68
+      },
+      "netOperatingIncome": 123442075.12,
+      "capitalOutlay": 124809147.91,
+      "loanAmortization": 6033757.68,
+      "totalNonOperatingExpenditures": 130842905.59,
+      "netChangeInFunds": -6543330.47,
+      "cashBalanceBeginning": 81661510.85,
+      "cashBalanceEnd": 72813361.28
+    },
+    "ldrrmf": {
+      "seventyPercent": 14096524.49,
+      "quickResponseFund": 6039750.48,
+      "total": 20136274.97
     }
   }
 }
