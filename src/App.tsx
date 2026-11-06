@@ -28,6 +28,7 @@ const SearchPage = lazy(() => import('@/pages/Search'));
 const Ideas = lazy(() => import('@/pages/Ideas'));
 const JoinUs = lazy(() => import('@/pages/JoinUs'));
 const TermsOfService = lazy(() => import('@/pages/TermsOfService'));
+const Privacy = lazy(() => import('@/pages/Privacy'));
 const SitemapPage = lazy(() => import('@/pages/sitemap'));
 const Discord = lazy(() => import('@/pages/Discord'));
 
@@ -174,6 +175,7 @@ function AppContent() {
             <Route path='/ideas' element={<Ideas />} />
             <Route path='/join-us' element={<JoinUs />} />
             <Route path='/terms-of-service' element={<TermsOfService />} />
+            <Route path='/privacy' element={<Privacy />} />
             <Route path='/sitemap' element={<SitemapPage />} />
             <Route path='/discord' element={<Discord />} />
 

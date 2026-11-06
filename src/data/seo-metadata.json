@@ -79,6 +79,10 @@
     "title": "Terms of Service | {{portal.name}}",
     "description": "Terms of use for {{portal.name}}, the community portal for {{lgu.name}}, {{lgu.province}}."
   },
+  "/privacy": {
+    "title": "Privacy | {{portal.name}}",
+    "description": "What {{portal.name}} collects: visit statistics through Google Analytics, no accounts, and forms run by others."
+  },
   "/not-found": {
     "title": "Page Not Found | {{portal.name}}",
     "description": "This page doesn't exist on {{portal.name}}."
