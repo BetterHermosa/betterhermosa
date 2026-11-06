@@ -19,7 +19,7 @@ A short-lived way for workers affected by the Jinboway fire to register their de
 2. **Build the form.** Signed in to the Google account that should own the data, open https://script.google.com, paste `scripts/forms/jinboway-form.gs`, fill in the `CONFIG` block (`collectorTitle`, `contact`, `closesOn`, optional `alertEmail`), choose `createJinbowayForm`, press Run, and approve the access request. The execution log prints three links: the **public form** link (the only one to share), the **edit** link and the **responses sheet** (both private).
 3. **Lock down the sheet** (see Security below) and **send a test entry** with fake data. Delete it afterwards.
 4. **Open the page.** In `src/data/jinboway.json` set `formUrl` (the public link), `collector.title`, `collector.contact`, `closesOn` (`YYYY-MM-DD`) and `open` to `true`, then open a PR. The page and the home notice only appear when `open` is true, every detail above is filled in, `formUrl` is a Google Forms link, and the closing date has not passed. An incomplete file can never go live.
-5. After the page is live, check the embedded form's height on a phone; adjust the iframe height in `src/pages/jinboway/index.tsx` if it cuts off or leaves a gap. The "Open the form in a new tab" button is the fallback.
+5. After the page is live, check the embedded form's height on a phone. The real form is about 4,800px tall at phone width and 3,200px on desktop, and the frame is sized to match (`h-[4900px] sm:h-[3500px]` in `src/pages/jinboway/index.tsx`); if you add fields or text to the form, remeasure and adjust. The "Open the form in a new tab" button is the fallback.
 6. The Councilor posts **one** official link from his own Facebook account, and edits the post to say: do not post details in the comments, use the form, it is free, never give an OTP, PIN or bank details.
 
 ## What the form asks
@@ -47,6 +47,15 @@ Google Forms has no CAPTCHA, so these make careless and automated spam hard; the
 - When passing data on, give offices Viewer access or a password-protected file (password sent separately). Do not post it in group chats or email plain spreadsheets.
 - The confirmation message and the page promise no aid and no amount. The notice says it is free and warns against OTP, PIN and bank detail scams.
 - Data Privacy Act of 2012 (RA 10173): the Councilor's office decides what is collected and why, so it is responsible for the notice and the data. Have the municipal data protection officer, if there is one, read the notice. This project is not legal advice.
+
+## Lessons from the first run
+
+- Google only allows `setRequireLogin` on Workspace accounts; on a regular Gmail account it throws "This operation is not supported". The script now only sets sign-in options when `requireGoogleSignIn` is true. A run that fails after `FormApp.create` leaves an empty form behind in Drive: delete it.
+- Google Forms inserts each new response above the old row 2 of the response sheet, so a Review formula that reads `A2:A` silently shifts to `A3:A` after the first response. The Review tab reads whole columns instead.
+- Inside `ARRAYFORMULA`, `OR()` combines every row into one answer; the name check uses arithmetic instead.
+- Both fixes were checked with two identical fake test entries: the first showed no flags, and after the second both rows were flagged as duplicate phone, duplicate person and duplicate company ID.
+- After pasting a newer version of the script over an existing project, run `applyFixes` once: it rewrites the form's notice text and rebuilds the Review tab.
+- The embedded form shows a "Sign in to Google to save your progress" line. That is Google's own and cannot be removed; signing in is optional.
 
 ## Closing and cleanup
 

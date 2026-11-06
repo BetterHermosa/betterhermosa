@@ -15,7 +15,7 @@
  *   6. Follow docs/jinboway-form.md: share the sheet with named people only, turn off
  *      new-response emails, send a test entry.
  *
- * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers.
+ * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, applyFixes.
  *
  * This script contains no secrets. It never makes anything public.
  */
@@ -29,6 +29,9 @@ const CONFIG = {
   // Who may receive the data (written in the privacy notice).
   recipients:
     'the offices of Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa',
+  // The same list in Filipino, for the Filipino sentences of the notice.
+  recipientsFil:
+    'mga tanggapan nina Cong. Tonyboy Roman at Mayor Anne Lorraine Adorable-Inton, at ng PESO Hermosa',
   // Last day the form accepts answers (YYYY-MM-DD). It closes at 23:59 Manila time.
   closesOn: 'TODO 2026-MM-DD', // required
   // Circuit-breaker alert goes here (it contains ONLY a count, never personal data).
@@ -87,8 +90,10 @@ function createJinbowayForm() {
   const form = FormApp.create(FORM_TITLE);
   form.setDescription(notice_());
   form.setCollectEmail(false);
-  form.setRequireLogin(CONFIG.requireGoogleSignIn);
-  form.setLimitOneResponsePerUser(CONFIG.requireGoogleSignIn);
+  // Sign-in settings only exist for some accounts, so apply them only when asked for.
+  if (CONFIG.requireGoogleSignIn) {
+    form.setLimitOneResponsePerUser(true); // this also requires sign-in
+  }
   form.setAllowResponseEdits(false);
   form.setShowLinkToRespondAgain(false);
   form.setPublishingSummary(false);
@@ -285,8 +290,9 @@ function installTriggers_() {
 }
 
 // A second tab of FORMULAS only (the raw answers are never edited) that flags things to check.
+// Formulas read whole columns of 'Form Responses 1' (not A2:A), because Google Forms inserts each new
+// response above the old row 2, which would silently shift an A2:A reference.
 function buildReviewSheet_(ss) {
-  const src = "'Form Responses 1'!";
   const sheet = ss.getSheetByName('Review') || ss.insertSheet('Review');
   sheet.clear();
   sheet
@@ -304,68 +310,74 @@ function buildReviewSheet_(ss) {
       ],
     ])
     .setFontWeight('bold');
-  const f = function (formula) {
-    return '=ARRAYFORMULA(IF(A2:A="","",' + formula + '))';
+  const full = function (col) {
+    return "'Form Responses 1'!" + col + ':' + col;
   };
-  sheet
-    .getRange('A2')
-    .setFormula('=ARRAYFORMULA(IF(' + src + 'A2:A="","",' + src + 'A2:A))');
+  const R = function (col) {
+    return 'FILTER(' + full(col) + ',ROW(' + full(col) + ')>1)';
+  };
+  const f = function (formula) {
+    return '=ARRAYFORMULA(IF(' + R('A') + '="","",' + formula + '))';
+  };
+  sheet.getRange('A2').setFormula(f(R('A')));
   sheet
     .getRange('B2')
-    .setFormula(f('UPPER(' + src + 'B2:B)&", "&UPPER(' + src + 'C2:C)'));
+    .setFormula(f('UPPER(' + R('B') + ')&", "&UPPER(' + R('C') + ')'));
   sheet
     .getRange('C2')
     .setFormula(
-      f('IF(COUNTIF(' + src + 'H2:H,' + src + 'H2:H)>1,"DUPLICATE PHONE","")')
+      f('IF(COUNTIF(' + full('H') + ',' + R('H') + ')>1,"DUPLICATE PHONE","")')
     );
   sheet
     .getRange('D2')
     .setFormula(
       f(
         'IF(COUNTIFS(' +
-          src +
-          'B2:B,' +
-          src +
-          'B2:B,' +
-          src +
-          'C2:C,' +
-          src +
-          'C2:C,' +
-          src +
-          'E2:E,' +
-          src +
-          'E2:E)>1,"DUPLICATE PERSON","")'
+          full('B') +
+          ',' +
+          R('B') +
+          ',' +
+          full('C') +
+          ',' +
+          R('C') +
+          ',' +
+          full('E') +
+          ',' +
+          R('E') +
+          ')>1,"DUPLICATE PERSON","")'
       )
     );
   sheet
     .getRange('E2')
     .setFormula(
-      f('IF(COUNTIF(' + src + 'K2:K,' + src + 'K2:K)>1,"DUPLICATE ID","")')
+      f('IF(COUNTIF(' + full('K') + ',' + R('K') + ')>1,"DUPLICATE ID","")')
     );
   sheet
     .getRange('F2')
     .setFormula(
       f(
         'IF(REGEXMATCH(TO_TEXT(' +
-          src +
-          'H2:H),"^(09[0-9]{9}|\\+639[0-9]{9})$"),"","CHECK PHONE")'
+          R('H') +
+          '),"^(09[0-9]{9}|\+639[0-9]{9})$"),"","CHECK PHONE")'
       )
     );
+  // Plain arithmetic, not OR(): inside ARRAYFORMULA, OR() would combine every row into one answer.
   sheet
     .getRange('G2')
     .setFormula(
       f(
-        'IF(OR(LEN(' +
-          src +
-          'B2:B)<2,LEN(' +
-          src +
-          'C2:C)<2,REGEXMATCH(' +
-          src +
-          'B2:B&' +
-          src +
-          'C2:C,"[0-9]")),"CHECK NAME","")'
+        'IF((LEN(' +
+          R('B') +
+          ')<2)+(LEN(' +
+          R('C') +
+          ')<2)+REGEXMATCH(' +
+          R('B') +
+          '&' +
+          R('C') +
+          ',"[0-9]")>0,"CHECK NAME","")'
       )
     );
+  sheet.getRange('A2:A5000').setNumberFormat('yyyy-mm-dd hh:mm');
   sheet.setFrozenRows(1);
   // Keep phone numbers and IDs as plain text so a leading zero is not dropped.
   const raw = ss.getSheetByName('Form Responses 1');
@@ -373,6 +385,14 @@ function buildReviewSheet_(ss) {
     raw.getRange('H2:H5000').setNumberFormat('@');
     raw.getRange('K2:K5000').setNumberFormat('@');
   }
+}
+
+// Re-apply the notice text and the Review tab to the form and sheet that already exist
+// (run once after pasting a newer version of this script).
+function applyFixes() {
+  const props = PropertiesService.getScriptProperties();
+  FormApp.openById(props.getProperty('FORM_ID')).setDescription(notice_());
+  buildReviewSheet_(SpreadsheetApp.openById(props.getProperty('SHEET_ID')));
 }
 
 // ---------------------------------------------------------------- helpers
@@ -406,7 +426,7 @@ function notice_() {
     who +
     ' para mangalap ng impormasyon ng mga manggagawang naapektuhan ' +
     'ng sunog sa Jinboway, upang makahingi ng tulong sa ' +
-    CONFIG.recipients +
+    CONFIG.recipientsFil +
     '. Hindi ito garantiya ng tulong.\n' +
     'This form was created by ' +
     who +
@@ -420,7 +440,7 @@ function notice_() {
     'PRIVACY NOTICE (Data Privacy Act of 2012). Kokolektahin: pangalan, kaarawan, tirahan, contact number, ' +
     'benepisyaryo, posisyon at company ID. Layunin: i-verify ang iyong detalye at i-coordinate ang tulong. ' +
     'Ibabahagi sa: ' +
-    CONFIG.recipients +
+    CONFIG.recipientsFil +
     ". Itatago lamang hangga't kailangan para sa layuning ito at buburahin pagkatapos. " +
     'Para magtanong, magtama o magpabura ng iyong datos: ' +
     CONFIG.contact +

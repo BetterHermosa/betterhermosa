@@ -155,7 +155,7 @@ const JinbowayPage: FC = () => {
               sandbox='allow-scripts allow-forms allow-same-origin allow-popups allow-popups-to-escape-sandbox'
               referrerPolicy='no-referrer'
               loading='lazy'
-              className='border-kapwa-border-weak h-[2600px] w-full rounded-xl border sm:h-[2000px]'
+              className='border-kapwa-border-weak h-[4900px] w-full rounded-xl border sm:h-[3500px]'
             />
           </Section>
         </>
