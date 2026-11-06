@@ -38,6 +38,15 @@ const JinbowayPage: FC = () => {
         noIndex
       />
 
+      <img
+        src='/logos/jinboway-help.jpg'
+        alt='Hermosa Fire Assistance: Magparehistro dito / Register here'
+        width={1200}
+        height={737}
+        fetchPriority='high'
+        className='h-auto w-full rounded-2xl'
+      />
+
       <header className='space-y-2'>
         <h1 className='text-kapwa-text-strong text-2xl leading-tight font-black sm:text-3xl'>
           Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway
