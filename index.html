@@ -41,6 +41,24 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
+
+    <!--
+      Prerendered pages ship a plain-text copy of their content for crawlers and
+      readers without JavaScript. Hide it while the app loads so it never flashes
+      unstyled. If the app has not replaced it after 6 seconds (for example the
+      script failed to load), show it again instead of leaving a blank page.
+    -->
+    <script>
+      document.documentElement.classList.add('js');
+      setTimeout(function () {
+        document.documentElement.classList.remove('js');
+      }, 6000);
+    </script>
+    <style>
+      .js #root > [data-prerender] {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>

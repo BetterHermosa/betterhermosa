@@ -116,6 +116,14 @@ Run automatically during the build process.
 
 ---
 
+### `prerender-heads.cjs`
+
+Runs after `vite build`. Writes `dist/<route>/index.html` for every public route with its own title, description, canonical, Open Graph tags, JSON-LD and a plain-text copy of the page content inside `<div id="root"><div data-prerender>…</div></div>`, so crawlers, link previews and AI readers that do not run JavaScript get real content.
+
+`index.html` hides that copy with a `js` class (set by an inline script before first paint) so browsers never flash it unstyled while the app loads. If the app has not replaced it after 6 seconds, the class is removed and the text shows instead of a blank page. Routes can set `noindex` (adds a robots meta tag) and `noSitemap` (left out of `sitemap.xml` and `llms.txt`) in `scripts/lib/routes.cjs`.
+
+---
+
 ### `fetch-budget.js`
 
 Snapshots national-government projects located in Hermosa from the [Philippine Budget Data API](https://budget.bettergov.ph/docs) for the `/budget` page.
