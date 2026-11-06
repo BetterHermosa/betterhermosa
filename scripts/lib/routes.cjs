@@ -114,6 +114,8 @@ const STATIC_ROUTES = [
   { path: '/services', priority: '0.9', changefreq: 'weekly' },
   { path: '/budget', priority: '0.7', changefreq: 'monthly' },
   { path: '/finances', priority: '0.7', changefreq: 'monthly' },
+  // Short-lived assistance form: prerendered for share previews, never listed.
+  { path: '/tulong-jinboway', noSitemap: true, noindex: true },
   {
     path: '/transparency/infrastructure',
     priority: '0.7',

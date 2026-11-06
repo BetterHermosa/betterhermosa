@@ -36,14 +36,16 @@ const xmlEscape = s =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 function sitemapXml() {
-  const urls = routes.map(
-    r => `  <url>
+  const urls = routes
+    .filter(r => !r.noSitemap)
+    .map(
+      r => `  <url>
     <loc>${xmlEscape(baseUrl + r.path)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority}</priority>
   </url>`
-  );
+    );
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.join('\n')}
@@ -70,7 +72,7 @@ function llmsTxt() {
     '## Key pages',
     '',
   ];
-  for (const r of routes.filter(r => !r.breadcrumbs)) {
+  for (const r of routes.filter(r => !r.breadcrumbs && !r.noSitemap)) {
     lines.push(`- [${r.title || r.path}](${baseUrl}${r.path})`);
   }
 
@@ -144,5 +146,5 @@ for (const [file, content] of [
   fs.writeFileSync(path.join(PUBLIC, file), content, 'utf8');
 }
 console.log(
-  `✅ Wrote sitemap.xml (${routes.length} URLs), robots.txt, llms.txt, llms-full.txt, data/hermosa.json for ${baseUrl}`
+  `✅ Wrote sitemap.xml (${routes.filter(r => !r.noSitemap).length} URLs), robots.txt, llms.txt, llms-full.txt, data/hermosa.json for ${baseUrl}`
 );

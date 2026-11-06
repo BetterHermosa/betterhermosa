@@ -3,6 +3,7 @@ import { FC } from 'react';
 // import InfoWidgets from '../components/home/InfoWidgets';
 // import PromotionBanner from '../components/home/PromotionBanner';
 // import JoinUsBanner from '../components/home/JoinUsBanner';
+import AssistanceBanner from '@/components/home/AssistanceBanner';
 import GovernmentSection from '@/components/home/GovernmentSection';
 import Hero from '@/components/home/Hero';
 // import NewsSection from '@/components/home/NewsSection';
@@ -21,6 +22,10 @@ const Home: FC = () => {
       <SEO jsonLd={homeJsonLd} />
       {/* Documented animation pattern: animate-in fade-in */}
       <div className='animate-in fade-in duration-700'>
+        <ErrorBoundary name='Assistance'>
+          <AssistanceBanner />
+        </ErrorBoundary>
+
         <ErrorBoundary name='Hero'>
           <Hero />
         </ErrorBoundary>
