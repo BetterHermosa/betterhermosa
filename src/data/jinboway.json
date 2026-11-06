@@ -1,11 +1,11 @@
 {
-  "open": false,
-  "formUrl": "",
-  "closesOn": "",
+  "open": true,
+  "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe_KkcgegWnSbNVHLqgCjGWw9zyH3JfSHoAIn9ko3sLzuDWsA/viewform",
+  "closesOn": "2026-11-30",
   "collector": {
     "name": "Elvin Iglesia",
-    "title": "",
-    "contact": ""
+    "title": "Barangay Councilor",
+    "contact": "Facebook/Messenger: facebook.com/elviniglesia"
   },
   "recipients": [
     "Cong. Tonyboy Roman",
