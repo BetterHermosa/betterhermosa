@@ -32,18 +32,18 @@ const JinbowayPage: FC = () => {
   return (
     <div className='container mx-auto max-w-3xl space-y-6 px-4 pt-8 pb-20'>
       <SEO
-        title='Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway | BetterHermosa'
-        description='Pagpaparehistro ng mga taga-Bataan na nagtatrabaho sa Jinboway at apektado ng sunog. Registration for Bataan residents working at Jinboway.'
+        title='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway | BetterHermosa'
+        description='Pagpaparehistro ng mga taga-Hermosa, Bataan na nagtatrabaho sa Jinboway at apektado ng sunog. Registration for Hermosa, Bataan residents working at Jinboway.'
         ogImage='/logos/png/jinboway-og.png'
         noIndex
       />
 
       <header className='space-y-2'>
         <h1 className='text-kapwa-text-strong text-2xl leading-tight font-black sm:text-3xl'>
-          Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway
+          Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway
         </h1>
         <p className='text-kapwa-text-support'>
-          Help for Bataan residents affected by the Jinboway fire
+          Help for Hermosa, Bataan residents affected by the Jinboway fire
         </p>
       </header>
 
@@ -76,11 +76,13 @@ const JinbowayPage: FC = () => {
               in the form does not guarantee assistance.
             </p>
             <p className='text-kapwa-text-strong border-kapwa-border-brand border-l-4 pl-3 text-sm leading-relaxed font-bold'>
-              Para ito sa mga residente ng Bataan na nagtatrabaho sa Jinboway,
-              dahil taga-Bataan ang mga opisyal na hihingan ng tulong.
+              Para lamang ito sa mga residente ng Hermosa, Bataan na
+              nagtatrabaho sa Jinboway, dahil ang mga tanggapang hihingan ng
+              tulong ay naglilingkod sa Hermosa.
               <span className='text-kapwa-text-support block font-normal'>
-                This initiative is for Bataan residents who work at Jinboway,
-                because the officials we are asking for help are from Bataan.
+                This initiative is only for residents of Hermosa, Bataan who
+                work at Jinboway, because the offices we are asking for help
+                serve Hermosa.
               </span>
             </p>
           </Section>
@@ -110,7 +112,10 @@ const JinbowayPage: FC = () => {
             <ul className='text-kapwa-text-strong list-disc space-y-1 pl-5 text-sm'>
               <li>Apelyido, pangalan at gitnang pangalan / Full name</li>
               <li>Petsa ng kapanganakan / Birthdate</li>
-              <li>Tirahan at barangay / Address and barangay</li>
+              <li>
+                Tirahan at barangay sa Hermosa, Bataan / Address and barangay in
+                Hermosa, Bataan
+              </li>
               <li>Contact number</li>
               <li>Benepisyaryo (sino ang tatanggap ng tulong) / Beneficiary</li>
               <li>Posisyon sa Jinboway / Designation</li>

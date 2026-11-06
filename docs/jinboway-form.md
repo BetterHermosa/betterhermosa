@@ -2,7 +2,7 @@
 
 A short-lived way for workers affected by the Jinboway fire to register their details so Councilor Elvin Iglesia's office can ask Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa for help.
 
-**Who it is for:** Bataan residents who work at Jinboway. The officials being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) are from Bataan. The form notice, the page and the home notice all say so. The form cannot stop anyone from submitting, so the offices check residency and employment when they verify each entry (the address and barangay or town fields are there for that).
+**Who it is for:** residents of **Hermosa, Bataan** who work at Jinboway, because the offices being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) serve Hermosa. The form notice, the page and the home notice all say so. The form enforces what a web form can: the barangay question lists only Hermosa's 23 barangays (there is no "other town" option), the address help text says Hermosa, Bataan, and a required box says "I live in Hermosa, Bataan and I work at Jinboway". It cannot stop someone from ticking it falsely, so the offices still check residency and employment against the address, barangay and company ID when they verify each entry.
 
 **BetterHermosa never receives or stores the answers.** The form is a Google Form owned by the Councilor's Google account. Answers go to a private Google Sheet in that account. The site only has a page that explains the form and embeds it, and a notice on the home page that links to that page.
 

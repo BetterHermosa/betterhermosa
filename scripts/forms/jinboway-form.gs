@@ -15,7 +15,7 @@
  *   6. Follow docs/jinboway-form.md: share the sheet with named people only, turn off
  *      new-response emails, send a test entry.
  *
- * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, updateNotice, applyFixes.
+ * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, updateNotice, restrictToHermosa, applyFixes.
  *
  * This script contains no secrets. It never makes anything public.
  */
@@ -70,8 +70,12 @@ const BARANGAYS = [
   'Santo Cristo (Poblacion)',
   'Sumalo',
   'Tipo',
-  'Ibang bayan / Other town (isulat sa address / type it in the address)',
 ];
+
+const BARANGAY_TITLE = 'Barangay sa Hermosa / Barangay in Hermosa';
+const RESIDENT_TITLE = 'Residente ng Hermosa / Hermosa resident';
+const RESIDENT_CHOICE =
+  'Residente ako ng Hermosa, Bataan at nagtatrabaho ako sa Jinboway. / I live in Hermosa, Bataan and I work at Jinboway.';
 
 const FORM_TITLE =
   'Pagpaparehistro: mga apektado ng sunog sa Jinboway / Registration: workers affected by the Jinboway fire';
@@ -122,12 +126,12 @@ function createJinbowayForm() {
     .addParagraphTextItem()
     .setTitle('Tirahan / Address')
     .setHelpText(
-      'Bahay/kalye, barangay, bayan. / House/street, barangay, town.'
+      'Bahay/kalye, barangay, Hermosa, Bataan. / House/street, barangay, Hermosa, Bataan.'
     )
     .setRequired(true); // F
   form
     .addListItem()
-    .setTitle('Barangay / Bayan / Barangay or town')
+    .setTitle(BARANGAY_TITLE)
     .setChoiceValues(BARANGAYS)
     .setRequired(true); // G
   const phone = text_(
@@ -195,6 +199,13 @@ function createJinbowayForm() {
       .requireTextMatchesPattern('^' + CONFIG.humanCheckWord + '$')
       .build()
   );
+
+  // Created last so the sheet columns B..N keep their letters; it becomes column O.
+  form
+    .addCheckboxItem()
+    .setTitle(RESIDENT_TITLE)
+    .setChoiceValues([RESIDENT_CHOICE])
+    .setRequired(true); // O
 
   // Response sheet in the same account.
   const ss = SpreadsheetApp.create('Jinboway registration responses (PRIVATE)');
@@ -387,6 +398,42 @@ function buildReviewSheet_(ss) {
   }
 }
 
+// Make the existing form Hermosa-only: only Hermosa's barangays in the dropdown, a required
+// "I live in Hermosa and work at Jinboway" box, and the new notice. Safe to run twice.
+// The new box becomes column O of the response sheet; the Review tab is not affected.
+function restrictToHermosa() {
+  const form = FormApp.openById(
+    PropertiesService.getScriptProperties().getProperty('FORM_ID')
+  );
+  const items = form.getItems();
+  const list = items
+    .filter(function (i) {
+      return i.getType() === FormApp.ItemType.LIST;
+    })[0]
+    .asListItem();
+  list.setTitle(BARANGAY_TITLE).setChoiceValues(BARANGAYS);
+  items
+    .filter(function (i) {
+      return i.getType() === FormApp.ItemType.PARAGRAPH_TEXT;
+    })[0]
+    .asParagraphTextItem()
+    .setHelpText(
+      'Bahay/kalye, barangay, Hermosa, Bataan. / House/street, barangay, Hermosa, Bataan.'
+    );
+  const has = items.some(function (i) {
+    return i.getTitle() === RESIDENT_TITLE;
+  });
+  if (!has) {
+    const box = form
+      .addCheckboxItem()
+      .setTitle(RESIDENT_TITLE)
+      .setChoiceValues([RESIDENT_CHOICE])
+      .setRequired(true);
+    form.moveItem(box.getIndex(), list.getIndex() + 1); // show it right after the barangay question
+  }
+  form.setDescription(notice_());
+}
+
 // Re-write only the notice text on the existing form (does not touch the sheet or its Review tab).
 function updateNotice() {
   FormApp.openById(
@@ -441,8 +488,8 @@ function notice_() {
     'in order to ask for help from ' +
     CONFIG.recipients +
     '. It is not a guarantee of assistance.\n\n' +
-    'Ang inisyatibang ito ay para sa mga residente ng Bataan na nagtatrabaho sa Jinboway, dahil taga-Bataan ang mga opisyal na hihingan ng tulong. / ' +
-    'This initiative is for Bataan residents who work at Jinboway, because the officials we are asking for help are from Bataan.\n\n' +
+    'Ang inisyatibang ito ay para lamang sa mga residente ng Hermosa, Bataan na nagtatrabaho sa Jinboway, dahil ang mga tanggapang hihingan ng tulong ay naglilingkod sa Hermosa. / ' +
+    'This initiative is only for residents of Hermosa, Bataan who work at Jinboway, because the offices we are asking for help serve Hermosa.\n\n' +
     'LIBRE ITO. Walang bayad. Huwag magbigay ng OTP, PIN o bank details kaninuman. / ' +
     'THIS IS FREE. Never give anyone an OTP, PIN or bank details. ' +
     'Huwag mag-post ng personal na detalye sa mga comment. / Do not post personal details in comments.\n\n' +
