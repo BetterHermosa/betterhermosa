@@ -69,10 +69,12 @@ function render(route) {
 
   html = html.replace('</head>', `    ${tags}\n  </head>`);
   // React's createRoot replaces this content on boot; readers that don't run
-  // JavaScript keep it.
+  // JavaScript keep it. The wrapper lets index.html hide it from browsers that
+  // are about to run the app, so it never flashes unstyled.
   return html.replace(
     '<div id="root"></div>',
-    () => `<div id="root">${bodyHtml({ ...route, title, description })}</div>`
+    () =>
+      `<div id="root"><div data-prerender>${bodyHtml({ ...route, title, description })}</div></div>`
   );
 }
 
