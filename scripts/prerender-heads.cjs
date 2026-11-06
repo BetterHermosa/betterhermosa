@@ -58,6 +58,9 @@ function render(route) {
     `<meta data-rh="true" property="og:image:width" content="1200" />`,
     `<meta data-rh="true" property="og:image:height" content="630" />`,
     `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
+    ...(route.noindex
+      ? [`<meta data-rh="true" name="robots" content="noindex, nofollow" />`]
+      : []),
     ...jsonLdFor(route).map(
       ld =>
         `<script data-rh="true" type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`

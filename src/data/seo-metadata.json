@@ -19,6 +19,10 @@
     "title": "DPWH Contracts in {{lgu.name}} | {{lgu.province}} Roads, Flood Control, Buildings | {{portal.name}}",
     "description": "Public works contracts that name {{lgu.name}}, {{lgu.province}}: budget, status, progress and contractor as published by DPWH, by year and barangay."
   },
+  "/tulong-jinboway": {
+    "title": "Tulong para sa mga apektado ng sunog sa Jinboway | {{portal.name}}",
+    "description": "Pagpaparehistro ng mga manggagawang apektado ng sunog sa Jinboway. Registration for workers affected by the Jinboway fire."
+  },
   "/finances": {
     "title": "{{lgu.name}}'s Own Finances | Income and Spending | {{portal.name}}",
     "description": "Income, spending and disaster fund of the {{lgu.fullName}}, {{lgu.province}} from Bureau of Local Government Finance reports."
