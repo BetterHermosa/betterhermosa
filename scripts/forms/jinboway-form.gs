@@ -15,7 +15,7 @@
  *   6. Follow docs/jinboway-form.md: share the sheet with named people only, turn off
  *      new-response emails, send a test entry.
  *
- * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, applyFixes.
+ * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, updateNotice, applyFixes.
  *
  * This script contains no secrets. It never makes anything public.
  */
@@ -387,6 +387,13 @@ function buildReviewSheet_(ss) {
   }
 }
 
+// Re-write only the notice text on the existing form (does not touch the sheet or its Review tab).
+function updateNotice() {
+  FormApp.openById(
+    PropertiesService.getScriptProperties().getProperty('FORM_ID')
+  ).setDescription(notice_());
+}
+
 // Re-apply the notice text and the Review tab to the form and sheet that already exist
 // (run once after pasting a newer version of this script).
 function applyFixes() {
@@ -434,6 +441,8 @@ function notice_() {
     'in order to ask for help from ' +
     CONFIG.recipients +
     '. It is not a guarantee of assistance.\n\n' +
+    'Ang inisyatibang ito ay para sa mga residente ng Bataan na nagtatrabaho sa Jinboway, dahil taga-Bataan ang mga opisyal na hihingan ng tulong. / ' +
+    'This initiative is for Bataan residents who work at Jinboway, because the officials we are asking for help are from Bataan.\n\n' +
     'LIBRE ITO. Walang bayad. Huwag magbigay ng OTP, PIN o bank details kaninuman. / ' +
     'THIS IS FREE. Never give anyone an OTP, PIN or bank details. ' +
     'Huwag mag-post ng personal na detalye sa mga comment. / Do not post personal details in comments.\n\n' +
