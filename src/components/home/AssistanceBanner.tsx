@@ -34,7 +34,7 @@ const AssistanceBanner: FC = () => {
   return (
     <div
       role='region'
-      aria-label='Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway'
+      aria-label='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway'
       className='bg-kapwa-bg-warning-default text-kapwa-text-strong'
     >
       <div className='container mx-auto flex flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between'>
@@ -44,9 +44,9 @@ const AssistanceBanner: FC = () => {
             className='mt-0.5 h-5 w-5 shrink-0'
           />
           <p className='text-sm leading-snug font-bold'>
-            Taga-Bataan na apektado ng sunog sa Jinboway? Magparehistro dito.
+            Taga-Hermosa na apektado ng sunog sa Jinboway? Magparehistro dito.
             <span className='block font-normal'>
-              Bataan resident affected by the Jinboway fire? Register here.
+              Hermosa resident affected by the Jinboway fire? Register here.
             </span>
           </p>
         </div>

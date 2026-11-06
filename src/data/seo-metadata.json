@@ -20,8 +20,8 @@
     "description": "Public works contracts that name {{lgu.name}}, {{lgu.province}}: budget, status, progress and contractor as published by DPWH, by year and barangay."
   },
   "/tulong-jinboway": {
-    "title": "Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway | {{portal.name}}",
-    "description": "Pagpaparehistro ng mga taga-Bataan na nagtatrabaho sa Jinboway at apektado ng sunog. Registration for Bataan residents working at Jinboway."
+    "title": "Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway | {{portal.name}}",
+    "description": "Pagpaparehistro ng mga taga-Hermosa, Bataan na nagtatrabaho sa Jinboway at apektado ng sunog. Registration for Hermosa, Bataan residents working at Jinboway."
   },
   "/finances": {
     "title": "{{lgu.name}}'s Own Finances | Income and Spending | {{portal.name}}",
