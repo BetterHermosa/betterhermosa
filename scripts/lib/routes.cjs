@@ -131,6 +131,7 @@ const STATIC_ROUTES = [
   { path: '/data/weather', priority: '0.5', changefreq: 'daily' },
   { path: '/contribute', priority: '0.4' },
   { path: '/accessibility', priority: '0.3' },
+  { path: '/privacy', priority: '0.3' },
   { path: '/sitemap', priority: '0.3' },
 ];
 

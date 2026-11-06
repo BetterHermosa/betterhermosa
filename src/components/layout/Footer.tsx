@@ -146,6 +146,12 @@ export const Footer: FC = () => {
             >
               Sitemap
             </Link>
+            <Link
+              to='/privacy'
+              className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase hover:text-kapwa-text-inverse'
+            >
+              Privacy
+            </Link>
             {/* <Link to='/accessibility' className='text-[10px] font-bold text-kapwa-text-disabled hover:text-kapwa-text-inverse uppercase tracking-widest'>Accessibility</Link> */}
           </div>
         </div>
