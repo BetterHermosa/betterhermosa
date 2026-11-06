@@ -53,11 +53,12 @@ function render(route) {
     `<meta data-rh="true" property="og:title" content="${esc(title)}" />`,
     `<meta data-rh="true" property="og:description" content="${esc(description)}" />`,
     `<meta data-rh="true" property="og:url" content="${url}" />`,
-    `<meta data-rh="true" property="og:image" content="${ogImage}" />`,
+    `<meta data-rh="true" property="og:image" content="${route.ogImage ? baseUrl + route.ogImage : ogImage}" />`,
     `<meta data-rh="true" property="og:image:type" content="image/png" />`,
     `<meta data-rh="true" property="og:image:width" content="1200" />`,
     `<meta data-rh="true" property="og:image:height" content="630" />`,
     `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
+    `<meta data-rh="true" name="twitter:image" content="${route.ogImage ? baseUrl + route.ogImage : ogImage}" />`,
     ...(route.noindex
       ? [`<meta data-rh="true" name="robots" content="noindex, nofollow" />`]
       : []),

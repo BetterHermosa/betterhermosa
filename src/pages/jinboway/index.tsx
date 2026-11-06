@@ -32,17 +32,18 @@ const JinbowayPage: FC = () => {
   return (
     <div className='container mx-auto max-w-3xl space-y-6 px-4 pt-8 pb-20'>
       <SEO
-        title='Tulong para sa mga apektado ng sunog sa Jinboway | BetterHermosa'
-        description='Pagpaparehistro ng mga manggagawang apektado ng sunog sa Jinboway.'
+        title='Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway | BetterHermosa'
+        description='Pagpaparehistro ng mga taga-Bataan na nagtatrabaho sa Jinboway at apektado ng sunog. Registration for Bataan residents working at Jinboway.'
+        ogImage='/logos/png/jinboway-og.png'
         noIndex
       />
 
       <header className='space-y-2'>
         <h1 className='text-kapwa-text-strong text-2xl leading-tight font-black sm:text-3xl'>
-          Tulong para sa mga apektado ng sunog sa Jinboway
+          Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway
         </h1>
         <p className='text-kapwa-text-support'>
-          Help for workers affected by the Jinboway fire
+          Help for Bataan residents affected by the Jinboway fire
         </p>
       </header>
 
@@ -73,6 +74,14 @@ const JinbowayPage: FC = () => {
               {who} is collecting information from workers affected by the
               Jinboway fire in order to ask for help from {recipients}. Filling
               in the form does not guarantee assistance.
+            </p>
+            <p className='text-kapwa-text-strong border-kapwa-border-brand border-l-4 pl-3 text-sm leading-relaxed font-bold'>
+              Para ito sa mga residente ng Bataan na nagtatrabaho sa Jinboway,
+              dahil taga-Bataan ang mga opisyal na hihingan ng tulong.
+              <span className='text-kapwa-text-support block font-normal'>
+                This initiative is for Bataan residents who work at Jinboway,
+                because the officials we are asking for help are from Bataan.
+              </span>
             </p>
           </Section>
 

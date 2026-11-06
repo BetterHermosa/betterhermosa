@@ -2,6 +2,8 @@
 
 A short-lived way for workers affected by the Jinboway fire to register their details so Councilor Elvin Iglesia's office can ask Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa for help.
 
+**Who it is for:** Bataan residents who work at Jinboway. The officials being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) are from Bataan. The form notice, the page and the home notice all say so. The form cannot stop anyone from submitting, so the offices check residency and employment when they verify each entry (the address and barangay or town fields are there for that).
+
 **BetterHermosa never receives or stores the answers.** The form is a Google Form owned by the Councilor's Google account. Answers go to a private Google Sheet in that account. The site only has a page that explains the form and embeds it, and a notice on the home page that links to that page.
 
 ## Pieces
@@ -54,7 +56,7 @@ Google Forms has no CAPTCHA, so these make careless and automated spam hard; the
 - Google Forms inserts each new response above the old row 2 of the response sheet, so a Review formula that reads `A2:A` silently shifts to `A3:A` after the first response. The Review tab reads whole columns instead.
 - Inside `ARRAYFORMULA`, `OR()` combines every row into one answer; the name check uses arithmetic instead.
 - Both fixes were checked with two identical fake test entries: the first showed no flags, and after the second both rows were flagged as duplicate phone, duplicate person and duplicate company ID.
-- After pasting a newer version of the script over an existing project, run `applyFixes` once: it rewrites the form's notice text and rebuilds the Review tab.
+- After pasting a newer version of the script over an existing project, run `updateNotice` to rewrite only the form's notice text. `applyFixes` does that and also rebuilds the Review tab, which clears the "Verified by offices" column, so avoid it once the offices have started marking entries.
 - The embedded form shows a "Sign in to Google to save your progress" line. That is Google's own and cannot be removed; signing in is optional.
 
 ## Closing and cleanup
@@ -66,4 +68,5 @@ Google Forms has no CAPTCHA, so these make careless and automated spam hard; the
 ## Notes
 
 - The page is prerendered with `noindex` so a Facebook share shows a proper title, but search engines are told not to list it. The route carries `noSitemap` and `noindex` flags in `scripts/lib/routes.cjs`.
+- **Search and share metadata:** the title ("Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway | BetterHermosa"), the H1 and the prerendered H1 all start with the same text, the description is under 160 characters and says it is for Bataan residents, and the page has its own 1200x630 share card (`public/logos/png/jinboway-og.png`) so a Facebook post shows a clear preview. The route sets `ogImage` in `scripts/lib/routes.cjs` and the prerender writes `og:image` and `twitter:image` from it. The page stays `noindex` and out of the sitemap on purpose: it is a short-lived page that collects no data itself. If you want Google to list it, remove `noindex` from `src/pages/jinboway/index.tsx` and the route in `scripts/lib/routes.cjs`, and drop `noSitemap` if it should be in the sitemap; consider taking it down again when the form closes.
 - I could not find news coverage of the fire when preparing this, so the wording says only "workers affected by the Jinboway fire", as stated by the Councilor, and states no facts or numbers about it.
