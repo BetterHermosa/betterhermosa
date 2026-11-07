@@ -137,12 +137,7 @@ const STATIC_ROUTES = [
 ];
 
 const FEATURE_ROUTES = {
-  statistics: [
-    '/government/statistics',
-    '/government/statistics/population',
-    '/government/statistics/municipal-income',
-    '/government/statistics/competitiveness',
-  ],
+  statistics: ['/statistics'],
   transparency: [
     '/transparency',
     '/transparency/financial',

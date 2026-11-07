@@ -31,6 +31,10 @@
     "title": "National Projects in {{lgu.name}} | Budget Data | {{portal.name}}",
     "description": "Roads, flood control and barangay buildings in {{lgu.name}}, {{lgu.province}} funded in the national budget (GAA 2020-2026), plus the FY2027 proposal and House bill."
   },
+  "/statistics": {
+    "title": "Population of {{lgu.name}}, {{lgu.province}} by Barangay | {{portal.name}}",
+    "description": "Census population of {{lgu.name}}, {{lgu.province}} from 1960 to 2024 and for each of its 23 barangays, with growth rates. Source: PSA."
+  },
   "/data/weather": {
     "title": "Weather in {{lgu.name}}, {{lgu.province}} Today | {{portal.name}}",
     "description": "Current weather and forecast for {{lgu.name}}, {{lgu.province}}."
