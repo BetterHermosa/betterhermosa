@@ -7,8 +7,10 @@ import {
 } from 'lucide-react';
 
 import { SEO } from '@/components/layout/SEO';
+import { ShareMenu } from '@/components/ui/ShareMenu';
 
 import { embedUrl, jinboway, jinbowayStatus } from '@/lib/jinboway';
+import { config } from '@/lib/lguConfig';
 
 const Section: FC<{ title: string; en: string; children: React.ReactNode }> = ({
   title,
@@ -55,6 +57,12 @@ const JinbowayPage: FC = () => {
           Help for Hermosa, Bataan residents affected by the Jinboway fire
         </p>
       </header>
+
+      <ShareMenu
+        url={`${config.portal.baseUrl}/tulong-jinboway`}
+        title='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway'
+        text='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway. Magparehistro dito:'
+      />
 
       {!ready ? (
         <Section
