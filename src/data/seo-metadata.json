@@ -23,6 +23,10 @@
     "title": "Tulong para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic | {{portal.name}}",
     "description": "Para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic. Magparehistro dito. Registration for Hermosa, Bataan residents affected by the fire at factories and warehouses in Subic."
   },
+  "/tulong": {
+    "title": "Tulong para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic | {{portal.name}}",
+    "description": "Para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic. Magparehistro dito. Registration for Hermosa, Bataan residents affected by the fire at factories and warehouses in Subic."
+  },
   "/finances": {
     "title": "{{lgu.name}}'s Own Finances | Income and Spending | {{portal.name}}",
     "description": "Income, spending and disaster fund of the {{lgu.fullName}}, {{lgu.province}} from Bureau of Local Government Finance reports."

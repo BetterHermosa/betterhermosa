@@ -76,3 +76,5 @@ Google Forms has no CAPTCHA, so these make careless and automated spam hard; the
 ## Share menu
 
 The page has an "Ibahagi / Share" button (`src/components/ui/ShareMenu.tsx`, reusable for any page). It offers the phone's own share sheet (when the browser supports it), copy link, Facebook, Viber, WhatsApp, Telegram, X, LinkedIn, email and a QR code (`qrcode.react`, loaded only when the QR dialog opens). It always shares the canonical address `https://betterhermosa.org/tulong-jinboway`, with a short Filipino message. Facebook shows the share card from `jinboway-og.png`.
+
+**Short link.** The page is also served at `/tulong` (same page, `noindex`, not in the sitemap). The Share button and QR code use `https://betterhermosa.org/tulong`. Facebook keeps the first preview it scraped for an address for weeks, so a title or image change on `/tulong-jinboway` kept showing the old card; `/tulong` was added so Facebook fetches fresh. If you change the title or image again, run Facebook's Sharing Debugger ("Scrape Again") on the address people share.

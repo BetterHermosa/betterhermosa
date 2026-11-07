@@ -121,6 +121,13 @@ const STATIC_ROUTES = [
     noindex: true,
     ogImage: '/logos/png/jinboway-og.png',
   },
+  // Same page on a short address that Facebook has not cached; this is the one to share.
+  {
+    path: '/tulong',
+    noSitemap: true,
+    noindex: true,
+    ogImage: '/logos/png/jinboway-og.png',
+  },
   {
     path: '/transparency/infrastructure',
     priority: '0.7',
