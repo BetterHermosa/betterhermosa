@@ -11,7 +11,7 @@ A short-lived way for Hermosa residents affected by the fire at the factories an
 | Piece | Where |
 | --- | --- |
 | Script that builds the form, the response sheet and the safeguards | `scripts/forms/jinboway-form.gs` |
-| Page (not in the menu, `noindex`, not in the sitemap or `llms.txt`) | `/tulong-jinboway`, `src/pages/jinboway/index.tsx` |
+| Page (not in the menu, `noindex`, not in the sitemap or `llms.txt`) | `/tulong/subic-fire` (old `/tulong-jinboway` redirects), `src/pages/jinboway/index.tsx` |
 | Notice on the home page | `src/components/home/AssistanceBanner.tsx` |
 | The one place that opens and closes everything | `src/data/jinboway.json` |
 
@@ -76,3 +76,5 @@ Google Forms has no CAPTCHA, so these make careless and automated spam hard; the
 ## Share menu
 
 The page has an "Ibahagi / Share" button (`src/components/ui/ShareMenu.tsx`, reusable for any page). It offers the phone's own share sheet (when the browser supports it), copy link, Facebook, Viber, WhatsApp, Telegram, X, LinkedIn, email and a QR code (`qrcode.react`, loaded only when the QR dialog opens). It always shares the canonical address `https://betterhermosa.org/tulong-jinboway`, with a short Filipino message. Facebook shows the share card from `jinboway-og.png`.
+
+**Address.** The page lives at `https://betterhermosa.org/tulong/subic-fire` (`noindex`, not in the sitemap). The old addresses `/tulong-jinboway` and `/tulong` redirect to it (`public/_redirects`, 301; the app also redirects client-side). The Share button and QR code use the new address. Facebook keeps the first preview it scraped for an address for weeks, so changing the title or image on an address people already shared keeps showing the old card; that is why the page moved to a new address. If you change the title or image again, run Facebook's Sharing Debugger ("Scrape Again") on the address people share. The file name `jinboway` in the code is only internal and is not shown to visitors.

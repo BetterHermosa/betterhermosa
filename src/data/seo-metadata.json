@@ -19,7 +19,7 @@
     "title": "DPWH Contracts in {{lgu.name}} | {{lgu.province}} Roads, Flood Control, Buildings | {{portal.name}}",
     "description": "Public works contracts that name {{lgu.name}}, {{lgu.province}}: budget, status, progress and contractor as published by DPWH, by year and barangay."
   },
-  "/tulong-jinboway": {
+  "/tulong/subic-fire": {
     "title": "Tulong para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic | {{portal.name}}",
     "description": "Para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic. Magparehistro dito. Registration for Hermosa, Bataan residents affected by the fire at factories and warehouses in Subic."
   },

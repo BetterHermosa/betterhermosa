@@ -75,7 +75,10 @@ const Privacy: FC = () => (
       <p>
         Ang ilang pahina ay may link o naka-embed na form ng Google Forms,
         halimbawa ang{' '}
-        <Link to='/tulong-jinboway' className='text-kapwa-text-brand font-bold'>
+        <Link
+          to='/tulong/subic-fire'
+          className='text-kapwa-text-brand font-bold'
+        >
           pagpaparehistro para sa tulong
         </Link>{' '}
         kung bukas pa. Ang impormasyong isinusumite roon ay napupunta sa taong

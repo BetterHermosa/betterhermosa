@@ -54,7 +54,7 @@ const AssistanceBanner: FC = () => {
         </div>
         <div className='flex items-center gap-2'>
           <Link
-            to='/tulong-jinboway'
+            to='/tulong/subic-fire'
             className='bg-kapwa-bg-surface-bold text-kapwa-text-inverse inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full px-5 text-sm font-bold whitespace-nowrap sm:flex-none'
           >
             Fill up the form
