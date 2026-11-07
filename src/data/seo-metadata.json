@@ -33,7 +33,7 @@
   },
   "/statistics": {
     "title": "Population of {{lgu.name}}, {{lgu.province}} by Barangay | {{portal.name}}",
-    "description": "Census population of {{lgu.name}}, {{lgu.province}} from 1960 to 2020 and for each of its 23 barangays, with growth rates. Source: PSA."
+    "description": "Census population of {{lgu.name}}, {{lgu.province}} from 1960 to 2024 and for each of its 23 barangays, with growth rates. Source: PSA."
   },
   "/data/weather": {
     "title": "Weather in {{lgu.name}}, {{lgu.province}} Today | {{portal.name}}",

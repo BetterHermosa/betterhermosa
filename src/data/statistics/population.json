@@ -5,8 +5,8 @@
       "province": "Bataan",
       "municipality": "Hermosa"
     },
-    "source": "PSA Census of Population and Housing (compiled by PhilAtlas)",
-    "notes": "Latest census in this data is 2020. Barangay figures for 1990-2020 add up exactly to the municipal total in every census year. The 2024 census is not included yet.",
+    "source": "Philippine Statistics Authority, Census of Population and Housing 2020 and earlier (compiled by PhilAtlas); 2024 Census of Population (POPCEN) from psa.gov.ph",
+    "notes": "2024 figures are from the PSA website (Philippine Standard Geographic Code listing) and add up to the municipal total of 80,557. Figures for 1990-2020 add up to the municipal total in every census year.",
     "censusDates": {
       "1960": "1960-02-15",
       "1970": "1970-05-06",
@@ -18,7 +18,8 @@
       "2007": "2007-08-01",
       "2010": "2010-05-01",
       "2015": "2015-08-01",
-      "2020": "2020-05-01"
+      "2020": "2020-05-01",
+      "2024": "2024-07-01"
     }
   },
   "municipality": {
@@ -67,6 +68,10 @@
       {
         "year": 2020,
         "population": 77443
+      },
+      {
+        "year": 2024,
+        "population": 80557
       }
     ],
     "growthRates": [
@@ -77,6 +82,10 @@
       {
         "period": "2015-2020",
         "rate": 3.47
+      },
+      {
+        "period": "2020-2024",
+        "rate": 0.95
       },
       {
         "period": "2010-2020",
@@ -116,6 +125,10 @@
         {
           "year": 2020,
           "population": 1705
+        },
+        {
+          "year": 2024,
+          "population": 1480
         }
       ]
     },
@@ -150,6 +163,10 @@
         {
           "year": 2020,
           "population": 2176
+        },
+        {
+          "year": 2024,
+          "population": 2547
         }
       ]
     },
@@ -184,6 +201,10 @@
         {
           "year": 2020,
           "population": 3117
+        },
+        {
+          "year": 2024,
+          "population": 2943
         }
       ]
     },
@@ -218,6 +239,10 @@
         {
           "year": 2020,
           "population": 7840
+        },
+        {
+          "year": 2024,
+          "population": 8334
         }
       ]
     },
@@ -252,6 +277,10 @@
         {
           "year": 2020,
           "population": 2613
+        },
+        {
+          "year": 2024,
+          "population": 2598
         }
       ]
     },
@@ -286,6 +315,10 @@
         {
           "year": 2020,
           "population": 437
+        },
+        {
+          "year": 2024,
+          "population": 414
         }
       ]
     },
@@ -320,6 +353,10 @@
         {
           "year": 2020,
           "population": 3000
+        },
+        {
+          "year": 2024,
+          "population": 3807
         }
       ]
     },
@@ -354,6 +391,10 @@
         {
           "year": 2020,
           "population": 10322
+        },
+        {
+          "year": 2024,
+          "population": 9906
         }
       ]
     },
@@ -388,6 +429,10 @@
         {
           "year": 2020,
           "population": 943
+        },
+        {
+          "year": 2024,
+          "population": 783
         }
       ]
     },
@@ -422,6 +467,10 @@
         {
           "year": 2020,
           "population": 4544
+        },
+        {
+          "year": 2024,
+          "population": 4757
         }
       ]
     },
@@ -456,6 +505,10 @@
         {
           "year": 2020,
           "population": 3287
+        },
+        {
+          "year": 2024,
+          "population": 3667
         }
       ]
     },
@@ -490,6 +543,10 @@
         {
           "year": 2020,
           "population": 5496
+        },
+        {
+          "year": 2024,
+          "population": 6965
         }
       ]
     },
@@ -524,6 +581,10 @@
         {
           "year": 2020,
           "population": 2025
+        },
+        {
+          "year": 2024,
+          "population": 2632
         }
       ]
     },
@@ -558,6 +619,10 @@
         {
           "year": 2020,
           "population": 3699
+        },
+        {
+          "year": 2024,
+          "population": 3587
         }
       ]
     },
@@ -592,6 +657,10 @@
         {
           "year": 2020,
           "population": 6556
+        },
+        {
+          "year": 2024,
+          "population": 7072
         }
       ]
     },
@@ -626,6 +695,10 @@
         {
           "year": 2020,
           "population": 2421
+        },
+        {
+          "year": 2024,
+          "population": 2559
         }
       ]
     },
@@ -660,6 +733,10 @@
         {
           "year": 2020,
           "population": 631
+        },
+        {
+          "year": 2024,
+          "population": 943
         }
       ]
     },
@@ -694,6 +771,10 @@
         {
           "year": 2020,
           "population": 2151
+        },
+        {
+          "year": 2024,
+          "population": 1842
         }
       ]
     },
@@ -728,6 +809,10 @@
         {
           "year": 2020,
           "population": 1746
+        },
+        {
+          "year": 2024,
+          "population": 1822
         }
       ]
     },
@@ -762,6 +847,10 @@
         {
           "year": 2020,
           "population": 2324
+        },
+        {
+          "year": 2024,
+          "population": 2029
         }
       ]
     },
@@ -796,6 +885,10 @@
         {
           "year": 2020,
           "population": 896
+        },
+        {
+          "year": 2024,
+          "population": 653
         }
       ]
     },
@@ -830,6 +923,10 @@
         {
           "year": 2020,
           "population": 2640
+        },
+        {
+          "year": 2024,
+          "population": 2273
         }
       ]
     },
@@ -864,6 +961,10 @@
         {
           "year": 2020,
           "population": 6874
+        },
+        {
+          "year": 2024,
+          "population": 6944
         }
       ]
     }

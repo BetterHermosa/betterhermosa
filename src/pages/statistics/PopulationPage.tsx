@@ -56,7 +56,7 @@ export default function PopulationPage() {
   const latestMuni = municipality.history[municipality.history.length - 1];
   const prevYear = municipality.history[municipality.history.length - 2].year;
   const latestGrowth = municipality.growthRates.find(
-    r => r.period === '2015-2020'
+    r => r.period === '2020-2024'
   );
   const growth = latestGrowth?.rate;
   const sortedBarangays = useMemo(() => {
