@@ -61,7 +61,7 @@ const JinbowayPage: FC = () => {
       </header>
 
       <ShareMenu
-        url={`${config.portal.baseUrl}/tulong`}
+        url={`${config.portal.baseUrl}/tulong/subic-fire`}
         title='Tulong para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic'
         text='Tulong para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic. Magparehistro dito:'
       />

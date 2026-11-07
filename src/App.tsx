@@ -181,8 +181,15 @@ function AppContent() {
 
             {/* Data Utilities */}
             <Route path='/budget' element={<BudgetPage />} />
-            <Route path='/tulong-jinboway' element={<JinbowayPage />} />
-            <Route path='/tulong' element={<JinbowayPage />} />
+            <Route path='/tulong/subic-fire' element={<JinbowayPage />} />
+            <Route
+              path='/tulong-jinboway'
+              element={<Navigate to='/tulong/subic-fire' replace />}
+            />
+            <Route
+              path='/tulong'
+              element={<Navigate to='/tulong/subic-fire' replace />}
+            />
             <Route path='/finances' element={<FinancesPage />} />
             <Route path='/data/weather' element={<WeatherPage />} />
             <Route path='/data/forex' element={<ForexPage />} />
