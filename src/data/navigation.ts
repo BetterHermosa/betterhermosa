@@ -1,5 +1,4 @@
 import { config } from '../lib/lguConfig';
-import { lguLabels } from '../lib/lguLabels';
 import { NavigationItem } from '../types';
 import serviceCategories from './service_categories.json';
 
@@ -32,14 +31,6 @@ export const mainNavigation: NavigationItem[] = [
   {
     label: 'Statistics',
     href: '/statistics',
-    children: [
-      { label: 'Demographics', href: '/statistics' },
-      { label: 'Competitiveness', href: '/statistics/competitiveness' },
-      {
-        label: `${lguLabels.adjective} Income`,
-        href: '/statistics/municipal-income',
-      },
-    ],
     ...(config.features.statistics ? {} : { hidden: true }),
   },
   {

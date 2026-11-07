@@ -1,12 +1,12 @@
 {
   "meta": {
     "location": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "municipality": "Los Baños"
+      "region": "Region III",
+      "province": "Bataan",
+      "municipality": "Hermosa"
     },
-    "source": "PSA Census",
-    "notes": "2024 data is projected/latest census.",
+    "source": "PSA Census of Population and Housing (compiled by PhilAtlas)",
+    "notes": "Latest census in this data is 2020. Barangay figures for 1990-2020 add up exactly to the municipal total in every census year. The 2024 census is not included yet.",
     "censusDates": {
       "1960": "1960-02-15",
       "1970": "1970-05-06",
@@ -18,172 +18,853 @@
       "2007": "2007-08-01",
       "2010": "2010-05-01",
       "2015": "2015-08-01",
-      "2020": "2020-05-01",
-      "2024": "2024-07-01"
+      "2020": "2020-05-01"
     }
   },
   "municipality": {
-    "name": "Los Baños",
+    "name": "Hermosa",
     "history": [
-      { "year": 1960, "population": 21519 },
-      { "year": 1970, "population": 32167 },
-      { "year": 1975, "population": 38351 },
-      { "year": 1980, "population": 49555 },
-      { "year": 1990, "population": 66211 },
-      { "year": 1995, "population": 71683 },
-      { "year": 2000, "population": 82027 },
-      { "year": 2007, "population": 98631 },
-      { "year": 2010, "population": 101884 },
-      { "year": 2015, "population": 112008 },
-      { "year": 2020, "population": 115353 },
-      { "year": 2024, "population": 117030 }
+      {
+        "year": 1960,
+        "population": 12550
+      },
+      {
+        "year": 1970,
+        "population": 19501
+      },
+      {
+        "year": 1975,
+        "population": 23246
+      },
+      {
+        "year": 1980,
+        "population": 25672
+      },
+      {
+        "year": 1990,
+        "population": 34633
+      },
+      {
+        "year": 1995,
+        "population": 38764
+      },
+      {
+        "year": 2000,
+        "population": 46254
+      },
+      {
+        "year": 2007,
+        "population": 52484
+      },
+      {
+        "year": 2010,
+        "population": 56997
+      },
+      {
+        "year": 2015,
+        "population": 65862
+      },
+      {
+        "year": 2020,
+        "population": 77443
+      }
     ],
     "growthRates": [
-      { "period": "2010-2015", "rate": 1.82 },
-      { "period": "2015-2020", "rate": 0.62 },
-      { "period": "2015-2024", "rate": 0.49 },
-      { "period": "2020-2024", "rate": 0.35 }
+      {
+        "period": "2010-2015",
+        "rate": 2.79
+      },
+      {
+        "period": "2015-2020",
+        "rate": 3.47
+      },
+      {
+        "period": "2010-2020",
+        "rate": 3.11
+      }
     ]
   },
   "barangays": [
     {
-      "id": "anos",
-      "name": "Anos",
+      "id": "a-rivera",
+      "name": "A. Rivera",
       "history": [
-        { "year": 2010, "population": 7446 },
-        { "year": 2015, "population": 8039 },
-        { "year": 2020, "population": 8815 },
-        { "year": 2024, "population": 9368 }
+        {
+          "year": 1990,
+          "population": 1474
+        },
+        {
+          "year": 1995,
+          "population": 1482
+        },
+        {
+          "year": 2000,
+          "population": 1571
+        },
+        {
+          "year": 2007,
+          "population": 1657
+        },
+        {
+          "year": 2010,
+          "population": 1663
+        },
+        {
+          "year": 2015,
+          "population": 1675
+        },
+        {
+          "year": 2020,
+          "population": 1705
+        }
       ]
     },
     {
-      "id": "bagong-silang",
-      "name": "Bagong Silang",
+      "id": "almacen",
+      "name": "Almacen",
       "history": [
-        { "year": 2010, "population": 577 },
-        { "year": 2015, "population": 629 },
-        { "year": 2020, "population": 707 },
-        { "year": 2024, "population": 727 }
+        {
+          "year": 1990,
+          "population": 1672
+        },
+        {
+          "year": 1995,
+          "population": 1650
+        },
+        {
+          "year": 2000,
+          "population": 2139
+        },
+        {
+          "year": 2007,
+          "population": 1795
+        },
+        {
+          "year": 2010,
+          "population": 1939
+        },
+        {
+          "year": 2015,
+          "population": 2175
+        },
+        {
+          "year": 2020,
+          "population": 2176
+        }
       ]
     },
     {
-      "id": "bambang",
-      "name": "Bambang",
+      "id": "bacong",
+      "name": "Bacong",
       "history": [
-        { "year": 2010, "population": 7021 },
-        { "year": 2015, "population": 7228 },
-        { "year": 2020, "population": 7638 },
-        { "year": 2024, "population": 7816 }
+        {
+          "year": 1990,
+          "population": 1070
+        },
+        {
+          "year": 1995,
+          "population": 1506
+        },
+        {
+          "year": 2000,
+          "population": 1836
+        },
+        {
+          "year": 2007,
+          "population": 2334
+        },
+        {
+          "year": 2010,
+          "population": 2547
+        },
+        {
+          "year": 2015,
+          "population": 2828
+        },
+        {
+          "year": 2020,
+          "population": 3117
+        }
       ]
     },
     {
-      "id": "batong-malake",
-      "name": "Batong Malake",
+      "id": "balsic",
+      "name": "Balsic",
       "history": [
-        { "year": 2010, "population": 11884 },
-        { "year": 2015, "population": 15314 },
-        { "year": 2020, "population": 12578 },
-        { "year": 2024, "population": 12879 }
+        {
+          "year": 1990,
+          "population": 4301
+        },
+        {
+          "year": 1995,
+          "population": 4467
+        },
+        {
+          "year": 2000,
+          "population": 4996
+        },
+        {
+          "year": 2007,
+          "population": 5646
+        },
+        {
+          "year": 2010,
+          "population": 5704
+        },
+        {
+          "year": 2015,
+          "population": 6594
+        },
+        {
+          "year": 2020,
+          "population": 7840
+        }
       ]
     },
     {
-      "id": "baybayin",
-      "name": "Baybayin (Pob.)",
+      "id": "bamban",
+      "name": "Bamban",
       "history": [
-        { "year": 2010, "population": 1307 },
-        { "year": 2015, "population": 1632 },
-        { "year": 2020, "population": 1466 },
-        { "year": 2024, "population": 1538 }
+        {
+          "year": 1990,
+          "population": 910
+        },
+        {
+          "year": 1995,
+          "population": 1324
+        },
+        {
+          "year": 2000,
+          "population": 1585
+        },
+        {
+          "year": 2007,
+          "population": 2016
+        },
+        {
+          "year": 2010,
+          "population": 2157
+        },
+        {
+          "year": 2015,
+          "population": 2379
+        },
+        {
+          "year": 2020,
+          "population": 2613
+        }
       ]
     },
     {
-      "id": "bayog",
-      "name": "Bayog",
+      "id": "burgos-soliman",
+      "name": "Burgos-Soliman",
       "history": [
-        { "year": 2010, "population": 9671 },
-        { "year": 2015, "population": 10460 },
-        { "year": 2020, "population": 11613 },
-        { "year": 2024, "population": 11782 }
+        {
+          "year": 1990,
+          "population": 675
+        },
+        {
+          "year": 1995,
+          "population": 679
+        },
+        {
+          "year": 2000,
+          "population": 576
+        },
+        {
+          "year": 2007,
+          "population": 607
+        },
+        {
+          "year": 2010,
+          "population": 493
+        },
+        {
+          "year": 2015,
+          "population": 556
+        },
+        {
+          "year": 2020,
+          "population": 437
+        }
       ]
     },
     {
-      "id": "lalakay",
-      "name": "Lalakay",
+      "id": "cataning",
+      "name": "Cataning",
       "history": [
-        { "year": 2010, "population": 4253 },
-        { "year": 2015, "population": 5032 },
-        { "year": 2020, "population": 4234 },
-        { "year": 2024, "population": 4350 }
+        {
+          "year": 1990,
+          "population": 1381
+        },
+        {
+          "year": 1995,
+          "population": 1565
+        },
+        {
+          "year": 2000,
+          "population": 2122
+        },
+        {
+          "year": 2007,
+          "population": 1895
+        },
+        {
+          "year": 2010,
+          "population": 2656
+        },
+        {
+          "year": 2015,
+          "population": 3018
+        },
+        {
+          "year": 2020,
+          "population": 3000
+        }
       ]
     },
     {
-      "id": "maahas",
-      "name": "Maahas",
+      "id": "culis",
+      "name": "Culis",
       "history": [
-        { "year": 2010, "population": 6800 },
-        { "year": 2015, "population": 7536 },
-        { "year": 2020, "population": 8785 },
-        { "year": 2024, "population": 9485 }
+        {
+          "year": 1990,
+          "population": 3817
+        },
+        {
+          "year": 1995,
+          "population": 4431
+        },
+        {
+          "year": 2000,
+          "population": 5915
+        },
+        {
+          "year": 2007,
+          "population": 6219
+        },
+        {
+          "year": 2010,
+          "population": 7216
+        },
+        {
+          "year": 2015,
+          "population": 8610
+        },
+        {
+          "year": 2020,
+          "population": 10322
+        }
       ]
     },
     {
-      "id": "malinta",
-      "name": "Malinta",
+      "id": "daungan",
+      "name": "Daungan",
       "history": [
-        { "year": 2010, "population": 6258 },
-        { "year": 2015, "population": 7368 },
-        { "year": 2020, "population": 6531 },
-        { "year": 2024, "population": 6161 }
+        {
+          "year": 1990,
+          "population": 797
+        },
+        {
+          "year": 1995,
+          "population": 743
+        },
+        {
+          "year": 2000,
+          "population": 942
+        },
+        {
+          "year": 2007,
+          "population": 936
+        },
+        {
+          "year": 2010,
+          "population": 905
+        },
+        {
+          "year": 2015,
+          "population": 962
+        },
+        {
+          "year": 2020,
+          "population": 943
+        }
       ]
     },
     {
-      "id": "mayondon",
-      "name": "Mayondon",
+      "id": "judge-roman-cruz-sr",
+      "name": "Judge Roman Cruz Sr.",
       "history": [
-        { "year": 2010, "population": 16181 },
-        { "year": 2015, "population": 17071 },
-        { "year": 2020, "population": 17817 },
-        { "year": 2024, "population": 16520 }
+        {
+          "year": 1990,
+          "population": 2301
+        },
+        {
+          "year": 1995,
+          "population": 2620
+        },
+        {
+          "year": 2000,
+          "population": 2814
+        },
+        {
+          "year": 2007,
+          "population": 2942
+        },
+        {
+          "year": 2010,
+          "population": 3072
+        },
+        {
+          "year": 2015,
+          "population": 3816
+        },
+        {
+          "year": 2020,
+          "population": 4544
+        }
       ]
     },
     {
-      "id": "putho-tuntungin",
-      "name": "Putho Tuntungin",
+      "id": "mabiga",
+      "name": "Mabiga",
       "history": [
-        { "year": 2010, "population": 8692 },
-        { "year": 2015, "population": 9068 },
-        { "year": 2020, "population": 9300 },
-        { "year": 2024, "population": 9602 }
+        {
+          "year": 1990,
+          "population": 1592
+        },
+        {
+          "year": 1995,
+          "population": 1731
+        },
+        {
+          "year": 2000,
+          "population": 1931
+        },
+        {
+          "year": 2007,
+          "population": 2106
+        },
+        {
+          "year": 2010,
+          "population": 2144
+        },
+        {
+          "year": 2015,
+          "population": 2902
+        },
+        {
+          "year": 2020,
+          "population": 3287
+        }
       ]
     },
     {
-      "id": "san-antonio",
-      "name": "San Antonio",
+      "id": "mabuco",
+      "name": "Mabuco",
       "history": [
-        { "year": 2010, "population": 13173 },
-        { "year": 2015, "population": 13537 },
-        { "year": 2020, "population": 15978 },
-        { "year": 2024, "population": 16512 }
+        {
+          "year": 1990,
+          "population": 1024
+        },
+        {
+          "year": 1995,
+          "population": 1164
+        },
+        {
+          "year": 2000,
+          "population": 1664
+        },
+        {
+          "year": 2007,
+          "population": 1833
+        },
+        {
+          "year": 2010,
+          "population": 2943
+        },
+        {
+          "year": 2015,
+          "population": 3238
+        },
+        {
+          "year": 2020,
+          "population": 5496
+        }
       ]
     },
     {
-      "id": "tadlak",
-      "name": "Tadlak",
+      "id": "maite",
+      "name": "Maite",
       "history": [
-        { "year": 2010, "population": 3342 },
-        { "year": 2015, "population": 3319 },
-        { "year": 2020, "population": 4043 },
-        { "year": 2024, "population": 4377 }
+        {
+          "year": 1990,
+          "population": 673
+        },
+        {
+          "year": 1995,
+          "population": 861
+        },
+        {
+          "year": 2000,
+          "population": 1058
+        },
+        {
+          "year": 2007,
+          "population": 1183
+        },
+        {
+          "year": 2010,
+          "population": 1548
+        },
+        {
+          "year": 2015,
+          "population": 1706
+        },
+        {
+          "year": 2020,
+          "population": 2025
+        }
       ]
     },
     {
-      "id": "timugan",
-      "name": "Timugan (Pob.)",
+      "id": "mambog-mandama",
+      "name": "Mambog-Mandama",
       "history": [
-        { "year": 2010, "population": 5279 },
-        { "year": 2015, "population": 5775 },
-        { "year": 2020, "population": 5848 },
-        { "year": 2024, "population": 5913 }
+        {
+          "year": 1990,
+          "population": 1331
+        },
+        {
+          "year": 1995,
+          "population": 1375
+        },
+        {
+          "year": 2000,
+          "population": 1501
+        },
+        {
+          "year": 2007,
+          "population": 2144
+        },
+        {
+          "year": 2010,
+          "population": 2585
+        },
+        {
+          "year": 2015,
+          "population": 2922
+        },
+        {
+          "year": 2020,
+          "population": 3699
+        }
+      ]
+    },
+    {
+      "id": "palihan",
+      "name": "Palihan",
+      "history": [
+        {
+          "year": 1990,
+          "population": 3053
+        },
+        {
+          "year": 1995,
+          "population": 3370
+        },
+        {
+          "year": 2000,
+          "population": 4333
+        },
+        {
+          "year": 2007,
+          "population": 4883
+        },
+        {
+          "year": 2010,
+          "population": 5621
+        },
+        {
+          "year": 2015,
+          "population": 6129
+        },
+        {
+          "year": 2020,
+          "population": 6556
+        }
+      ]
+    },
+    {
+      "id": "pandatung",
+      "name": "Pandatung",
+      "history": [
+        {
+          "year": 1990,
+          "population": 700
+        },
+        {
+          "year": 1995,
+          "population": 1087
+        },
+        {
+          "year": 2000,
+          "population": 1254
+        },
+        {
+          "year": 2007,
+          "population": 1662
+        },
+        {
+          "year": 2010,
+          "population": 1713
+        },
+        {
+          "year": 2015,
+          "population": 2048
+        },
+        {
+          "year": 2020,
+          "population": 2421
+        }
+      ]
+    },
+    {
+      "id": "pulo",
+      "name": "Pulo",
+      "history": [
+        {
+          "year": 1990,
+          "population": 445
+        },
+        {
+          "year": 1995,
+          "population": 556
+        },
+        {
+          "year": 2000,
+          "population": 549
+        },
+        {
+          "year": 2007,
+          "population": 501
+        },
+        {
+          "year": 2010,
+          "population": 365
+        },
+        {
+          "year": 2015,
+          "population": 579
+        },
+        {
+          "year": 2020,
+          "population": 631
+        }
+      ]
+    },
+    {
+      "id": "saba",
+      "name": "Saba",
+      "history": [
+        {
+          "year": 1990,
+          "population": 838
+        },
+        {
+          "year": 1995,
+          "population": 1251
+        },
+        {
+          "year": 2000,
+          "population": 937
+        },
+        {
+          "year": 2007,
+          "population": 1559
+        },
+        {
+          "year": 2010,
+          "population": 1737
+        },
+        {
+          "year": 2015,
+          "population": 1875
+        },
+        {
+          "year": 2020,
+          "population": 2151
+        }
+      ]
+    },
+    {
+      "id": "sacrifice-valley",
+      "name": "Sacrifice Valley",
+      "history": [
+        {
+          "year": 1990,
+          "population": 453
+        },
+        {
+          "year": 1995,
+          "population": 931
+        },
+        {
+          "year": 2000,
+          "population": 902
+        },
+        {
+          "year": 2007,
+          "population": 1141
+        },
+        {
+          "year": 2010,
+          "population": 1183
+        },
+        {
+          "year": 2015,
+          "population": 1248
+        },
+        {
+          "year": 2020,
+          "population": 1746
+        }
+      ]
+    },
+    {
+      "id": "san-pedro",
+      "name": "San Pedro",
+      "history": [
+        {
+          "year": 1990,
+          "population": 2127
+        },
+        {
+          "year": 1995,
+          "population": 2189
+        },
+        {
+          "year": 2000,
+          "population": 2237
+        },
+        {
+          "year": 2007,
+          "population": 2201
+        },
+        {
+          "year": 2010,
+          "population": 1950
+        },
+        {
+          "year": 2015,
+          "population": 2318
+        },
+        {
+          "year": 2020,
+          "population": 2324
+        }
+      ]
+    },
+    {
+      "id": "santo-cristo",
+      "name": "Santo Cristo",
+      "history": [
+        {
+          "year": 1990,
+          "population": 1003
+        },
+        {
+          "year": 1995,
+          "population": 847
+        },
+        {
+          "year": 2000,
+          "population": 803
+        },
+        {
+          "year": 2007,
+          "population": 819
+        },
+        {
+          "year": 2010,
+          "population": 897
+        },
+        {
+          "year": 2015,
+          "population": 896
+        },
+        {
+          "year": 2020,
+          "population": 896
+        }
+      ]
+    },
+    {
+      "id": "sumalo",
+      "name": "Sumalo",
+      "history": [
+        {
+          "year": 1990,
+          "population": 776
+        },
+        {
+          "year": 1995,
+          "population": 1023
+        },
+        {
+          "year": 2000,
+          "population": 1154
+        },
+        {
+          "year": 2007,
+          "population": 1423
+        },
+        {
+          "year": 2010,
+          "population": 1529
+        },
+        {
+          "year": 2015,
+          "population": 1923
+        },
+        {
+          "year": 2020,
+          "population": 2640
+        }
+      ]
+    },
+    {
+      "id": "tipo",
+      "name": "Tipo",
+      "history": [
+        {
+          "year": 1990,
+          "population": 2220
+        },
+        {
+          "year": 1995,
+          "population": 1912
+        },
+        {
+          "year": 2000,
+          "population": 3435
+        },
+        {
+          "year": 2007,
+          "population": 4982
+        },
+        {
+          "year": 2010,
+          "population": 4430
+        },
+        {
+          "year": 2015,
+          "population": 5465
+        },
+        {
+          "year": 2020,
+          "population": 6874
+        }
       ]
     }
   ]
