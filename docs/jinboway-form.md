@@ -1,8 +1,8 @@
 # Jinboway fire: assistance registration form
 
-A short-lived way for workers affected by the Jinboway fire to register their details so Councilor Elvin Iglesia's office can ask Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa for help.
+A short-lived way for workers affected by the fire at Jinboway, or at any other company in the same burned building, to register their details so Councilor Elvin Iglesia's office can ask Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa for help.
 
-**Who it is for:** residents of **Hermosa, Bataan** who work at Jinboway, because the offices being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) serve Hermosa. The form notice, the page and the home notice all say so. The form enforces what a web form can: the barangay question lists only Hermosa's 23 barangays (there is no "other town" option), the address help text says Hermosa, Bataan, and a required box says "I live in Hermosa, Bataan and I work at Jinboway". It cannot stop someone from ticking it falsely, so the offices still check residency and employment against the address, barangay and company ID when they verify each entry.
+**Who it is for:** residents of **Hermosa, Bataan** who are displaced workers of Jinboway or of the other companies in the burned building (the page says: "displaced workers ng Jinboway at ibang kumpanya na kabilang sa nasunog na gusali"), because the offices being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) serve Hermosa. The form notice, the page and the home notice all say so. The form enforces what a web form can: the barangay question lists only Hermosa's 23 barangays (there is no "other town" option), the address help text says Hermosa, Bataan, and a required box says "I live in Hermosa, Bataan and I work at Jinboway". It cannot stop someone from ticking it falsely, so the offices still check residency and employment against the address, barangay and company ID when they verify each entry.
 
 **BetterHermosa never receives or stores the answers.** The form is a Google Form owned by the Councilor's Google account. Answers go to a private Google Sheet in that account. The site only has a page that explains the form and embeds it, and a notice on the home page that links to that page.
 
@@ -26,7 +26,9 @@ A short-lived way for workers affected by the Jinboway fire to register their de
 
 ## What the form asks
 
-Surname, first name, middle name, birthdate, address, barangay or town, contact number, beneficiary (the person who will receive the aid; SELF if the worker), designation at Jinboway, the Jinboway company or employee ID (company ID only, never SSS, PhilHealth, TIN or national ID numbers), an optional department or supervisor, a consent box, and a human check. No email, no uploads.
+Surname, first name, middle name, birthdate, address, barangay or town, contact number, beneficiary (the person who will receive the aid; SELF if the worker), the company they work for, designation, the company or employee ID (company ID only, never SSS, PhilHealth, TIN or national ID numbers), an optional department or supervisor, a consent box, and a human check. No email, no uploads.
+
+**Opening the live form to other companies.** The form was first built for Jinboway only. To open an existing form to all companies, paste the current `scripts/forms/jinboway-form.gs` into the form's Apps Script project and run `openToAllCompanies`. It retitles the form, adds a required "Kumpanya / Company" question (column P of the response sheet, shown before the designation), makes the designation and ID questions neutral, updates the residency box and the notice, and rebuilds the Review tab (duplicate ID is now checked per company). Existing answers are not changed; earlier rows have an empty company cell, and they were all Jinboway.
 
 ## Spam safeguards (installed by the script)
 

@@ -34,8 +34,8 @@ const JinbowayPage: FC = () => {
   return (
     <div className='container mx-auto max-w-3xl space-y-6 px-4 pt-8 pb-20'>
       <SEO
-        title='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway | BetterHermosa'
-        description='Pagpaparehistro ng mga taga-Hermosa, Bataan na nagtatrabaho sa Jinboway at apektado ng sunog. Registration for Hermosa, Bataan residents working at Jinboway.'
+        title='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway at iba pang kumpanya | BetterHermosa'
+        description='Pagpaparehistro ng mga taga-Hermosa, Bataan na apektado ng sunog sa Jinboway at ibang kumpanya sa nasunog na gusali. Registration for Hermosa, Bataan residents affected by the fire at Jinboway and other companies.'
         ogImage='/logos/png/jinboway-og.png'
         noIndex
       />
@@ -51,17 +51,19 @@ const JinbowayPage: FC = () => {
 
       <header className='space-y-2'>
         <h1 className='text-kapwa-text-strong text-2xl leading-tight font-black sm:text-3xl'>
-          Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway
+          Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway at
+          iba pang kumpanya
         </h1>
         <p className='text-kapwa-text-support'>
-          Help for Hermosa, Bataan residents affected by the Jinboway fire
+          Help for Hermosa, Bataan residents affected by the fire at Jinboway
+          and other companies in the burned building
         </p>
       </header>
 
       <ShareMenu
         url={`${config.portal.baseUrl}/tulong-jinboway`}
-        title='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway'
-        text='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway. Magparehistro dito:'
+        title='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway at iba pang kumpanya'
+        text='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway at iba pang kumpanya. Magparehistro dito:'
       />
 
       {!ready ? (
@@ -84,22 +86,30 @@ const JinbowayPage: FC = () => {
           <Section title='Ano ito?' en='What is this?'>
             <p className='text-kapwa-text-strong text-sm leading-relaxed'>
               Si {who} ay nangangalap ng impormasyon ng mga manggagawang
-              naapektuhan ng sunog sa Jinboway upang makahingi ng tulong sa{' '}
-              {recipients}. Hindi ito garantiya ng tulong.
+              naapektuhan ng sunog sa Jinboway at sa nasunog na gusali upang
+              makahingi ng tulong sa <strong>{recipients}</strong>. Hindi ito
+              garantiya ng tulong.
             </p>
             <p className='text-kapwa-text-support text-sm leading-relaxed'>
               {who} is collecting information from workers affected by the
-              Jinboway fire in order to ask for help from {recipients}. Filling
-              in the form does not guarantee assistance.
+              Jinboway fire and the burned building in order to ask for help
+              from <strong>{recipients}</strong>. Filling in the form does not
+              guarantee assistance.
             </p>
             <p className='text-kapwa-text-strong border-kapwa-border-brand border-l-4 pl-3 text-sm leading-relaxed font-bold'>
-              Para lamang ito sa mga residente ng Hermosa, Bataan na
-              nagtatrabaho sa Jinboway, dahil ang mga tanggapang hihingan ng
-              tulong ay naglilingkod sa Hermosa.
+              Para lamang ito sa mga residente ng Hermosa, Bataan, dahil ang mga
+              tanggapang hihingan ng tulong ay naglilingkod sa Hermosa.
               <span className='text-kapwa-text-support block font-normal'>
-                This initiative is only for residents of Hermosa, Bataan who
-                work at Jinboway, because the offices we are asking for help
-                serve Hermosa.
+                This initiative is only for residents of Hermosa, Bataan,
+                because the offices we are asking for help serve Hermosa.
+              </span>
+            </p>
+            <p className='text-kapwa-text-strong text-sm leading-relaxed font-bold'>
+              Para kanino: displaced workers ng Jinboway at ibang kumpanya na
+              kabilang sa nasunog na gusali.
+              <span className='text-kapwa-text-support block font-normal'>
+                Who it is for: displaced workers of Jinboway and of the other
+                companies that were in the burned building.
               </span>
             </p>
           </Section>
@@ -135,10 +145,11 @@ const JinbowayPage: FC = () => {
               </li>
               <li>Contact number</li>
               <li>Benepisyaryo (sino ang tatanggap ng tulong) / Beneficiary</li>
-              <li>Posisyon sa Jinboway / Designation</li>
+              <li>Pangalan ng kumpanya (hal. Jinboway) / Company name</li>
+              <li>Posisyon sa kumpanya / Designation</li>
               <li>
-                Jinboway company ID number (HUWAG ang SSS, PhilHealth, TIN o
-                national ID / NOT SSS, PhilHealth, TIN or national ID)
+                Company ID number (HUWAG ang SSS, PhilHealth, TIN o national ID
+                / NOT SSS, PhilHealth, TIN or national ID)
               </li>
             </ul>
           </Section>
