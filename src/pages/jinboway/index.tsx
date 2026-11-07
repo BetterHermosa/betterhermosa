@@ -40,9 +40,9 @@ const JinbowayPage: FC = () => {
 
       <img
         src='/logos/jinboway-help.jpg'
-        alt='Hermosa Fire Assistance: Magparehistro dito / Register here'
+        alt='Tulong para sa mga manggagawa. Para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic. Magparehistro dito / Register here'
         width={1200}
-        height={737}
+        height={725}
         fetchPriority='high'
         className='h-auto w-full rounded-2xl'
       />
