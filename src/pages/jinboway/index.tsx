@@ -84,22 +84,30 @@ const JinbowayPage: FC = () => {
           <Section title='Ano ito?' en='What is this?'>
             <p className='text-kapwa-text-strong text-sm leading-relaxed'>
               Si {who} ay nangangalap ng impormasyon ng mga manggagawang
-              naapektuhan ng sunog sa Jinboway upang makahingi ng tulong sa{' '}
-              {recipients}. Hindi ito garantiya ng tulong.
+              naapektuhan ng sunog sa Jinboway at sa nasunog na gusali upang
+              makahingi ng tulong sa {recipients}. Hindi ito garantiya ng
+              tulong.
             </p>
             <p className='text-kapwa-text-support text-sm leading-relaxed'>
               {who} is collecting information from workers affected by the
-              Jinboway fire in order to ask for help from {recipients}. Filling
-              in the form does not guarantee assistance.
+              Jinboway fire and the burned building in order to ask for help
+              from {recipients}. Filling in the form does not guarantee
+              assistance.
             </p>
             <p className='text-kapwa-text-strong border-kapwa-border-brand border-l-4 pl-3 text-sm leading-relaxed font-bold'>
-              Para lamang ito sa mga residente ng Hermosa, Bataan na
-              nagtatrabaho sa Jinboway, dahil ang mga tanggapang hihingan ng
-              tulong ay naglilingkod sa Hermosa.
+              Para lamang ito sa mga residente ng Hermosa, Bataan, dahil ang mga
+              tanggapang hihingan ng tulong ay naglilingkod sa Hermosa.
               <span className='text-kapwa-text-support block font-normal'>
-                This initiative is only for residents of Hermosa, Bataan who
-                work at Jinboway, because the offices we are asking for help
-                serve Hermosa.
+                This initiative is only for residents of Hermosa, Bataan,
+                because the offices we are asking for help serve Hermosa.
+              </span>
+            </p>
+            <p className='text-kapwa-text-strong text-sm leading-relaxed font-bold'>
+              Para kanino: displaced workers ng Jinboway at ibang kumpanya na
+              kabilang sa nasunog na gusali.
+              <span className='text-kapwa-text-support block font-normal'>
+                Who it is for: displaced workers of Jinboway and of the other
+                companies that were in the burned building.
               </span>
             </p>
           </Section>
