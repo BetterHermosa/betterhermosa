@@ -34,7 +34,7 @@ const AssistanceBanner: FC = () => {
   return (
     <div
       role='region'
-      aria-label='Tulong para sa mga taga-Hermosa na apektado ng sunog sa Jinboway'
+      aria-label='Tulong para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic'
       className='bg-kapwa-bg-warning-default text-kapwa-text-strong'
     >
       <div className='container mx-auto flex flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between'>
@@ -44,15 +44,17 @@ const AssistanceBanner: FC = () => {
             className='mt-0.5 h-5 w-5 shrink-0'
           />
           <p className='text-sm leading-snug font-bold'>
-            Taga-Hermosa na apektado ng sunog sa Jinboway? Magparehistro dito.
+            Taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa
+            Subic? Magparehistro dito.
             <span className='block font-normal'>
-              Hermosa resident affected by the Jinboway fire? Register here.
+              Hermosa resident affected by the fire at factories and warehouses
+              in Subic? Register here.
             </span>
           </p>
         </div>
         <div className='flex items-center gap-2'>
           <Link
-            to='/tulong-jinboway'
+            to='/tulong/subic-fire'
             className='bg-kapwa-bg-surface-bold text-kapwa-text-inverse inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full px-5 text-sm font-bold whitespace-nowrap sm:flex-none'
           >
             Fill up the form

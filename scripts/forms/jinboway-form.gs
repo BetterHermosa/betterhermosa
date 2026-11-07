@@ -1,5 +1,5 @@
 /**
- * Jinboway fire: assistance registration form (Google Apps Script).
+ * Jinboway fire and other companies in the burned building: assistance registration form (Google Apps Script).
  *
  * HOW TO RUN (about 5 minutes), signed in to the Google account that should OWN the data:
  *   1. Open https://script.google.com and press "New project".
@@ -15,7 +15,7 @@
  *   6. Follow docs/jinboway-form.md: share the sheet with named people only, turn off
  *      new-response emails, send a test entry.
  *
- * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, updateNotice, restrictToHermosa, applyFixes.
+ * Other functions you can run later:  showLinks, reopenForm, closeForm, removeAllTriggers, updateNotice, restrictToHermosa, openToAllCompanies, applyFixes.
  *
  * This script contains no secrets. It never makes anything public.
  */
@@ -75,10 +75,12 @@ const BARANGAYS = [
 const BARANGAY_TITLE = 'Barangay sa Hermosa / Barangay in Hermosa';
 const RESIDENT_TITLE = 'Residente ng Hermosa / Hermosa resident';
 const RESIDENT_CHOICE =
-  'Residente ako ng Hermosa, Bataan at nagtatrabaho ako sa Jinboway. / I live in Hermosa, Bataan and I work at Jinboway.';
+  'Residente ako ng Hermosa, Bataan at apektado ako ng sunog (manggagawa ng Jinboway o ng ibang kumpanya sa nasunog na gusali). / I live in Hermosa, Bataan and I am affected by the fire (a worker of Jinboway or of another company in the burned building).';
+
+const COMPANY_TITLE = 'Kumpanya / Company';
 
 const FORM_TITLE =
-  'Pagpaparehistro: mga apektado ng sunog sa Jinboway / Registration: workers affected by the Jinboway fire';
+  'Pagpaparehistro: mga apektado ng sunog sa Jinboway at ibang kumpanya sa nasunog na gusali / Registration: workers affected by the fire at Jinboway and other companies in the burned building';
 
 // ---------------------------------------------------------------- main
 
@@ -154,10 +156,10 @@ function createJinbowayForm() {
     true,
     'Sino ang tatanggap ng tulong? Isulat ang SELF kung ikaw mismo ang manggagawa. / Who will receive the aid? Write SELF if you are the worker.'
   ); // I
-  text_(form, 'Posisyon / Designation sa Jinboway', true); // J
+  text_(form, 'Posisyon / Designation', true); // J
   text_(
     form,
-    'Jinboway company/employee ID number',
+    'Company/employee ID number',
     true,
     'Company ID lamang. HUWAG ilagay ang SSS, PhilHealth, TIN o national ID. / Company ID only. Do NOT enter SSS, PhilHealth, TIN or national ID numbers.'
   ); // K
@@ -206,6 +208,15 @@ function createJinbowayForm() {
     .setTitle(RESIDENT_TITLE)
     .setChoiceValues([RESIDENT_CHOICE])
     .setRequired(true); // O
+
+  // Also created last so it becomes column P and the letters above do not move; shown before the designation.
+  const company = text_(
+    form,
+    COMPANY_TITLE,
+    true,
+    'Pangalan ng kumpanya kung saan ka nagtatrabaho, hal. Jinboway. / Name of the company you work for, e.g. Jinboway.'
+  ); // P
+  form.moveItem(company.getIndex(), designationIndex_(form));
 
   // Response sheet in the same account.
   const ss = SpreadsheetApp.create('Jinboway registration responses (PRIVATE)');
@@ -361,7 +372,17 @@ function buildReviewSheet_(ss) {
   sheet
     .getRange('E2')
     .setFormula(
-      f('IF(COUNTIF(' + full('K') + ',' + R('K') + ')>1,"DUPLICATE ID","")')
+      f(
+        'IF(COUNTIFS(' +
+          full('K') +
+          ',' +
+          R('K') +
+          ',' +
+          full('P') +
+          ',' +
+          R('P') +
+          ')>1,"DUPLICATE ID","")'
+      )
     );
   sheet
     .getRange('F2')
@@ -434,6 +455,41 @@ function restrictToHermosa() {
   form.setDescription(notice_());
 }
 
+// Open the existing form to every company in the burned building (not only Jinboway): new title, a
+// required "Kumpanya / Company" question (column P of the sheet, shown before the designation), neutral
+// wording for the designation and ID questions, the updated residency box and the new notice.
+// Does not touch existing answers. Safe to run twice.
+function openToAllCompanies() {
+  const props = PropertiesService.getScriptProperties();
+  const form = FormApp.openById(props.getProperty('FORM_ID'));
+  form.setTitle(FORM_TITLE);
+  form.setDescription(notice_());
+  const items = form.getItems();
+  items.forEach(function (i) {
+    const t = i.getTitle();
+    if (t === 'Posisyon / Designation sa Jinboway') {
+      i.setTitle('Posisyon / Designation');
+    } else if (t === 'Jinboway company/employee ID number') {
+      i.setTitle('Company/employee ID number');
+    } else if (t === RESIDENT_TITLE) {
+      i.asCheckboxItem().setChoiceValues([RESIDENT_CHOICE]);
+    }
+  });
+  const has = items.some(function (i) {
+    return i.getTitle() === COMPANY_TITLE;
+  });
+  if (!has) {
+    const company = text_(
+      form,
+      COMPANY_TITLE,
+      true,
+      'Pangalan ng kumpanya kung saan ka nagtatrabaho, hal. Jinboway. / Name of the company you work for, e.g. Jinboway.'
+    );
+    form.moveItem(company.getIndex(), designationIndex_(form));
+  }
+  buildReviewSheet_(SpreadsheetApp.openById(props.getProperty('SHEET_ID')));
+}
+
 // Re-write only the notice text on the existing form (does not touch the sheet or its Review tab).
 function updateNotice() {
   FormApp.openById(
@@ -455,6 +511,13 @@ function text_(form, title, required, help) {
   const item = form.addTextItem().setTitle(title).setRequired(required);
   if (help) item.setHelpText(help);
   return item;
+}
+
+function designationIndex_(form) {
+  const found = form.getItems().filter(function (i) {
+    return i.getTitle().indexOf('Posisyon / Designation') === 0;
+  })[0];
+  return found.getIndex();
 }
 
 function alertEmail_() {
@@ -479,29 +542,31 @@ function notice_() {
     'Ang form na ito ay ginawa ni ' +
     who +
     ' para mangalap ng impormasyon ng mga manggagawang naapektuhan ' +
-    'ng sunog sa Jinboway, upang makahingi ng tulong sa ' +
+    'ng sunog sa Jinboway at sa iba pang kumpanya sa nasunog na gusali, upang makahingi ng tulong sa ' +
     CONFIG.recipientsFil +
     '. Hindi ito garantiya ng tulong.\n' +
     'This form was created by ' +
     who +
-    ' to collect information from workers affected by the Jinboway fire, ' +
+    ' to collect information from workers affected by the fire at Jinboway and the other companies in the burned building, ' +
     'in order to ask for help from ' +
     CONFIG.recipients +
     '. It is not a guarantee of assistance.\n\n' +
-    'Ang inisyatibang ito ay para lamang sa mga residente ng Hermosa, Bataan na nagtatrabaho sa Jinboway, dahil ang mga tanggapang hihingan ng tulong ay naglilingkod sa Hermosa. / ' +
-    'This initiative is only for residents of Hermosa, Bataan who work at Jinboway, because the offices we are asking for help serve Hermosa.\n\n' +
+    'Para kanino: displaced workers ng Jinboway at ibang kumpanya na kabilang sa nasunog na gusali. / ' +
+    'Who it is for: displaced workers of Jinboway and of the other companies in the burned building.\n\n' +
+    'Ang inisyatibang ito ay para lamang sa mga residente ng Hermosa, Bataan, dahil ang mga tanggapang hihingan ng tulong ay naglilingkod sa Hermosa. / ' +
+    'This initiative is only for residents of Hermosa, Bataan, because the offices we are asking for help serve Hermosa.\n\n' +
     'LIBRE ITO. Walang bayad. Huwag magbigay ng OTP, PIN o bank details kaninuman. / ' +
     'THIS IS FREE. Never give anyone an OTP, PIN or bank details. ' +
     'Huwag mag-post ng personal na detalye sa mga comment. / Do not post personal details in comments.\n\n' +
     'PRIVACY NOTICE (Data Privacy Act of 2012). Kokolektahin: pangalan, kaarawan, tirahan, contact number, ' +
-    'benepisyaryo, posisyon at company ID. Layunin: i-verify ang iyong detalye at i-coordinate ang tulong. ' +
+    'benepisyaryo, kumpanya, posisyon at company ID. Layunin: i-verify ang iyong detalye at i-coordinate ang tulong. ' +
     'Ibabahagi sa: ' +
     CONFIG.recipientsFil +
     ". Itatago lamang hangga't kailangan para sa layuning ito at buburahin pagkatapos. " +
     'Para magtanong, magtama o magpabura ng iyong datos: ' +
     CONFIG.contact +
     '.\n' +
-    'We collect: name, birthdate, address, contact number, beneficiary, designation and company ID. Purpose: to verify ' +
+    'We collect: name, birthdate, address, contact number, beneficiary, company, designation and company ID. Purpose: to verify ' +
     'your details and coordinate help. Shared with: ' +
     CONFIG.recipients +
     '. Kept only as long as needed for this purpose, ' +

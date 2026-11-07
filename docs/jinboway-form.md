@@ -1,8 +1,8 @@
 # Jinboway fire: assistance registration form
 
-A short-lived way for workers affected by the Jinboway fire to register their details so Councilor Elvin Iglesia's office can ask Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa for help.
+A short-lived way for Hermosa residents affected by the fire at the factories and warehouses in Subic to register their details so Councilor Elvin Iglesia's office can ask Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton and PESO Hermosa for help.
 
-**Who it is for:** residents of **Hermosa, Bataan** who work at Jinboway, because the offices being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) serve Hermosa. The form notice, the page and the home notice all say so. The form enforces what a web form can: the barangay question lists only Hermosa's 23 barangays (there is no "other town" option), the address help text says Hermosa, Bataan, and a required box says "I live in Hermosa, Bataan and I work at Jinboway". It cannot stop someone from ticking it falsely, so the offices still check residency and employment against the address, barangay and company ID when they verify each entry.
+**Who it is for:** residents of **Hermosa, Bataan** who were affected by the fire at the factories and warehouses in Subic (the wording used everywhere: "Para sa mga taga-Hermosa na naapektuhan ng sunog sa mga pabrika at bodega sa Subic"; it deliberately does not name one company), because the offices being asked for help (Cong. Tonyboy Roman, Mayor Anne Lorraine Adorable-Inton, PESO Hermosa) serve Hermosa. The form notice, the page and the home notice all say so. The form enforces what a web form can: the barangay question lists only Hermosa's 23 barangays (there is no "other town" option), the address help text says Hermosa, Bataan, and a required box says "I live in Hermosa, Bataan and I work at Jinboway". It cannot stop someone from ticking it falsely, so the offices still check residency and employment against the address, barangay and company ID when they verify each entry.
 
 **BetterHermosa never receives or stores the answers.** The form is a Google Form owned by the Councilor's Google account. Answers go to a private Google Sheet in that account. The site only has a page that explains the form and embeds it, and a notice on the home page that links to that page.
 
@@ -11,7 +11,7 @@ A short-lived way for workers affected by the Jinboway fire to register their de
 | Piece | Where |
 | --- | --- |
 | Script that builds the form, the response sheet and the safeguards | `scripts/forms/jinboway-form.gs` |
-| Page (not in the menu, `noindex`, not in the sitemap or `llms.txt`) | `/tulong-jinboway`, `src/pages/jinboway/index.tsx` |
+| Page (not in the menu, `noindex`, not in the sitemap or `llms.txt`) | `/tulong/subic-fire` (old `/tulong-jinboway` redirects), `src/pages/jinboway/index.tsx` |
 | Notice on the home page | `src/components/home/AssistanceBanner.tsx` |
 | The one place that opens and closes everything | `src/data/jinboway.json` |
 
@@ -26,7 +26,9 @@ A short-lived way for workers affected by the Jinboway fire to register their de
 
 ## What the form asks
 
-Surname, first name, middle name, birthdate, address, barangay or town, contact number, beneficiary (the person who will receive the aid; SELF if the worker), designation at Jinboway, the Jinboway company or employee ID (company ID only, never SSS, PhilHealth, TIN or national ID numbers), an optional department or supervisor, a consent box, and a human check. No email, no uploads.
+Surname, first name, middle name, birthdate, address, barangay or town, contact number, beneficiary (the person who will receive the aid; SELF if the worker), the company they work for, designation, the company or employee ID (company ID only, never SSS, PhilHealth, TIN or national ID numbers), an optional department or supervisor, a consent box, and a human check. No email, no uploads.
+
+**Opening the live form to other companies.** The form was first built for Jinboway only. To open an existing form to all companies, paste the current `scripts/forms/jinboway-form.gs` into the form's Apps Script project and run `openToAllCompanies`. It retitles the form, adds a required "Kumpanya / Company" question (column P of the response sheet, shown before the designation), makes the designation and ID questions neutral, updates the residency box and the notice, and rebuilds the Review tab (duplicate ID is now checked per company). Existing answers are not changed; earlier rows have an empty company cell, and they were all Jinboway.
 
 ## Spam safeguards (installed by the script)
 
@@ -68,5 +70,11 @@ Google Forms has no CAPTCHA, so these make careless and automated spam hard; the
 ## Notes
 
 - The page is prerendered with `noindex` so a Facebook share shows a proper title, but search engines are told not to list it. The route carries `noSitemap` and `noindex` flags in `scripts/lib/routes.cjs`.
-- **Search and share metadata:** the title ("Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway | BetterHermosa"), the H1 and the prerendered H1 all start with the same text, the description is under 160 characters and says it is for Bataan residents, and the page has its own 1200x630 share card (`public/logos/png/jinboway-og.png`) so a Facebook post shows a clear preview. The route sets `ogImage` in `scripts/lib/routes.cjs` and the prerender writes `og:image` and `twitter:image` from it. The page stays `noindex` and out of the sitemap on purpose: it is a short-lived page that collects no data itself. If you want Google to list it, remove `noindex` from `src/pages/jinboway/index.tsx` and the route in `scripts/lib/routes.cjs`, and drop `noSitemap` if it should be in the sitemap; consider taking it down again when the form closes.
+- **Search and share metadata:** the title ("Tulong para sa mga taga-Bataan na apektado ng sunog sa Jinboway | BetterHermosa"), the H1 and the prerendered H1 all start with the same text, the description is under 160 characters and says it is for Bataan residents, and the page has its own share card (1800x945, with the same artwork as the image at the top of the page, `public/logos/jinboway-help.jpg`) (`public/logos/png/jinboway-og.png`) so a Facebook post shows a clear preview. The route sets `ogImage` in `scripts/lib/routes.cjs` and the prerender writes `og:image` and `twitter:image` from it. The page stays `noindex` and out of the sitemap on purpose: it is a short-lived page that collects no data itself. If you want Google to list it, remove `noindex` from `src/pages/jinboway/index.tsx` and the route in `scripts/lib/routes.cjs`, and drop `noSitemap` if it should be in the sitemap; consider taking it down again when the form closes.
 - I could not find news coverage of the fire when preparing this, so the wording says only "workers affected by the Jinboway fire", as stated by the Councilor, and states no facts or numbers about it.
+
+## Share menu
+
+The page has an "Ibahagi / Share" button (`src/components/ui/ShareMenu.tsx`, reusable for any page). It offers the phone's own share sheet (when the browser supports it), copy link, Facebook, Viber, WhatsApp, Telegram, X, LinkedIn, email and a QR code (`qrcode.react`, loaded only when the QR dialog opens). It always shares the canonical address `https://betterhermosa.org/tulong-jinboway`, with a short Filipino message. Facebook shows the share card from `jinboway-og.png`.
+
+**Address.** The page lives at `https://betterhermosa.org/tulong/subic-fire` (`noindex`, not in the sitemap). The old addresses `/tulong-jinboway` and `/tulong` redirect to it (`public/_redirects`, 301; the app also redirects client-side). The Share button and QR code use the new address. Facebook keeps the first preview it scraped for an address for weeks, so changing the title or image on an address people already shared keeps showing the old card; that is why the page moved to a new address. If you change the title or image again, run Facebook's Sharing Debugger ("Scrape Again") on the address people share. The file name `jinboway` in the code is only internal and is not shown to visitors.

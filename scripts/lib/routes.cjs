@@ -115,8 +115,9 @@ const STATIC_ROUTES = [
   { path: '/budget', priority: '0.7', changefreq: 'monthly' },
   { path: '/finances', priority: '0.7', changefreq: 'monthly' },
   // Short-lived assistance form: prerendered for share previews, never listed.
+  // /tulong-jinboway and /tulong redirect here (public/_redirects).
   {
-    path: '/tulong-jinboway',
+    path: '/tulong/subic-fire',
     noSitemap: true,
     noindex: true,
     ogImage: '/logos/png/jinboway-og.png',
