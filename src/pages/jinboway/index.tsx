@@ -9,8 +9,10 @@ import {
 import { SEO } from '@/components/layout/SEO';
 import { ShareMenu } from '@/components/ui/ShareMenu';
 
-import { embedUrl, jinboway, jinbowayStatus } from '@/lib/jinboway';
+import { jinboway, jinbowayStatus } from '@/lib/jinboway';
 import { config } from '@/lib/lguConfig';
+
+import { FormEmbed } from './FormEmbed';
 
 const Section: FC<{ title: string; en: string; children: React.ReactNode }> = ({
   title,
@@ -183,14 +185,7 @@ const JinbowayPage: FC = () => {
               Buksan sa bagong tab / Open the form in a new tab
               <ExternalLinkIcon aria-hidden='true' className='h-4 w-4' />
             </a>
-            <iframe
-              title='Registration form / Form ng pagpaparehistro'
-              src={embedUrl(formUrl!)}
-              sandbox='allow-scripts allow-forms allow-same-origin allow-popups allow-popups-to-escape-sandbox'
-              referrerPolicy='no-referrer'
-              loading='lazy'
-              className='border-kapwa-border-weak h-[4900px] w-full rounded-xl border sm:h-[3500px]'
-            />
+            <FormEmbed formUrl={formUrl!} />
           </Section>
         </>
       )}

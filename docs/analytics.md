@@ -23,6 +23,7 @@ Reports appear in analytics.google.com. Real-time shows within minutes; standard
 - Visits to the Jinboway page: Reports, Engagement, Pages and screens, filter on `/tulong-jinboway`.
 - Clicks to the form: Reports, Engagement, Events, `click` with `link_domain` `docs.google.com`.
 - Shares: the Share menu on the Jinboway page sends a GA4 `share` event with `method` (copy_link, native, facebook, viber, whatsapp, telegram, x, linkedin, email, qr_code). Reports, Engagement, Events, `share`. It only records that a share happened, not who shared or with whom.
+- Registrations: when someone sends the form, the page detects it and sends a GA4 `generate_lead` event (`method` = google_form). It counts submissions (including repeats), not who sent them. Reports, Engagement, Events, `generate_lead`.
 - Visits only count people whose browser lets the tag load. Ad blockers and "Do Not Track" extensions hide some visitors, so treat the numbers as a floor.
 
 ## Privacy
